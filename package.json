@@ -24,7 +24,7 @@
     "jquery-browserify": "^1.8.1",
     "lodash.defer": "^4.1.0",
     "packery": "^2.1.1",
-    "paris-styleguide": "git+ssh://git@46.18.195.231:root/paris-fr-style-guides.git#1.6.1",
+    "paris-styleguide": "git+ssh://git@git.etaminstud.io:paris/livingstyleguide.git#1.6.1",
     "vanilla-lazyload": "^2.1.1",
     "velocity-animate": "^1.2.3",
     "viewport-units-buggyfill": "^0.6.0",
