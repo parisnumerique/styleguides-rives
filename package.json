@@ -1,0 +1,37 @@
+{
+  "name": "grandformat-rivesdeseine",
+  "description": "Grand Format Rives de Seine",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "gulp default",
+    "compile": "gulp compile"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.1",
+    "gulp-rename": "^1.2.0",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-util": "^3.0.7",
+    "harp": "^0.20.3",
+    "image-size": "^0.5.0",
+    "imagesloaded": "^4.1.1",
+    "jquery": "^2.1.4",
+    "jquery-bridget": "^2.0.1",
+    "jquery-browserify": "^1.8.1",
+    "lodash.defer": "^4.1.0",
+    "packery": "^2.1.1",
+    "paris-styleguide": "git+ssh://git@46.18.195.231:root/paris-fr-style-guides.git#1.6.1",
+    "vanilla-lazyload": "^2.1.1",
+    "velocity-animate": "^1.2.3",
+    "viewport-units-buggyfill": "^0.6.0",
+    "vinyl": "^0.4.6",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.2.3",
+    "waypoints": "^4.0.1"
+  }
+}

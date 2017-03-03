@@ -1,0 +1,25 @@
+// This is the production file
+
+$assets-path: '/rivesdeseine/';
+
+// Libs
+@import '_lib/unslider';
+
+// Base
+@import "../base/_all";
+
+// Modules
+@import "../modules/_all";
+
+// Fix for quick-access
+@include small {
+  .quick-access {
+    display: none;
+  }
+}
+
+// Fix for footer
+body.full-page .footer {
+  position: relative;
+  z-index: 99;
+}

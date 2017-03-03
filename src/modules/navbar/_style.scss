@@ -1,0 +1,73 @@
+.gfrds_navbar {
+  display: none;
+
+  @include large-and-medium {
+    align-items: center;
+    background-color: $gray1A;
+    display: flex;
+    height: 6rem;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 101;
+
+    &-logo {
+      opacity: 0.5;
+      padding: 0 2.2rem;
+      transition: opacity 0.2s ease;
+
+      svg {
+        height: 1.9rem;
+        display: block;
+        fill: $white;
+        width: 12.5rem;
+      }
+
+      &:hover, &:focus {
+        opacity: 1;
+      }
+    }
+
+    &-title {
+      font-size: 1.4rem;
+      flex-grow: 1;
+      opacity: 0.5;
+      text-align: center;
+
+      strong {text-transform: uppercase;}
+    }
+
+    &-social {
+      .share-item a {
+        color: $white;
+        opacity: 0.5;
+        font-size: 2.3rem;
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+
+        &:hover, &:focus {
+          color: $white;
+          opacity: 1;
+        }
+      }
+
+    }
+
+    &-button-top {
+      border-left: 0.1rem solid transparentize($white, 0.9);
+      height: 6rem;
+      line-height: 6rem;
+      margin-left: 3rem;
+      padding: 0 2.3rem;
+
+      svg {
+        fill: none;
+        height: 1.2rem;
+        stroke: $white;
+        stroke-miterlimit: 10;
+        width: 2rem;
+      }
+    }
+  }
+}

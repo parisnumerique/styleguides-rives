@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+
+    title= title
+
+    meta(name="description", content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0")
+
+    //- Favicon
+    //-link(rel="apple-touch-icon" href=baseUrl + "/images/touchicon.png")
+    //-link(rel="icon" href=baseUrl + "/images/favicon.png")
+    //-meta(name="msapplication-TileColor" content="#ffffff")
+    //-meta(name="msapplication-TileImage" content=baseUrl + "/images/tileicon.png")
+
+    //- Open Graph
+    //-meta(property="og:title", content=title)
+    //-meta(property="og:description", content="")
+    //-meta(property="og:type", content="website")
+    //-meta(property="og:url", content=baseUrl)
+    //-meta(property="og:image", content=baseUrl + "/images/share.jpg")
+    //-meta(property="og:locale", content="fr_FR")
+
+    link(href="stylesheets/main.css" type="text/css" rel="stylesheet")
+
+  body
+
+    != yield
+
+    script
+      include ../node_modules/paris-styleguide/build/assets/javascript/locales.js
+    script
+      include ../node_modules/paris-styleguide/build/assets/javascript/config.js
+    script(src="javascript/lib/jquery-2.1.4.min.js")
+    script(src="javascript/lib/paris.js")
+    script(src="javascript/grandformat.js")

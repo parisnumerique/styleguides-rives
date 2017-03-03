@@ -1,0 +1,14 @@
+{
+  "index": {
+    "assetsPath": "",
+    "data": {
+      "url": "http://www.paris.fr/actualites/grandformat/rivesdeseine",
+      "title": "Rives de Seine",
+      "subtitle": ""
+    }
+  },
+  "grandformat": {
+    "assetsPath": "/rivesdeseine/",
+    "layout": false
+  }
+}
