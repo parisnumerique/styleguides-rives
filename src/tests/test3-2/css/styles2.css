@@ -1,0 +1,32 @@
+
+.wrapper {
+  width: 40%;
+  margin: 0 auto;
+  text-align: center;
+
+  @include transition(width 0.3s ease-out);
+
+  > h1, > p {
+    color: #333333;
+  }
+
+  .container {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    > svg {
+      position: absolute;
+      display: block;
+
+      path {
+        stroke: darken($color-svg, 10%);
+        stroke-width: 10px;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+        stroke-dasharray: 1px, 15px;
+        fill: $color-svg;
+      }
+    }
+  }
+}
