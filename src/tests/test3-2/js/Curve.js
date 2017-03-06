@@ -32,6 +32,13 @@ function Curve(){
     this.updateCurve();
   }
 
+  this.influence = function( influenceX, influenceY )
+  {
+    for( var i = 0; i < points.length ; i++ ){
+      points[i].influence( influenceX, influenceY );
+    }
+  }
+
   this.autoRipple = function()
   {
     if( curve ){

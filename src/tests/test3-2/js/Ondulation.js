@@ -47,10 +47,15 @@ function addListeners(){
     // storing the y position of the mouse - we want the y pos relative to the SVG container so we'll subtract the container top from clientY.
     mousePos.y = e.clientY;
     mousePos.x = e.clientX;
+    var normMousePosX = mousePos.x / stageW;
+    var normMousePosY = mousePos.y / stageH;
+    var influenceX =  (normMousePosX - 0.5)
+    var influenceY =  (normMousePosY - 0.5)
+
     for( var i = 0 ; i < curvesObj.length ; i ++ ){
-    curvesObj[i].moveTo( 0, { x:origin + ( mousePos.x - origin) / 5  + i * 50, y:- 50 }, 17, null)
-    curvesObj[i].moveTo( 1, { x: mousePos.x + i * 50, y:mousePos.y + i * 50 }, 17, null )
-    //  curvesO[i].moveTo( 2, { x:origin + (origin - mousePos.x) / 5 - i * 50, y:stageH + 50 } )
+      influenceX = influenceX;
+      influenceY = influenceY;
+      curvesObj[i].influence( influenceX, influenceY );
     }
 
     });

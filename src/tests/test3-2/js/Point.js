@@ -13,8 +13,9 @@ function Point(posX,posY){
   var isRipple = false;
   var rippleDir = 1;
   var rippleRand = Math.random() * 0.01 + 0.005;
-
-
+  var infX = 0;
+  var infY = 0;
+  var cumulatedInf = 0;
   this.getX = function(){
     return x;
   }
@@ -39,6 +40,11 @@ function Point(posX,posY){
     ( isRipple ) ? isRipple = false : isRipple = true;
   }
 
+  this.influence = function( influenceX, influenceY )
+  {
+    infX = influenceX;
+    infY = influenceY;
+  }
 
   this.onEnterFrame = function(time)
   {
@@ -65,7 +71,9 @@ function Point(posX,posY){
     }
     else {
       //COMPLETE
-      x = x+ripple;
+      cumulatedInf += infX;
+      if( cumulatedInf > 100 || cumulatedInf < -100) infX = 0;
+      x = x+ripple+ infX;
       y = y;
     }
   }
