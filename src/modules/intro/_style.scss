@@ -1,0 +1,28 @@
+.gfrds_intro {
+  color: $darkblue;
+  display: flex;
+  justify-content: flex-end;
+  padding: 4rem 20rem;
+
+  .is-history & {
+    color: $white;
+  }
+
+  &-content {
+    max-width: 30rem;
+  }
+
+  &-icon {
+    font-size: 4rem;
+  }
+
+  &-title {
+    font-size: 4rem;
+  }
+
+  &-text {
+    p {
+      margin: 2rem 0;
+    }
+  }
+}

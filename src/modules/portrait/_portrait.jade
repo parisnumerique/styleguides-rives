@@ -1,0 +1,15 @@
+mixin portrait(data)
+  .gfrds_portrait(class=data.modifiers)
+    .gfrds_portrait-wrapper
+      .gfrds_portrait-header
+        .gfrds_portrait-label= data.label
+        h2.gfrds_portrait-title= data.title
+      .gfrds_portrait-content
+        .gfrds_portrait-content-col embed
+        .gfrds_portrait-content-col
+          .gfrds_portrait-text= data.text
+          .gfrds_portrait-share
+            h3.gfrds_portrait-share-title= data.share.title
+            ul.gfrds_portrait-share-items
+              each item in data.share.items
+                li.gfrds_portrait-share-item: a(href=item.href)= item.icon

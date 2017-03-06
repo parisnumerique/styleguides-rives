@@ -1,8 +1,72 @@
 .gfrds_portrait {
-  color: $white;
-  height: 80rem;
   width: 100%;
 
   &.pink {background-color: $pink;}
   &.orange {background-color: $orange;}
+
+  &-wrapper {
+    margin: 0 auto;
+    max-width: 100rem;
+    padding: 3rem 0 0;
+  }
+
+  &-header {
+    margin-bottom: 4rem;
+  }
+
+  &-label {
+    color: $white;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  &-title {
+    font-size: 20rem;
+    line-height: 16rem;
+    margin: 0;
+    transform: translateX(-1.2rem);
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+
+    &-col {
+      max-width: 40%;
+    }
+  }
+
+  &-share {
+    margin-top: 5rem;
+
+    &-title {
+      color: $white;
+      font-size: 3rem;
+    }
+
+    &-items {
+      @include reset-list;
+    }
+
+    &-item {
+      border: 0.3rem solid $darkblue2;
+      border-bottom: 0;
+      display: inline-block;
+
+      & + & {
+        border-left: 0;
+      }
+
+      > a {
+        align-items: center;
+        color: $darkblue2;
+        display: inline-flex;
+        height: 10rem;
+        justify-content: center;
+        text-decoration: none;
+        width: 10rem;
+      }
+    }
+  }
 }

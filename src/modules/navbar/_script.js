@@ -50,5 +50,5 @@ GFrds.navbar = (function(){
 })();
 
 $(document).ready(function(){
-  GFrds.navbar('.gfrds_navbar');
+  // GFrds.navbar('.gfrds_navbar');
 });

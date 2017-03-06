@@ -78,3 +78,5 @@ function Point(posX,posY){
     }
   }
 }
+
+module.exports = Point;

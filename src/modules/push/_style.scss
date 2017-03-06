@@ -1,0 +1,37 @@
+.gfrds_push {
+  align-items: center;
+  background-color: $white;
+  display: flex;
+  justify-content: flex-start;
+  margin: 30rem 0;
+
+  .is-history & {
+    background-color: $white;
+  }
+
+  &-embed {
+    background-color: $ribbon2;
+    height: 30rem;
+    margin-right: 5rem;
+    width: 30rem;
+  }
+
+  &-content {
+    max-width: 100rem;
+  }
+
+  &-label {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  &-title {
+    font-size: 4rem;
+  }
+
+  &-text {
+    p {
+      margin: 2rem 0;
+    }
+  }
+}
