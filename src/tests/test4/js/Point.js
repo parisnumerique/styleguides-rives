@@ -1,4 +1,4 @@
-function Point(posX,posY,attribute){
+function Point(posX,posY,attribute,rippleCoef){
 
   var x, y, targetPos, att;
   var t, startTime, endTime, duration;
@@ -13,7 +13,8 @@ function Point(posX,posY,attribute){
   var rippleMin = -0.5;
   var isRipple = false;
   var rippleDir = 1;
-  var rippleRand = Math.random() * 0.01 + 0.005;
+  //var rippleRand = Math.random() * 0.01 + 0.005;
+  var rippleRand = rippleCoef;
   var infX = 0;
   var infY = 0;
   var cumulatedInf = 0;
