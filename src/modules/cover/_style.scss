@@ -1,0 +1,12 @@
+.gfrds_cover {
+  align-items: center;
+  background-color: $grayCC;
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+
+  &-title {
+    color: $white;
+    font-size: 8rem;
+  }
+}

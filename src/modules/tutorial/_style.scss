@@ -1,0 +1,39 @@
+.gfrds_tutorial {
+  align-items: center;
+  background-color: $darkblue2;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  margin: 5rem 0 30rem;
+  padding: 4rem;
+
+  .is-history & {
+    background-color: $white;
+  }
+
+  &-figure {
+    background-color: $ribbon2;
+    height: 13rem;
+    width: 20rem;
+  }
+
+  &-content {
+    margin: 0 auto;
+    max-width: 100rem;
+  }
+
+  &-label {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+  &-title {
+    font-size: 4rem;
+  }
+
+  &-text {
+    p {
+      margin: 2rem 0;
+    }
+  }
+}

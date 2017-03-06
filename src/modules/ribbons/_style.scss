@@ -1,2 +1,14 @@
 .gfrds_ribbons {
+  display: block;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &-svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 }

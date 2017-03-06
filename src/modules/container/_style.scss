@@ -1,3 +1,10 @@
 .gfrds_container {
+  color: $darkblue;
   overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  &.is-history {
+    background-color: $darkblue;
+  }
 }
