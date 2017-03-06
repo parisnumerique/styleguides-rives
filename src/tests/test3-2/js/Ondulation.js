@@ -60,23 +60,29 @@ function addListeners(){
 
     });
 
+    $(window).on('resize', function(){
+      setParams();
+    });
+
     $(window).keypress(function (e) {
-    //use e.which
-    var keyCode = e.keyCode;
-    console.log( keyCode );
     var posX = -1;
 
-    if( keyCode == 113){
-      console.log( "<< move left <<")
-      posX = stageW / 4;
+    switch (e.which) {
+      case 113:
+        console.log( "<< move left <<")
+        posX = stageW / 4;
+        break;
+
+      case 100:
+        console.log( "<< move right >>")
+        posX = (stageW / 4) * 3;
+        break;
+
+      case 115:
+        posX = origin;
+        break;
     }
-    else if ( keyCode == 100){ //go right
-      console.log( "<< move right >>")
-      posX = (stageW / 4) * 3;
-    }
-    else if ( keyCode == 115 ){
-      posX = origin;
-    }
+
     if( posX == -1 ) return;
     for( var i = 0 ; i < curvesObj.length ; i ++ ){
       curvesObj[i].moveTo( 2, { x:posX - i * 50, y: stageH + 50 }, 2000, TWEEN.Easing.Quadratic.InOut )
