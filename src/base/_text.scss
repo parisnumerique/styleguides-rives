@@ -11,3 +11,15 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@font-face {
+    font-family: 'Seine';
+    src: url('#{$assets-path}fonts/seine-regular-webfont.eot');
+    src: url('#{$assets-path}fonts/seine-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$assets-path}fonts/seine-regular-webfont.woff2') format('woff2'),
+         url('#{$assets-path}fonts/seine-regular-webfont.woff') format('woff'),
+         url('#{$assets-path}fonts/seine-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+$seine: 'Seine', 'Montserrat', sans-serif;

@@ -1,6 +1,5 @@
 .gfrds_portrait {
   overflow: hidden;
-  // transform: translate3d(0, 0, 0);
   position: relative;
   width: 100%;
 
@@ -27,7 +26,8 @@
   }
 
   &-title {
-    font-size: 20rem;
+    font-family: $seine;
+    font-size: 16rem;
     line-height: 16rem;
     margin: 0;
     transform: translateX(-1.2rem);
