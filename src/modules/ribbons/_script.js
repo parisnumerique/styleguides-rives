@@ -14,11 +14,18 @@ GFrds.ribbons = (function(){
     var stageW, stageH, offset, origin, mousePos = {};
     var scrollStep = -1;
 
+
     function init(){
       svgElement = $el.find('.gfrds_ribbons-svg').get(0);
       setParams();
 
-
+      if( !GFrds.rippleCoef ){
+        GFrds.rippleCoef = [
+          [ Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005],
+          [ Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005],
+          [ Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005]
+          ];
+      }
       origin = stageW / 2;
       offset = stageW / 24;
 
@@ -26,10 +33,12 @@ GFrds.ribbons = (function(){
       var curveObj;
 
       $el.find('path').each(function(i, el){
+
         curves.push(this);
-        initPoints = [new Point(origin, -50),
-                      new Point(origin + offset, stageH / 2),
-                      new Point(origin, stageH+50)];
+        console.log( i + ">>" )
+        initPoints = [new Point(origin, -50, GFrds.rippleCoef[i][0]),
+                      new Point(origin + offset, stageH / 2, GFrds.rippleCoef[i][1]),
+                      new Point(origin, stageH+50, GFrds.rippleCoef[i][2])];
         curveObj = new Curve();
         curveObj.init( this, initPoints.slice(), i );
         curvesObj.push( curveObj );
