@@ -9,6 +9,8 @@
 
   &.borders-only {
     .gfrds_ribbons-path {
+      fill: none;
+      stroke-width: 1px;
       stroke: transparentize($white, 0.8) !important;
     }
   }
@@ -21,18 +23,18 @@
 
   &-path {
     fill: none;
-    stroke-width: 7rem;
+    //stroke-width: 1px;
 
     &:nth-child(1) {
-      stroke: $ribbon1;
+      fill: $ribbon1;
     }
 
     &:nth-child(2) {
-      stroke: $ribbon2;
+      fill: $ribbon2;
     }
 
     &:nth-child(3) {
-      stroke: $ribbon3;
+      fill: $ribbon3;
     }
   }
 }

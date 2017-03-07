@@ -51,25 +51,25 @@ function Curve(){
 
   this.updateCurve = function(){
 
+    //<path class="st0" d="M490.5,261.5 c0,0, 36,162 ,35,254 s-43,235- 43,235h-67c0,0,49-92,55-236s-31-253-31-253H490.5z"/>
 
     if( curve ){
 
       var path = "";
 
       for ( var i = 0 ; i < points.length ; i ++ ){
-        if( i == 1 ){
-          path += 'Q';
+
+        console.log( points[i].getAtt() )
+        if( points[i].getAtt() != "" ){
+          path += points[i].getAtt();
         }
-        else if( i == points.length - 1 && points.length > 3){
-          path += 'T';
-        }
+
 
         path += points[i].getX()+','+points[i].getY() + ' ';
-
       }
 
-      //console.log( "path :: " + path)
       curve.setAttribute('d', "M" + path);
+
     }
 
   }

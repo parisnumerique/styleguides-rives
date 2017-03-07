@@ -13,7 +13,7 @@ GFrds.ribbons = (function(){
     var svgElement, curves = [], curvesPaths = [], curvesObj = [];
     var stageW, stageH, offset, origin, mousePos = {};
     var scrollStep = -1;
-
+    var curveWidth;
 
     function init(){
       svgElement = $el.find('.gfrds_ribbons-svg').get(0);
@@ -21,9 +21,9 @@ GFrds.ribbons = (function(){
 
       if( !GFrds.rippleCoef ){
         GFrds.rippleCoef = [
-          [ Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005],
-          [ Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005],
-          [ Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005]
+          [ Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005],
+          [ Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005],
+          [ Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005],
           ];
       }
       origin = stageW / 2;
@@ -31,14 +31,26 @@ GFrds.ribbons = (function(){
 
       var initPoints;
       var curveObj;
+      curveWidth = 90;
 
       $el.find('path').each(function(i, el){
 
         curves.push(this);
-        console.log( i + ">>" )
-        initPoints = [new Point(origin, -50, GFrds.rippleCoef[i][0]),
-                      new Point(origin + offset, stageH / 2, GFrds.rippleCoef[i][1]),
-                      new Point(origin, stageH+50, GFrds.rippleCoef[i][2])];
+        if( i == 0 ) {
+          curveWidth = 80
+        } else {
+          curveWidth = 100;
+        }
+
+        //console.log( i + ">>" )
+        initPoints = [new Point(origin, -50, "", GFrds.rippleCoef[i][0]),
+                      new Point(origin + offset, stageH / 2, "Q", GFrds.rippleCoef[i][1]),
+                      new Point(origin, stageH + 50, "", GFrds.rippleCoef[i][2]),
+                      new Point(origin - curveWidth, stageH + 50, "", GFrds.rippleCoef[i][3]),
+                      new Point(origin - curveWidth, stageH + 50, "", GFrds.rippleCoef[i][4]),
+                      new Point(origin + offset - curveWidth, stageH / 2, "Q", GFrds.rippleCoef[i][5]),
+                      new Point(origin - curveWidth, -50, "", GFrds.rippleCoef[i][6])
+                    ];
         curveObj = new Curve();
         curveObj.init( this, initPoints.slice(), i );
         curvesObj.push( curveObj );
@@ -79,26 +91,23 @@ GFrds.ribbons = (function(){
               console.log( "MOVE >> 0")
               scrollStep = 0
               for( var i = 0 ; i < curvesObj.length ; i ++ ){
-                curvesObj[i].moveTo( 0, { x:(stageW / 4) * 1.5 - i * 40, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
-                curvesObj[i].moveTo( 1, { x:(stageW / 4) *1.1 - i * 50, y: stageH / 2 }, 5000, Tween.Easing.Quadratic.InOut )
                 curvesObj[i].moveTo( 2, { x:(stageW / 4) - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
+                curvesObj[i].moveTo( 4, { x:(stageW / 4)- curveWidth - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
               }
             }
             else if( scrollTop >= 1500 && scrollTop < 3000 && scrollStep != 1){
               console.log( "MOVE >> 1")
               scrollStep = 1
               for( var i = 0 ; i < curvesObj.length ; i ++ ){
-                curvesObj[i].moveTo( 0, { x:(stageW / 4) * 2.5 - i * 40, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
-                curvesObj[i].moveTo( 1, { x:(stageW / 4) * 3.2 - i * 50, y: stageH / 2 }, 5000, Tween.Easing.Quadratic.InOut )
                 curvesObj[i].moveTo( 2, { x:(stageW / 4) * 3 - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
+                curvesObj[i].moveTo( 4, { x:(stageW / 4)  * 3 - curveWidth - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
               }
             }
             else if ( scrollTop >= 3000 && scrollStep != 2){
               scrollStep = 2;
               for( var i = 0 ; i < curvesObj.length ; i ++ ){
-                curvesObj[i].moveTo( 0, { x:(stageW / 4) * 1.5 - i * 40, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
-                curvesObj[i].moveTo( 1, { x:(stageW / 4) *1.1 - i * 50, y: stageH / 2 }, 5000, Tween.Easing.Quadratic.InOut )
                 curvesObj[i].moveTo( 2, { x:(stageW / 4) - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
+                curvesObj[i].moveTo( 4, { x:(stageW / 4)- curveWidth - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
               }
             }
          });
@@ -129,12 +138,12 @@ GFrds.ribbons = (function(){
 
         if( posX == -1 ) return;
         for( var i = 0 ; i < curvesObj.length ; i ++ ){
-          curvesObj[i].moveTo( 2, { x:posX - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
+          curvesObj[i].moveTo( 2, { x:posX, y: stageH + 50 }, 2000, TWEEN.Easing.Quadratic.InOut );
+          curvesObj[i].moveTo( 4, { x:posX - curveWidth, y: stageH + 50 }, 2000, TWEEN.Easing.Quadratic.InOut );
         }
 
 
       })
-        //window.addEventListener('resize', setParams);
     }
 
     function loop(time) {

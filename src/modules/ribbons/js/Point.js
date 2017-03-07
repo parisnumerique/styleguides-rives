@@ -1,28 +1,34 @@
-function Point(posX,posY, rippleCoef){
+function Point(posX,posY,attribute,rippleCoef){
 
-  var x, y, targetPos;
+  var x, y, targetPos, att;
   var t, startTime, endTime, duration;
   var startPos, targetPos, deltaPos;
   var easingF;
   x = posX;
   y = posY;
+  att = attribute
 
   var ripple = 0;
   var rippleMax = 0.5;
   var rippleMin = -0.5;
   var isRipple = false;
   var rippleDir = 1;
+  //var rippleRand = Math.random() * 0.01 + 0.005;
   var rippleRand = rippleCoef;
   var infX = 0;
   var infY = 0;
   var cumulatedInf = 0;
-  
+
   this.getX = function(){
     return x;
   }
 
   this.getY = function(){
     return y;
+  }
+
+  this.getAtt = function(){
+    return att;
   }
 
   this.moveTo = function( pos, durationT, easing )
@@ -58,7 +64,7 @@ function Point(posX,posY, rippleCoef){
       rippleDir = 1;
     }
 
-    if( isRipple )  ripple += rippleRand * rippleDir;
+    if( isRipple )  ripple += (rippleRand * rippleDir);
 
     if( t < endTime){
       var k = (t - startTime) / duration;
