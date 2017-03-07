@@ -24,7 +24,7 @@ GFrds.ribbons = (function(){
           [ Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005],
           [ Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005],
           [ Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005, Math.random() * 0.01 + 0.005],
-          ];
+        ];
       }
       origin = stageW / 2;
       offset = stageW / 24;
@@ -51,6 +51,7 @@ GFrds.ribbons = (function(){
                       new Point(origin + offset - curveWidth, stageH / 2, "Q", GFrds.rippleCoef[i][5]),
                       new Point(origin - curveWidth, -50, "", GFrds.rippleCoef[i][6])
                     ];
+
         curveObj = new Curve();
         curveObj.init( this, initPoints.slice(), i );
         curvesObj.push( curveObj );
@@ -91,6 +92,15 @@ GFrds.ribbons = (function(){
               console.log( "MOVE >> 0")
               scrollStep = 0
               for( var i = 0 ; i < curvesObj.length ; i ++ ){
+                // TOP
+                curvesObj[i].moveTo( 0, { x:(stageW / 4) * 1.5 - i * 50, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
+                curvesObj[i].moveTo( 6, { x:(stageW / 4) * 1.5 - curveWidth - i * 50, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
+
+                // MIDDLE
+                curvesObj[i].moveTo( 1, { x:(stageW / 4) - i * 50, y: stageH/2 }, 5000, Tween.Easing.Quadratic.InOut )
+                curvesObj[i].moveTo( 5, { x:(stageW / 4) - curveWidth - i * 50, y: stageH /2 }, 5000, Tween.Easing.Quadratic.InOut )
+
+                // BOTTOM
                 curvesObj[i].moveTo( 2, { x:(stageW / 4) - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
                 curvesObj[i].moveTo( 4, { x:(stageW / 4)- curveWidth - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
               }
@@ -99,6 +109,13 @@ GFrds.ribbons = (function(){
               console.log( "MOVE >> 1")
               scrollStep = 1
               for( var i = 0 ; i < curvesObj.length ; i ++ ){
+                // TOP
+                curvesObj[i].moveTo( 0, { x:(stageW / 4) * 2.5 - i * 50, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
+                curvesObj[i].moveTo( 6, { x:(stageW / 4) * 2.5 - curveWidth - i * 50, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
+                // MIDDLE
+                curvesObj[i].moveTo( 1, { x:(stageW / 4) * 3 - i * 50, y: stageH /2}, 5000, Tween.Easing.Quadratic.InOut )
+                curvesObj[i].moveTo( 5, { x:(stageW / 4) * 3 - curveWidth - i * 50, y: stageH /2 }, 5000, Tween.Easing.Quadratic.InOut )
+                // BOTTOM
                 curvesObj[i].moveTo( 2, { x:(stageW / 4) * 3 - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
                 curvesObj[i].moveTo( 4, { x:(stageW / 4)  * 3 - curveWidth - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
               }
@@ -106,8 +123,15 @@ GFrds.ribbons = (function(){
             else if ( scrollTop >= 3000 && scrollStep != 2){
               scrollStep = 2;
               for( var i = 0 ; i < curvesObj.length ; i ++ ){
+                // TOP
+                curvesObj[i].moveTo( 0, { x:(stageW / 4) * 1.5 - i * 50, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
+                curvesObj[i].moveTo( 6, { x:(stageW / 4) * 1.5 - curveWidth - i * 50, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
+                // MIDDLE
+                curvesObj[i].moveTo( 1, { x:(stageW / 4) - i * 50, y: stageH /2}, 5000, Tween.Easing.Quadratic.InOut )
+                curvesObj[i].moveTo( 5, { x:(stageW / 4) - curveWidth - i * 50, y: stageH /2 }, 5000, Tween.Easing.Quadratic.InOut )
+                // BOTTOM
                 curvesObj[i].moveTo( 2, { x:(stageW / 4) - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
-                curvesObj[i].moveTo( 4, { x:(stageW / 4)- curveWidth - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
+                curvesObj[i].moveTo( 4, { x:(stageW / 4) - curveWidth - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
               }
             }
          });

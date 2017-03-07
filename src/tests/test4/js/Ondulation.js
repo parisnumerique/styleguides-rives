@@ -36,7 +36,7 @@ function init(){
                     new Point(origin + offset - curveWidth, stageH / 2, "Q", Math.random() * 0.01 + 0.005),
                     new Point(origin - curveWidth, -50, "", Math.random() * 0.01 + 0.005)
                   ];
-      
+
       curveObj = new Curve();
       curveObj.init( document.getElementById('curve_' + i), initPoints.slice(), i );
       curvesObj.push( curveObj );
@@ -96,7 +96,7 @@ function addListeners(){
     if( posX == -1 ) return;
     for( var i = 0 ; i < curvesObj.length ; i ++ ){
       curvesObj[i].moveTo( 2, { x:posX, y: stageH + 50 }, 2000, TWEEN.Easing.Quadratic.InOut );
-    //  curvesObj[i].moveTo( 3, { x:posX - i * curveWidth/2 - curveWidth, y: stageH + 50 }, 2000, TWEEN.Easing.Quadratic.InOut );
+      //curvesObj[i].moveTo( 3, { x:posX - i * curveWidth/2 - curveWidth, y: stageH + 50 }, 2000, TWEEN.Easing.Quadratic.InOut );
       curvesObj[i].moveTo( 4, { x:posX - curveWidth, y: stageH + 50 }, 2000, TWEEN.Easing.Quadratic.InOut );
     }
   })
