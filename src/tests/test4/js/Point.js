@@ -64,7 +64,7 @@ function Point(posX,posY,attribute,rippleCoef){
       rippleDir = 1;
     }
 
-    if( isRipple )  ripple += rippleRand * rippleDir;
+    if( isRipple )  ripple += (rippleRand * rippleDir);
 
     if( t < endTime){
       var k = (t - startTime) / duration;

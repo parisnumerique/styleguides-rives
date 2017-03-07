@@ -80,13 +80,21 @@ GFrds.ribbons = (function(){
                 curvesObj[i].moveTo( 2, { x:(stageW / 4) - i * 50, y: stageH + 50 }, 2000, Tween.Easing.Quadratic.InOut )
               }
             }
-            else if( scrollTop > 1500 && scrollTop < 2500 && scrollStep != 1){
+            else if( scrollTop >= 1500 && scrollTop < 3000 && scrollStep != 1){
               console.log( "MOVE >> 1")
               scrollStep = 1
               for( var i = 0 ; i < curvesObj.length ; i ++ ){
                 curvesObj[i].moveTo( 0, { x:(stageW / 4) * 2.5 - i * 40, y: -50 }, 2000, Tween.Easing.Quadratic.InOut )
                 curvesObj[i].moveTo( 1, { x:(stageW / 4) * 3.2 - i * 50, y: stageH / 2 }, 2000, Tween.Easing.Quadratic.InOut )
                 curvesObj[i].moveTo( 2, { x:(stageW / 4) * 3 - i * 50, y: stageH + 50 }, 2000, Tween.Easing.Quadratic.InOut )
+              }
+            }
+            else if ( scrollTop >= 3000 && scrollStep != 2){
+              scrollStep = 2;
+              for( var i = 0 ; i < curvesObj.length ; i ++ ){
+                curvesObj[i].moveTo( 0, { x:(stageW / 4) * 1.5 - i * 40, y: -50 }, 2000, Tween.Easing.Quadratic.InOut )
+                curvesObj[i].moveTo( 1, { x:(stageW / 4) *1.1 - i * 50, y: stageH / 2 }, 2000, Tween.Easing.Quadratic.InOut )
+                curvesObj[i].moveTo( 2, { x:(stageW / 4) - i * 50, y: stageH + 50 }, 2000, Tween.Easing.Quadratic.InOut )
               }
             }
          });
