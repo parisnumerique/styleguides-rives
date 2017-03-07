@@ -1,7 +1,6 @@
-mixin ribbons
-  .gfrds_ribbons
+mixin ribbons(data)
+  .gfrds_ribbons(class=data.modifiers)
     svg.gfrds_ribbons-svg
-      g
-        path(id="curve_2" d="" fill="none" stroke="#253B6E" stroke-width="70")
-        path(id="curve_1" d="" fill="none" stroke="#1891AC" stroke-width="70")
-        path(id="curve_0" d="" fill="none" stroke="#A2D5F2" stroke-width="70")
+      path.gfrds_ribbons-path
+      path.gfrds_ribbons-path
+      path.gfrds_ribbons-path

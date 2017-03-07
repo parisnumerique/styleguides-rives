@@ -1,3 +1,5 @@
+include ../ribbons/_ribbons
+
 mixin portrait(data)
   .gfrds_portrait(class=data.modifiers)
     .gfrds_portrait-wrapper
@@ -13,3 +15,5 @@ mixin portrait(data)
             ul.gfrds_portrait-share-items
               each item in data.share.items
                 li.gfrds_portrait-share-item: a(href=item.href)= item.icon
+    .gfrds_portrait-ribbons
+      +ribbons({"modifiers": ["borders-only"]})

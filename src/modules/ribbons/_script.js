@@ -15,7 +15,7 @@ GFrds.ribbons = (function(){
     var scrollStep = -1;
 
     function init(){
-      svgElement = $('gfrds_ribbons-svg').get(0);
+      svgElement = $el.find('.gfrds_ribbons-svg').get(0);
       setParams();
 
 
@@ -25,21 +25,16 @@ GFrds.ribbons = (function(){
       var initPoints;
       var curveObj;
 
-      for ( var i = 0 ; i < 10 ; i ++ ){
-
-        if( document.getElementById('curve_' + i) ){
-          curves.push(document.getElementById('curve_' + i));
-
-          initPoints = [new Point(origin, -50),
-                        new Point(origin + offset, stageH / 2),
-                        new Point(origin, stageH+50)];
-          curveObj = new Curve();
-          curveObj.init( document.getElementById('curve_' + i), initPoints.slice(), i );
-          curvesObj.push( curveObj );
-          curveObj.autoRipple();
-
-        }
-      }
+      $el.find('path').each(function(i, el){
+        curves.push(this);
+        initPoints = [new Point(origin, -50),
+                      new Point(origin + offset, stageH / 2),
+                      new Point(origin, stageH+50)];
+        curveObj = new Curve();
+        curveObj.init( this, initPoints.slice(), i );
+        curvesObj.push( curveObj );
+        curveObj.autoRipple();
+      });
 
       loop();
       addListeners();

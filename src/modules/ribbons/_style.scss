@@ -7,9 +7,32 @@
   width: 100%;
   z-index: 2;
 
+  &.borders-only {
+    .gfrds_ribbons-path {
+      stroke: transparentize($white, 0.8) !important;
+    }
+  }
+
   &-svg {
     display: block;
     height: 100%;
     width: 100%;
+  }
+
+  &-path {
+    fill: none;
+    stroke-width: 7rem;
+
+    &:nth-child(1) {
+      stroke: $ribbon1;
+    }
+
+    &:nth-child(2) {
+      stroke: $ribbon2;
+    }
+
+    &:nth-child(3) {
+      stroke: $ribbon3;
+    }
   }
 }
