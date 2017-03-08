@@ -29,11 +29,11 @@ function init(){
       curves.push(document.getElementById('curve_' + i));
       var rand = Math.random() * 0.01 + 0.005;
       initPoints = [new Point(origin, -50, "", Math.random() * 0.01 + 0.005),
-                    new Point(origin + offset, stageH / 2, "Q", Math.random() * 0.01 + 0.005),
+                    new Point(origin + offset / 2, stageH / 2, "Q", Math.random() * 0.01 + 0.005),
                     new Point(origin, stageH + 50, "", Math.random() * 0.01 + 0.005),
                     new Point(origin + curveWidth, stageH + 50, "", Math.random() * 0.01 + 0.005),
                     new Point(origin + curveWidth, stageH + 50, "", Math.random() * 0.01 + 0.005),
-                    new Point(origin + offset + curveWidth, stageH / 2, "Q", Math.random() * 0.01 + 0.005),
+                    new Point(origin + offset / 2 + curveWidth, stageH / 2, "Q", Math.random() * 0.01 + 0.005),
                     new Point(origin + curveWidth, -50, "", Math.random() * 0.01 + 0.005)
                   ];
 
@@ -71,10 +71,10 @@ function addListeners(){
     }
     if( posX == -1 ) return;
     for( var i = 0 ; i < curvesObj.length ; i ++ ){
-      curvesObj[i].moveTo( 3, { x:posX - curveWidth, y: stageH + 50 }, 1500 + i * 100 , TWEEN.Easing.Quadratic.InOut );
-      curvesObj[i].moveTo( 4, { x:posX - curveWidth, y: stageH + 50 }, 1500 + i * 100, TWEEN.Easing.Quadratic.InOut );
-      curvesObj[i].moveTo( 5, { x:posX - curveWidth - offset, y: stageH/2 }, 2300 + i * 100, TWEEN.Easing.Quadratic.Out );
-      curvesObj[i].moveTo( 6, { x:posX - curveWidth, y: 0 }, 1500 + i * 100, TWEEN.Easing.Quadratic.InOut );
+      curvesObj[i].moveTo( 3, { x:posX - curveWidth, y: stageH + 50 }, Math.random() * 60 + 1400 + i * 75 , TWEEN.Easing.Quadratic.InOut );
+      curvesObj[i].moveTo( 4, { x:posX - curveWidth, y: stageH + 50 }, Math.random() * 60 + 1400 + i * 75, TWEEN.Easing.Quadratic.InOut );
+      curvesObj[i].moveTo( 5, { x:posX - curveWidth - offset/2, y: stageH/2 }, Math.random() * 60 + 1600 + i * 75, TWEEN.Easing.Quadratic.InOut );
+      curvesObj[i].moveTo( 6, { x:posX - curveWidth, y: 0 }, Math.random() * 60 + 1400 + i * 75, TWEEN.Easing.Quadratic.InOut );
     }
   })
 }
