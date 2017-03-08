@@ -74,8 +74,8 @@ GFrds.ribbons = (function(){
         mousePos.x = e.clientX;
         var normMousePosX = mousePos.x / stageW;
         var normMousePosY = mousePos.y / stageH;
-        var influenceX =  (normMousePosX - 0.5)
-        var influenceY =  (normMousePosY - 0.5)
+        var influenceX =  (normMousePosX - 0.5)  * 2
+        var influenceY =  (normMousePosY - 0.5) * 2
 
         for( var i = 0 ; i < curvesObj.length ; i ++ ){
           influenceX = influenceX;

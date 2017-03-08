@@ -74,5 +74,3 @@ function Curve(){
   }
 
 }
-
-module.exports = Curve;

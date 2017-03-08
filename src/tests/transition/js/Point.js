@@ -49,10 +49,8 @@ function Point(posX,posY,attribute,rippleCoef){
 
   this.influence = function( influenceX, influenceY )
   {
-
     infX = influenceX;
     infY = influenceY;
-
   }
 
   this.onEnterFrame = function(time)
@@ -80,24 +78,10 @@ function Point(posX,posY,attribute,rippleCoef){
     }
     else {
       //COMPLETE
-
       cumulatedInf += infX;
-
-      if( cumulatedInf > 100 ){
-        cumulatedInf = 100;
-        infX = 0;
-      }else if( cumulatedInf < -100 ){
-        cumulatedInf = -100;
-        infX = 0;
-      }
-      else{
-      }
-
-      x = x + ripple + infX;
+      if( cumulatedInf > 100 || cumulatedInf < -100) infX = 0;
+      x = x+ripple+ infX;
       y = y;
-
     }
   }
 }
-
-module.exports = Point;
