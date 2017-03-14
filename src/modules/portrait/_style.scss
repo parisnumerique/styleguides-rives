@@ -7,13 +7,17 @@
   &.orange {background-color: $orange;}
 
   > .gfrds_wrapper {
-    padding: 3rem 0 0;
+    padding: 6.8rem 0 0;
     position: relative;
     z-index: 3;
   }
 
   &-header {
     margin-bottom: 4rem;
+
+    > .gfrds_label {
+      color: $white;
+    }
   }
 
   &-title {
