@@ -1,14 +1,17 @@
 .gfrds_intro {
   color: $darkblue;
-  display: flex;
-  justify-content: flex-end;
   padding: 8.5rem 20rem 15rem;
 
   .is-history & {
     color: $white;
   }
 
+  > .gfrds_wrapper {
+    overflow: hidden;
+  }
+
   &-content {
+    float: right;
     max-width: 47rem;
   }
 

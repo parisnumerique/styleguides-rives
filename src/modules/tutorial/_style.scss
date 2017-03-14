@@ -1,9 +1,6 @@
 .gfrds_tutorial {
-  align-items: center;
   background-color: $darkblue2;
   color: $white;
-  display: flex;
-  justify-content: space-between;
   margin: 5rem 0 0;
   padding: 4rem;
 
@@ -11,10 +8,17 @@
     background-color: $white;
   }
 
+  > .gfrds_wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
   &-figure {
     background-color: $ribbon2;
-    height: 13rem;
-    width: 20rem;
+    margin: 0 13rem 0 0;
+    min-height: 17rem;
+    min-width: 24rem;
   }
 
   &-content {
@@ -24,7 +28,7 @@
 
   &-title {
     font-family: $seine;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: normal;
     margin: 1rem 0;
   }

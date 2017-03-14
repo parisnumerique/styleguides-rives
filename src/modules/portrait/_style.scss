@@ -6,9 +6,7 @@
   &.pink {background-color: $pink;}
   &.orange {background-color: $orange;}
 
-  &-wrapper {
-    margin: 0 auto;
-    max-width: 100rem;
+  > .gfrds_wrapper {
     padding: 3rem 0 0;
     position: relative;
     z-index: 3;
