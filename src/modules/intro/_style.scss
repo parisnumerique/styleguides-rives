@@ -2,25 +2,35 @@
   color: $darkblue;
   display: flex;
   justify-content: flex-end;
-  padding: 4rem 20rem;
+  padding: 8.5rem 20rem 15rem;
 
   .is-history & {
     color: $white;
   }
 
   &-content {
-    max-width: 30rem;
+    max-width: 47rem;
   }
 
   &-icon {
-    font-size: 4rem;
+    svg {
+      fill: $darkblue;
+      height: 6.2rem;
+      width: 2.7rem;
+    }
   }
 
   &-title {
-    font-size: 4rem;
+    font-family: $seine;
+    font-size: 6rem;
+    font-weight: normal;
+    margin: 2.2rem 0;
   }
 
   &-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+
     p {
       margin: 2rem 0;
     }

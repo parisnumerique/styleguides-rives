@@ -1,7 +1,8 @@
 mixin intro(data)
   .gfrds_intro(class=data.modifiers)
     .gfrds_intro-content
-      .gfrds_intro-icon ☟
+      .gfrds_intro-icon
+        include images/scrolldown.svg
       h2.gfrds_intro-title= data.title
       .gfrds_intro-text
         each p in data.text
