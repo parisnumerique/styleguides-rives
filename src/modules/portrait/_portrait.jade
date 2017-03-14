@@ -8,7 +8,9 @@ mixin portrait(data)
         +label({text: data.label})
         h2.gfrds_portrait-title= data.title
       .gfrds_portrait-content
-        .gfrds_portrait-content-col embed
+        .gfrds_portrait-content-col
+          blockquote.instagram-media(data-instgrm-version="7")
+            a(href=data.embed target="_blank")
         .gfrds_portrait-content-col
           .gfrds_portrait-text= data.text
           .gfrds_portrait-share
