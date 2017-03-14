@@ -1,8 +1,8 @@
 'use strict';
 
-var Tween = require('./js/Tween');
-var Point = require('./js/Point');
-var Curve = require('./js/Curve');
+var Tween = require('./_js/Tween');
+var Point = require('./_js/Point');
+var Curve = require('./_js/Curve');
 
 var GFrds = window.GFrds || {};
 
