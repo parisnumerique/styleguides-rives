@@ -17,7 +17,7 @@
       "tutorial": {
         "label": "Naviguez",
         "title": "d'hier à nos jours",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo."
+        "text": "Selon que vous déplacez votre curseur de droite à gauche, vous pourrez passer d’une histoire à l’autre. Allez vers la gauche et s’ouvrent à vous les archives de la Seine, fleuve familier mais méconnu. Allez vers la droite et écoutez les anecdotes et histoires des parisiennes et parisiens d’aujourd’hui."
       },
       "items": [
         {
@@ -96,6 +96,31 @@
             }
           }
         }
+      ]
+    }
+  },
+  "histoire": {
+    "assetsPath": "",
+    "data": {
+      "modifiers": ["is-history"],
+      "url": "http://www.paris.fr/actualites/grandformat/rivesdeseine",
+      "title": "Rives de Seine",
+      "subtitle": "",
+      "cover": {
+        "title": "Parc Rives de Seine"
+      },
+      "intro": {
+        "title": "Les rives de la Seine, lieux de vie depuis 20 siècles",
+        "text": [
+          "Paris s’est construite depuis la Seine. Depuis 2000 ans, ses rives sont des lieux de vie. Paris.fr vous propose de plonger dans leur Histoire à travers des témoignages et des images d’archives !"
+        ]
+      },
+      "tutorial": {
+        "label": "Naviguez",
+        "title": "d'hier à nos jours",
+        "text": "Selon que vous déplacez votre curseur de droite à gauche, vous pourrez passer d’une histoire à l’autre. Allez vers la gauche et s’ouvrent à vous les archives de la Seine, fleuve familier mais méconnu. Allez vers la droite et écoutez les anecdotes et histoires des parisiennes et parisiens d’aujourd’hui."
+      },
+      "items": [
       ]
     }
   },

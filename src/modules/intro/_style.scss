@@ -4,6 +4,14 @@
 
   .is-history & {
     color: $white;
+
+    &-content {
+      float: left;
+    }
+
+    .gfrds_icon {
+      fill: $white;
+    }
   }
 
   > .gfrds_wrapper {
@@ -12,7 +20,7 @@
 
   &-content {
     float: right;
-    max-width: 47rem;
+    max-width: 51rem;
   }
 
   .gfrds_icon {
@@ -32,6 +40,7 @@
   &-text {
     font-size: 1.8rem;
     line-height: 3rem;
+    max-width: 45rem;
 
     p {
       margin: 2rem 0;
