@@ -15,18 +15,17 @@
     max-width: 47rem;
   }
 
-  &-icon {
-    svg {
-      fill: $darkblue;
-      height: 6.2rem;
-      width: 2.7rem;
-    }
+  .gfrds_icon {
+    fill: $darkblue;
+    height: 6.2rem;
+    width: 2.7rem;
   }
 
   &-title {
     font-family: $seine;
     font-size: 6rem;
     font-weight: normal;
+    line-height: 7rem;
     margin: 2.2rem 0;
   }
 

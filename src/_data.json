@@ -19,54 +19,82 @@
         "title": "d'hier à nos jours",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo."
       },
-      "portraits": [
+      "items": [
         {
-          "modifiers": ["pink"],
-          "label": "Voir",
-          "title": "Hortense et Yannis",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
-          "embed": "https://www.instagram.com/p/BRA1aRJD_Z4/",
-          "share": {
-            "title": "Partager :",
-            "items": [
-              {
-                "href": "#",
-                "icon": "twitter"
-              },
-              {
-                "href": "#",
-                "icon": "facebook"
-              }
-            ]
+          "type": "separator",
+          "data": {
+            "color": "#E6F8F6",
+            "height": "30rem"
           }
         },
         {
-          "modifiers": ["orange"],
-          "label": "Voir",
-          "title": "Charlette",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
-          "embed": "https://www.instagram.com/p/BRA1yzDjbqZ/",
-          "share": {
-            "title": "Partager :",
-            "items": [
-              {
-                "href": "#",
-                "icon": "twitter"
-              },
-              {
-                "href": "#",
-                "icon": "facebook"
-              }
-            ]
+          "type": "portrait",
+          "data": {
+            "modifiers": ["pink"],
+            "label": "Voir",
+            "title": "Hortense et Yannis",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
+            "embed": "https://www.instagram.com/p/BRA1aRJD_Z4/",
+            "share": {
+              "title": "Partager :",
+              "items": [
+                {
+                  "href": "#",
+                  "icon": "twitter"
+                },
+                {
+                  "href": "#",
+                  "icon": "facebook"
+                }
+              ]
+            }
           }
-        }
-      ],
-      "pushes": [
+        },
         {
-          "label": "Écouter",
-          "title": "Le flottage de bois",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue.",
-          "embed": "https%3A//api.soundcloud.com/tracks/8954462"
+          "type": "separator",
+          "data": {
+            "color": "#E6F8F6",
+            "height": "30rem"
+          }
+        },
+        {
+          "type": "push",
+          "data": {
+            "label": "Écouter",
+            "title": "Le flottage de bois",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue.",
+            "embed": "https%3A//api.soundcloud.com/tracks/8954462"
+          }
+        },
+        {
+          "type": "separator",
+          "data": {
+            "color": "#F9F7F7",
+            "height": "30rem"
+          }
+        },
+        {
+          "type": "portrait",
+          "data": {
+            "modifiers": ["orange"],
+            "label": "Voir",
+            "title": "Charlette",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
+            "embed": "https://www.instagram.com/p/BRA1yzDjbqZ/",
+            "share": {
+              "title": "Partager :",
+              "items": [
+                {
+                  "href": "#",
+                  "icon": "twitter"
+                },
+                {
+                  "href": "#",
+                  "icon": "facebook"
+                }
+              ]
+            }
+          }
         }
       ]
     }

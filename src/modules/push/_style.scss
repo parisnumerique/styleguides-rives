@@ -20,8 +20,15 @@
     max-width: 100rem;
   }
 
+  .gfrds_label {
+    margin-bottom: 0;
+  }
+
   &-title {
-    font-size: 4rem;
+    font-family: $seine;
+    font-size: 6rem;
+    margin: 0.5rem 0;
+    transform: translateX(-0.5rem);
   }
 
   &-text {

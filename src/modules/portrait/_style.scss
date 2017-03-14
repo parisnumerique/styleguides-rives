@@ -77,6 +77,7 @@
     &-title {
       color: $white;
       font-size: 3.6rem;
+      margin: 0 0 3.6rem;
     }
 
     &-items {
@@ -84,7 +85,7 @@
     }
 
     &-item {
-      border: 0.3rem solid $darkblue2;
+      border: 0.3rem solid $white;
       border-bottom: 0;
       display: inline-block;
 
@@ -94,13 +95,25 @@
 
       > a {
         align-items: center;
-        color: $darkblue2;
+        color: $white;
         display: inline-flex;
-        height: 10rem;
+        height: 18rem;
         justify-content: center;
         text-decoration: none;
-        width: 10rem;
+        transition: background 0.2s ease;
+        width: 18rem;
+
+        &:hover,
+        &:focus {
+          background-color: transparentize($white, 0.8);
+        }
       }
+    }
+
+    .gfrds_icon {
+      fill: $white;
+      height: 7.5rem;
+      width: 7.5rem;
     }
   }
 
