@@ -1,7 +1,9 @@
+include ../label/_label
+
 mixin push(data)
   .gfrds_push
     .gfrds_push-embed
     .gfrds_push-content
-      .gfrds_push-label= data.label
+      +label({text: data.label})
       h2.gfrds_push-title= data.title
       .gfrds_push-text= data.text

@@ -18,19 +18,17 @@
     margin-bottom: 4rem;
   }
 
-  &-label {
-    color: $white;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-  }
-
   &-title {
     font-family: $seine;
     font-size: 16rem;
     line-height: 16rem;
     margin: 0;
     transform: translateX(-1.2rem);
+  }
+
+  &-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
   }
 
   &-content {

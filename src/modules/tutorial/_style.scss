@@ -22,16 +22,17 @@
     max-width: 100rem;
   }
 
-  &-label {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-  }
-
   &-title {
-    font-size: 4rem;
+    font-family: $seine;
+    font-size: 6rem;
+    font-weight: normal;
+    margin: 1rem 0;
   }
 
   &-text {
+    font-size: 1.8rem;
+    line-height: 3rem;
+
     p {
       margin: 2rem 0;
     }
