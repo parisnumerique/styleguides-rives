@@ -1,0 +1,4 @@
+mixin icon(data)
+  svg.gfrds_icon(class="icon-" + data.icon)
+    title= data.icon
+    use(xlink:href="#icon-" + data.icon)

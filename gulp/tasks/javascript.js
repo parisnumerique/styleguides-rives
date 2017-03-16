@@ -14,6 +14,7 @@ var watchifyBundler   = watchify(browserify('./src/javascript/_main.js', watchif
 
 gulp.task('watch:js', watch); // so you can run `watch:js` to build the file
 gulp.task('compile:js', compile); // so you can run `compile:js` to build the file
+gulp.task('build:js', build); // so you can run `gulp build:js` to build the file
 
 watchifyBundler.on('update', watch); // on any dep update, runs the watchifyBundler
 watchifyBundler.on('log', gutil.log); // output build logs to terminal
@@ -30,6 +31,10 @@ function watch() {
 
 function compile () {
   bundle(path.join(config.harp.output, 'javascript'));
+}
+
+function build () {
+  bundle(config.build.assets.javascript);
 }
 
 function bundle(output) {

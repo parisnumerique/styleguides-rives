@@ -11,61 +11,116 @@
       "intro": {
         "title": "Se baigner dans la Seine",
         "text": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
-          "Pellentesque aliquet est eu blandit faucibus. Nam fringilla cursus turpis ut fringilla. Nulla at venenatis arcu. Aenean tempus mollis cursus. Nulla ut tortor non urna feugiat blandit a nec mi. Nam at tortor sed ligula facilisis ultricies vitae eget ipsum. Aliquam sit amet turpis nunc. Integer volutpat ex magna, id fermentum arcu dapibus nec. Aenean molestie odio et purus mollis, at vehicula nisi venenatis. Phasellus molestie sapien ut tristique iaculis. Vivamus orci nunc, pellentesque in libero in, aliquet efficitur dui. Mauris eu turpis ligula. Vivamus luctus sodales vulputate."
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo."
         ]
       },
       "tutorial": {
         "label": "Naviguez",
         "title": "d'hier à nos jours",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo."
+        "text": "Selon que vous déplacez votre curseur de droite à gauche, vous pourrez passer d’une histoire à l’autre. Allez vers la gauche et s’ouvrent à vous les archives de la Seine, fleuve familier mais méconnu. Allez vers la droite et écoutez les anecdotes et histoires des parisiennes et parisiens d’aujourd’hui."
       },
-      "portraits": [
+      "items": [
         {
-          "modifiers": ["pink"],
-          "label": "Voir",
-          "title": "Hortense et Yannis",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
-          "share": {
-            "title": "Partager :",
-            "items": [
-              {
-                "href": "#",
-                "icon": "twitter"
-              },
-              {
-                "href": "#",
-                "icon": "facebook"
-              }
-            ]
+          "type": "separator",
+          "data": {
+            "color": "#E6F8F6",
+            "height": "30rem"
           }
         },
         {
-          "modifiers": ["orange"],
-          "label": "Voir",
-          "title": "Charlette",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
-          "share": {
-            "title": "Partager :",
-            "items": [
-              {
-                "href": "#",
-                "icon": "twitter"
-              },
-              {
-                "href": "#",
-                "icon": "facebook"
-              }
-            ]
+          "type": "portrait",
+          "data": {
+            "modifiers": ["pink"],
+            "label": "Voir",
+            "title": "Hortense et Yannis",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
+            "embed": "https://www.instagram.com/p/BRA1aRJD_Z4/",
+            "share": {
+              "title": "Partager :",
+              "items": [
+                {
+                  "href": "#",
+                  "icon": "twitter"
+                },
+                {
+                  "href": "#",
+                  "icon": "facebook"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": "separator",
+          "data": {
+            "color": "#E6F8F6",
+            "height": "30rem"
+          }
+        },
+        {
+          "type": "push",
+          "data": {
+            "label": "Écouter",
+            "title": "Le flottage de bois",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue.",
+            "embed": "https%3A//api.soundcloud.com/tracks/8954462"
+          }
+        },
+        {
+          "type": "separator",
+          "data": {
+            "color": "#F9F7F7",
+            "height": "30rem"
+          }
+        },
+        {
+          "type": "portrait",
+          "data": {
+            "modifiers": ["orange"],
+            "label": "Voir",
+            "title": "Charlette",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
+            "embed": "https://www.instagram.com/p/BRA1yzDjbqZ/",
+            "share": {
+              "title": "Partager :",
+              "items": [
+                {
+                  "href": "#",
+                  "icon": "twitter"
+                },
+                {
+                  "href": "#",
+                  "icon": "facebook"
+                }
+              ]
+            }
           }
         }
-      ],
-      "pushes": [
-        {
-          "label": "Écouter",
-          "title": "Le flottage de bois",
-          "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue."
-        }
+      ]
+    }
+  },
+  "histoire": {
+    "assetsPath": "",
+    "data": {
+      "modifiers": ["is-history"],
+      "url": "http://www.paris.fr/actualites/grandformat/rivesdeseine",
+      "title": "Rives de Seine",
+      "subtitle": "",
+      "cover": {
+        "title": "Parc Rives de Seine"
+      },
+      "intro": {
+        "title": "Les rives de la Seine, lieux de vie depuis 20 siècles",
+        "text": [
+          "Paris s’est construite depuis la Seine. Depuis 2000 ans, ses rives sont des lieux de vie. Paris.fr vous propose de plonger dans leur Histoire à travers des témoignages et des images d’archives !"
+        ]
+      },
+      "tutorial": {
+        "label": "Naviguez",
+        "title": "d'hier à nos jours",
+        "text": "Selon que vous déplacez votre curseur de droite à gauche, vous pourrez passer d’une histoire à l’autre. Allez vers la gauche et s’ouvrent à vous les archives de la Seine, fleuve familier mais méconnu. Allez vers la droite et écoutez les anecdotes et histoires des parisiennes et parisiens d’aujourd’hui."
+      },
+      "items": [
       ]
     }
   },

@@ -1,7 +1,10 @@
+include ../label/_label
+
 mixin tutorial(data)
   .gfrds_tutorial
-    figure.gfrds_tutorial-figure
-    .gfrds_tutorial-content
-      .gfrds_tutorial-label= data.label
-      h2.gfrds_tutorial-title= data.title
-      .gfrds_tutorial-text= data.text
+    .gfrds_wrapper
+      figure.gfrds_tutorial-figure
+      .gfrds_tutorial-content
+        +label({text: data.label})
+        h2.gfrds_tutorial-title= data.title
+        .gfrds_tutorial-text= data.text

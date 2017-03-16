@@ -1,36 +1,37 @@
 .gfrds_portrait {
   overflow: hidden;
-  // transform: translate3d(0, 0, 0);
   position: relative;
   width: 100%;
 
   &.pink {background-color: $pink;}
   &.orange {background-color: $orange;}
 
-  &-wrapper {
-    margin: 0 auto;
-    max-width: 100rem;
-    padding: 3rem 0 0;
+  > .gfrds_wrapper {
+    padding: 6.8rem 0 0;
     position: relative;
     z-index: 3;
   }
 
   &-header {
     margin-bottom: 4rem;
-  }
 
-  &-label {
-    color: $white;
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
+    > .gfrds_label {
+      color: $white;
+    }
   }
 
   &-title {
-    font-size: 20rem;
-    line-height: 16rem;
+    font-family: $seine;
+    font-size: 14.5rem;
+    line-height: 14rem;
     margin: 0;
     transform: translateX(-1.2rem);
+  }
+
+  &-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 3rem;
   }
 
   &-content {
@@ -38,7 +39,35 @@
     justify-content: space-between;
 
     &-col {
+      min-width: 45rem;
       max-width: 40%;
+
+      &:first-child {
+        min-width: 49rem;
+      }
+    }
+  }
+
+  &-embed {
+    position: relative;
+
+    iframe {
+      margin: 0 !important;
+      width: 100%;
+      position: relative;
+    }
+
+    &:before {
+      background-color: transparentize($black, 0.85);
+      border-radius: 0.4rem;
+      content: "";
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform: translate3d(3rem, 3rem, 0);
+      width: 100%;
     }
   }
 
@@ -47,7 +76,8 @@
 
     &-title {
       color: $white;
-      font-size: 3rem;
+      font-size: 3.6rem;
+      margin: 0 0 3.6rem;
     }
 
     &-items {
@@ -55,7 +85,7 @@
     }
 
     &-item {
-      border: 0.3rem solid $darkblue2;
+      border: 0.3rem solid $white;
       border-bottom: 0;
       display: inline-block;
 
@@ -65,13 +95,25 @@
 
       > a {
         align-items: center;
-        color: $darkblue2;
+        color: $white;
         display: inline-flex;
-        height: 10rem;
+        height: 18rem;
         justify-content: center;
         text-decoration: none;
-        width: 10rem;
+        transition: background 0.2s ease;
+        width: 18rem;
+
+        &:hover,
+        &:focus {
+          background-color: transparentize($white, 0.8);
+        }
       }
+    }
+
+    .gfrds_icon {
+      fill: $white;
+      height: 7.5rem;
+      width: 7.5rem;
     }
   }
 

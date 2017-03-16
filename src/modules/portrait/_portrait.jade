@@ -1,19 +1,25 @@
+include ../icon/_icon
+include ../label/_label
 include ../ribbons/_ribbons
 
 mixin portrait(data)
   .gfrds_portrait(class=data.modifiers)
-    .gfrds_portrait-wrapper
+    .gfrds_wrapper
       .gfrds_portrait-header
-        .gfrds_portrait-label= data.label
+        +label({text: data.label})
         h2.gfrds_portrait-title= data.title
       .gfrds_portrait-content
-        .gfrds_portrait-content-col embed
+        .gfrds_portrait-content-col
+          .gfrds_portrait-embed
+            blockquote.instagram-media(data-instgrm-version="7")
+              a(href=data.embed target="_blank")
         .gfrds_portrait-content-col
           .gfrds_portrait-text= data.text
           .gfrds_portrait-share
             h3.gfrds_portrait-share-title= data.share.title
             ul.gfrds_portrait-share-items
               each item in data.share.items
-                li.gfrds_portrait-share-item: a(href=item.href)= item.icon
+                li.gfrds_portrait-share-item: a(href=item.href)
+                  +icon({icon: item.icon})
     .gfrds_portrait-ribbons
       +ribbons({"modifiers": ["borders-only"]})
