@@ -1,0 +1,89 @@
+.gfrds_list-header {
+  color: $darkblue2;
+
+  // modifiers
+  &.yellow {
+    .gfrds_list-header-cover {
+      background-color: $yellow;
+    }
+  }
+  &.pink {
+    .gfrds_list-header-cover {
+      background-color: $pink;
+    }
+  }
+
+  &-cover {
+    position: relative;
+  }
+
+  &-title {
+    bottom: 0;
+    font-family: $seine;
+    font-size: 13rem;
+    font-weight: normal;
+    margin: 0;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, 50%);
+  }
+
+  &-text {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 3rem;
+    margin: 0 auto;
+    text-align: center;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  &-social {
+    text-align: center;
+
+    a {
+      display: inline-block;
+      transition: opacity 0.2s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .gfrds_icon {
+      fill: $darkblue2;
+      height: 6rem;
+      width: 6rem;
+    }
+  }
+
+  @include large {
+    &-cover {
+      height: 30rem;
+
+      svg {
+        bottom: -5rem;
+        display: block;
+        fill: $white;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 25rem;
+
+        .gfrds_list-header.voir & {
+          bottom: -6rem;
+          width: 30rem;
+        }
+      }
+    }
+
+    &-text {
+      max-width: 45rem;
+      padding-top: 9rem;
+    }
+  }
+
+}

@@ -224,6 +224,44 @@
       ]
     }
   },
+  "ecouter": {
+    "data": {
+      "modifiers": ["is-list"],
+      "header": {
+        "title": "Écouter",
+        "modifiers": ["ecouter", "yellow"],
+        "text": [
+          "Pendant plusieurs mois, nous avons parcouru les bords de Seine, en amont, en aval, dans Paris, pour récolter les témoignages de celles et ceux qui la vivent.",
+          "Depuis longtemps, depuis peu, au quotidien, ce sont leurs mots ! Et pour retrouver tous les contenus Parc Rives de Seine à écouter, abonnez vous à notre <a href=\"#\">chaîne Soundcloud</a>."
+        ],
+        "social": {
+          "href": "#",
+          "icon": "soundcloud",
+          "title": "Soundcloud"
+        }
+      },
+      "items": []
+    }
+  },
+  "voir": {
+    "data": {
+      "modifiers": ["is-list"],
+      "header": {
+        "title": "Voir",
+        "modifiers": ["voir", "pink"],
+        "text": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nisl risus. Duis pellentesque eros eu magna suscipit, vitae gravida purus malesuada.",
+          "Vivamus elit felis, dignissim in faucibus at, venenatis vitae orci. Duis vulputate a turpis imperdiet eleifend. Sed sollicitudin eget nisi nec laoreet <a href=\"#\">compte instagram</a>."
+        ],
+        "social": {
+          "href": "#",
+          "icon": "instagram",
+          "title": "Instagram"
+        }
+      },
+      "items": []
+    }
+  },
   "grandformat": {
     "assetsPath": "/rivesdeseine/",
     "layout": false
