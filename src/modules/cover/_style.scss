@@ -2,7 +2,7 @@
   align-items: center;
   background-color: $darkblue;
   display: flex;
-  height: 80vh;
+  height: 41vw;
   overflow: hidden;
   position: relative;
   justify-content: center;
@@ -22,20 +22,31 @@
   &-title {
     color: $white;
     font-size: 8rem;
+    margin: 0 auto;
     position: relative;
     z-index: 2;
+    max-width: 53.6rem;
+    width: 50%;
   }
 
   &-logo {
     fill: $white;
-    height: 31rem;
-    width: 53.6rem;
+    width: 100%;
+
+    > svg {
+      display: block;
+    }
+  }
+
+  &-background {
+    height: 100%;
+    position: absolute;
+    width: 100%;
   }
 
   &-video {
     background: center center no-repeat;
     background-size: cover;
-    height: 100%;
     left: 50%;
     position: absolute;
     top: 50%;

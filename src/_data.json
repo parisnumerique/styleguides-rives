@@ -29,13 +29,6 @@
       },
       "items": [
         {
-          "type": "separator",
-          "data": {
-            "color": "#E6F8F6",
-            "height": "30rem"
-          }
-        },
-        {
           "type": "portrait",
           "data": {
             "modifiers": ["pink"],
@@ -123,7 +116,15 @@
       "title": "Rives de Seine",
       "subtitle": "",
       "cover": {
-        "title": "Parc Rives de Seine"
+        "title": "Parc Rives de Seine",
+        "background": {
+          "image": "modules/cover/poster.jpg",
+          "video": {
+            "sources": [
+              {"src": "http://preview.etaminstud.io/paris/rives/video/video.mp4", "type": "video/mp4"}
+            ]
+          }
+        }
       },
       "intro": {
         "title": "Les rives de la Seine, lieux de vie depuis 20 siècles",
