@@ -104,10 +104,10 @@ body.gfrds_navbar-mobile-open {
     }
 
     &-button-menu {
-      float: right;
       line-height: $navbar-height;
-      position: relative;
-      right: 0rem;
+      height: $navbar-height;
+      position: absolute;
+      right: 0;
       width: 6.5rem;
       z-index: 2001;
 
@@ -115,6 +115,7 @@ body.gfrds_navbar-mobile-open {
         background-color: transparent;
         display: inline-block;
         font-size: 0;
+        line-height: 0;
         position: absolute;
         right: 2rem;
         top: 2.7rem;
