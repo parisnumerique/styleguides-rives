@@ -196,7 +196,7 @@ body.gfrds_navbar-mobile-open {
           }
 
           &.current,
-          &:hover {
+          a:hover {
             .gfrds_navbar-nav-item-text:after {
               width: 100%;
             }
