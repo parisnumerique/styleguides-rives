@@ -15,34 +15,10 @@
           "text": "Menu"
         },
         "items": [
-          {
-            "href": "/",
-            "text": "Aujourd'hui",
-            "current": true
-          },
-          {"href": "#", "text": "Écouter"},
-          {"href": "#", "text": "Voir"},
-          {"href": "#", "text": "Revivre"}
-        ],
-        "social": [
-          {
-            "text": "Facebook",
-            "href": "https://www.facebook.com/agendaquefaireaparis",
-            "target": "_blank",
-            "icon": "facebook"
-          },
-          {
-            "text": "Twitter",
-            "href": "https://twitter.com/QueFaireAParis",
-            "target": "_blank",
-            "icon": "twitter"
-          },
-          {
-            "text": "Instagram",
-            "href": "https://www.instagram.com/quefaireaparis",
-            "target": "_blank",
-            "icon": "instagram"
-          }
+          {"href": "/", "text": "Aujourd'hui", "current": true},
+          {"href": "/ecouter", "text": "Écouter"},
+          {"href": "/voir", "text": "Voir"},
+          {"href": "/histoire", "text": "Revivre"}
         ]
       },
       "cover": {
@@ -186,6 +162,22 @@
       "url": "http://www.paris.fr/actualites/grandformat/rivesdeseine",
       "title": "Rives de Seine",
       "subtitle": "",
+      "navbar": {
+        "logo": {
+          "href": "http://www.paris.fr",
+          "text": "Paris"
+        },
+        "menu": {
+          "href": "#",
+          "text": "Menu"
+        },
+        "items": [
+          {"href": "/", "text": "Aujourd'hui"},
+          {"href": "/ecouter", "text": "Écouter"},
+          {"href": "/voir", "text": "Voir"},
+          {"href": "/histoire", "text": "Revivre", "current": true}
+        ]
+      },
       "cover": {
         "title": "Parc Rives de Seine",
         "background": {
@@ -267,6 +259,22 @@
   "ecouter": {
     "data": {
       "modifiers": ["is-list"],
+      "navbar": {
+        "logo": {
+          "href": "http://www.paris.fr",
+          "text": "Paris"
+        },
+        "menu": {
+          "href": "#",
+          "text": "Menu"
+        },
+        "items": [
+          {"href": "/", "text": "Aujourd'hui"},
+          {"href": "/ecouter", "text": "Écouter", "current": true},
+          {"href": "/voir", "text": "Voir"},
+          {"href": "/histoire", "text": "Revivre"}
+        ]
+      },
       "header": {
         "title": "Écouter",
         "modifiers": ["ecouter", "yellow"],
@@ -286,6 +294,22 @@
   "voir": {
     "data": {
       "modifiers": ["is-list"],
+      "navbar": {
+        "logo": {
+          "href": "http://www.paris.fr",
+          "text": "Paris"
+        },
+        "menu": {
+          "href": "#",
+          "text": "Menu"
+        },
+        "items": [
+          {"href": "/", "text": "Aujourd'hui"},
+          {"href": "/ecouter", "text": "Écouter"},
+          {"href": "/voir", "text": "Voir", "current": true},
+          {"href": "/histoire", "text": "Revivre"}
+        ]
+      },
       "header": {
         "title": "Voir",
         "modifiers": ["voir", "pink"],

@@ -2,6 +2,7 @@ include modules/_all
 include icons/_sprite.svg
 
 .gfrds_container(class=data.modifiers)
+  +navbar(data.navbar)
   +list-header(data.header)
   each item in data.items
     +list-item(item)
