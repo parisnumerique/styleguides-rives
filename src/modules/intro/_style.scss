@@ -26,12 +26,13 @@
     a {
       border-bottom: 0.1rem solid;
       color: inherit;
+      font-weight: 500;
       text-decoration: none;
       transition: border 0.2s ease;
 
       &:hover,
       &:focus {
-        border-bottom: 0.2rem solid;
+        border-bottom: 0.2rem solid $blue;
       }
     }
   }
@@ -50,10 +51,13 @@
 
       a {
         display: inline-block;
-        transition: opacity 0.2s ease;
+
+        .gfrds_icon {
+          transition: fill 0.2s ease;
+        }
 
         &:hover {
-          opacity: 0.7;
+          .gfrds_icon {fill: $blue;}
         }
       }
     }

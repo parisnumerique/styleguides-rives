@@ -1,0 +1,18 @@
+include ../icon/_icon
+include ../label/_label
+
+mixin list-item(data)
+  .gfrds_list-item(class=data.modifiers)
+    .gfrds_list-item-embed
+      - var isOpen = data.modifiers && !data.modifiers.indexOf('is-open')
+      - var src = isOpen ? data.img.large : data.img.thumb
+      img(src=src data-large=data.img.large data-thumb=data.img.thumb)
+    .gfrds_list-item-content
+      +label(data.label)
+      h2.gfrds_list-item-title= data.title
+      .gfrds_list-item-text
+        each p in data.text
+          p!= p
+      .gfrds_list-item-place
+        +icon({icon: 'marker'})
+        .gfrds_list-item-place-text!= data.place.join('<br />')

@@ -1,4 +1,5 @@
 .gfrds_list-header {
+  background-color: $white;
   color: $darkblue2;
 
   // modifiers
@@ -132,6 +133,10 @@
           width: 30rem;
         }
       }
+    }
+
+    > .gfrds_wrapper {
+      padding-bottom: 4rem;
     }
 
     &-title {

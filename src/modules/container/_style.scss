@@ -11,7 +11,13 @@ $navbar-height: 6rem;
     z-index: 3;
   }
 
+  // modifiers
   &.is-history {
     background-color: $darkblue;
+  }
+
+  &.is-list {
+    background-color: $lightbrown;
+    padding-bottom: 14rem;
   }
 }

@@ -3,11 +3,11 @@
   font-weight: 500;
   margin-bottom: 2rem;
   text-decoration: none;
+  text-transform: uppercase;
 
   &:link {
     border-bottom: 0.2rem solid transparent;
     color: inherit;
-    text-transform: uppercase;
     transition: border 0.2s ease;
 
     &:hover,

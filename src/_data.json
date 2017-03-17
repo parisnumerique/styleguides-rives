@@ -299,7 +299,98 @@
           "title": "Instagram"
         }
       },
-      "items": []
+      "items": [
+        {
+          "modifiers": ["is-open"],
+          "label": {
+            "text": "Voir"
+          },
+          "img": {
+            "thumb": "https://scontent-ams3-1.cdninstagram.com/t51.2885-15/s150x150/e35/c0.0.1079.1079/17265821_224907427977966_7588552117850210304_n.jpg",
+            "large": "https://scontent-ams3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c0.0.1079.1079/17265821_224907427977966_7588552117850210304_n.jpg"
+          },
+          "title": "Alain",
+          "text": [
+            "Je regarde la rive d’en face. Jussieu, l’Institut du monde arabe. Tous ces bâtiments, je les ai vus pousser. C’est ici que mes filles ont appris à faire du vélo. Caroline nous a quitté à l’âge de 23 ans, après dix ans de maladie. Perdre un enfant, je ne le souhaite à personne, mais à un moment donné, il faut savoir lâcher prise.",
+            "Je me suis rapproché d’une association d’étudiants de HEC qui aidait à construire des écoles en Afrique. Ils m’ont parlé d’un village au Burkina Faso qui s’appelait Korsimoro. Comme je suis né en Corse, à Pietralba, j’y ai vu un signe de la providence. J’ai organisé des concerts à l’église Saint-Marcel et j’ai levé 150 000 euros de fonds. Ma seule contrepartie souhaitée, c’était que l’établissement puisse porter son prénom. Aujourd’hui, l’école Caroline accueille 250 élèves, toutes confessions confondues, bien qu’elle s’appuie sur des structures diocésaines. C’est un projet œcuménique grâce auquel ma fille n’est pas morte pour rien.",
+            " Aujourd’hui, je suis apaisé. J’ai fini ma carrière à la direction de la communication d’un grand groupe financier. J’en suis sorti indemne. Je partage mon temps entre mon village de Monticello, où les cendres de Michel Rocard viennent d’être dispersées, et mon quartier d’Aligre, qui est aussi comme un village. Où que j’aille, je ne suis jamais bien loin de l’eau."
+          ],
+          "place": [
+            "Paris",
+            "Voie George Pompidou"
+          ]
+        },
+        {
+          "label": {
+            "text": "Voir"
+          },
+          "img": {
+            "thumb": "https://scontent-ams3-1.cdninstagram.com/t51.2885-15/s150x150/e35/17333011_538893613166331_5217672063845662720_n.jpg",
+            "large": "https://scontent-ams3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/17333011_538893613166331_5217672063845662720_n.jpg"
+          },
+          "title": "Kinge et Anni Marie",
+          "text": [
+            "On sort du cinéma. On a vu La La Land. On parlait justement de cette scène où le personnage principal raconte en chantant que sa tante vivait à Paris, et qu’un beau jour elle a sauté pieds nus dans la Seine. L’eau était glaciale, elle a éternué pendant un mois, mais elle jure qu’elle recommencerait si c’était à refaire. Cette chanson, c’est l’éloge des folies douces, des cœurs fragiles, des passions insensées. C’est très romantique, mais Pouah ! pour rien au monde je ne me baignerais dans ces eaux-là.",
+            "Nous sommes deux filles au-pair. Les enfants sont très gentils. Le problème, c’est plutôt les grand-mères ! Nous venons d’Estonie et des Pays-Bas. Paris, bien sûr, c’est une machine à fantasmes. L’architecture, la mode, la gastronomie, qui ne rêve pas de ça ?",
+            "Malheureusement, la réalité est un peu décevante. Surtout la vie nocturne, parce que les bars ferment à deux heures et que les clubs sont très classiques. Mais vous savez quoi ? On se rend compte qu’on préfère ce Paris-là, avec ses odeurs désagréables, ses bouis-bouis bon marché et son bordel ambiant, à celui des cartes postales qu’on essaie de vendre aux touristes. D’ailleurs, c’est drôle: on a regagné nos familles à Noël, mais c’est en revenant à Paris qu’on a eu l’impression d’enfin rentrer chez soi."
+          ],
+          "place": [
+            "Paris",
+            "Voie George Pompidou"
+          ]
+        },
+        {
+          "label": {
+            "text": "Voir"
+          },
+          "img": {
+            "thumb": "https://scontent-ams3-1.cdninstagram.com/t51.2885-15/s150x150/e35/17076287_683794215162694_2974520587717705728_n.jpg",
+            "large": "https://scontent-ams3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/17076287_683794215162694_2974520587717705728_n.jpg"
+          },
+          "title": "Marine",
+          "text": [
+            "Hortense danse sur les quais depuis 18 ans, nous avons continué ensemble. Souvent dans l’amphithéâtre (13e). A Paris Plage, on a même un parquet de danse à disposition ! Ce serait top d’en avoir un toute l’année, couvert. Au début, sur les quais, c'était plus confidentiel, sauvage… Mais quoi qu’il arrive, danser dehors, ce n’est pas comme s’exercer entre quatre murs. A l’intérieur, on est contraint dans ses gestes, et surtout dans sa technique. On se sent enfermé, cloisonné. C’est du tango argentin, il a besoin d’espace ! Quand vous êtes arrivés, on discutait justement d’un pas de danse. Hortense m’a dit : ‘je ne sais pas comment tourner’, et en cherchant on a trouvé !"
+          ],
+          "place": [
+            "Paris",
+            "Voie George Pompidou"
+          ]
+        },
+        {
+          "label": {
+            "text": "Voir"
+          },
+          "img": {
+            "thumb": "https://scontent-ams3-1.cdninstagram.com/t51.2885-15/s150x150/e35/c0.0.1079.1079/17267669_392950291082736_2718742288669868032_n.jpg",
+            "large": "https://scontent-ams3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/c0.0.1079.1079/17267669_392950291082736_2718742288669868032_n.jpg"
+          },
+          "title": "Tiphaine",
+          "text": [
+            "Hortense danse sur les quais depuis 18 ans, nous avons continué ensemble. Souvent dans l’amphithéâtre (13e). A Paris Plage, on a même un parquet de danse à disposition ! Ce serait top d’en avoir un toute l’année, couvert. Au début, sur les quais, c'était plus confidentiel, sauvage… Mais quoi qu’il arrive, danser dehors, ce n’est pas comme s’exercer entre quatre murs. A l’intérieur, on est contraint dans ses gestes, et surtout dans sa technique. On se sent enfermé, cloisonné. C’est du tango argentin, il a besoin d’espace ! Quand vous êtes arrivés, on discutait justement d’un pas de danse. Hortense m’a dit : ‘je ne sais pas comment tourner’, et en cherchant on a trouvé !"
+          ],
+          "place": [
+            "Paris",
+            "Voie George Pompidou"
+          ]
+        },
+        {
+          "label": {
+            "text": "Voir"
+          },
+          "img": {
+            "thumb": "https://scontent-ams3-1.cdninstagram.com/t51.2885-15/s150x150/e35/17332933_599766453555694_466806174197481472_n.jpg",
+            "large": "https://scontent-ams3-1.cdninstagram.com/t51.2885-15/s640x640/sh0.08/e35/17332933_599766453555694_466806174197481472_n.jpg"
+          },
+          "title": "Jean-Charles",
+          "text": [
+            "Hortense danse sur les quais depuis 18 ans, nous avons continué ensemble. Souvent dans l’amphithéâtre (13e). A Paris Plage, on a même un parquet de danse à disposition ! Ce serait top d’en avoir un toute l’année, couvert. Au début, sur les quais, c'était plus confidentiel, sauvage… Mais quoi qu’il arrive, danser dehors, ce n’est pas comme s’exercer entre quatre murs. A l’intérieur, on est contraint dans ses gestes, et surtout dans sa technique. On se sent enfermé, cloisonné. C’est du tango argentin, il a besoin d’espace ! Quand vous êtes arrivés, on discutait justement d’un pas de danse. Hortense m’a dit : ‘je ne sais pas comment tourner’, et en cherchant on a trouvé !"
+          ],
+          "place": [
+            "Paris",
+            "Voie George Pompidou"
+          ]
+        }
+      ]
     }
   },
   "grandformat": {

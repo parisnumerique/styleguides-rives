@@ -5743,10 +5743,69 @@ require('viewport-units-buggyfill').init();
 require('../modules/_all');
 
 },{"../modules/_all":6,"viewport-units-buggyfill":4}],6:[function(require,module,exports){
+require('./list-item/_script');
 require('./navbar/_script');
 require('./ribbons/_script');
 
-},{"./navbar/_script":7,"./ribbons/_script":11}],7:[function(require,module,exports){
+},{"./list-item/_script":7,"./navbar/_script":8,"./ribbons/_script":12}],7:[function(require,module,exports){
+'use strict';
+
+require('velocity-animate');
+
+var GFrds = window.GFrds || {};
+
+GFrds.listItem = (function(){
+
+  function module(selector){
+    var $el = $(selector),
+      $embed,
+      $image;
+
+    function init(){
+      $embed = $el.find('.gfrds_list-item-embed');
+      $image = $embed.find('img');
+
+      $el.on('click', onClick);
+    }
+
+    function onClick(e){
+      e.preventDefault();
+      $el.addClass('is-open');
+
+      setTimeout(function(){
+        var img = new Image();
+        img.onload = function () {
+          $image.attr('src', $image.data('large'));
+        }
+        img.src = $image.data('large');
+      }, 500);
+
+      resetAllItems();
+    }
+
+    function resetAllItems() {
+      $('.gfrds_list-item').not($el).removeClass('is-open');
+    }
+
+
+    init();
+
+    return $el;
+  }
+
+  return function(selector){
+    return $(selector).each(function(){
+      module(this);
+    });
+  };
+
+})();
+
+$(document).ready(function(){
+  GFrds.listItem('.gfrds_list-item');
+});
+
+},{"velocity-animate":3}],8:[function(require,module,exports){
 'use strict';
 
 require('velocity-animate');
@@ -5852,7 +5911,7 @@ $(document).ready(function(){
   GFrds.navbar('.gfrds_navbar');
 });
 
-},{"velocity-animate":3}],8:[function(require,module,exports){
+},{"velocity-animate":3}],9:[function(require,module,exports){
 function Curve(){
 
   var curve;
@@ -5930,7 +5989,7 @@ function Curve(){
 
 module.exports = Curve;
 
-},{}],9:[function(require,module,exports){
+},{}],10:[function(require,module,exports){
 function Point(posX,posY,attribute,rippleCoef){
 
   var x, y, targetPos, att;
@@ -6051,7 +6110,7 @@ function Point(posX,posY,attribute,rippleCoef){
 
 module.exports = Point;
 
-},{}],10:[function(require,module,exports){
+},{}],11:[function(require,module,exports){
 (function (process){
 /**
  * Tween.js - Licensed under the MIT license
@@ -6937,7 +6996,7 @@ TWEEN.Interpolation = {
 })(this);
 
 }).call(this,require('_process'))
-},{"_process":2}],11:[function(require,module,exports){
+},{"_process":2}],12:[function(require,module,exports){
 'use strict';
 
 var Tween = require('./_js/Tween');
@@ -7154,6 +7213,6 @@ $(document).ready(function(){
   GFrds.ribbons('.gfrds_ribbons');
 });
 
-},{"./_js/Curve":8,"./_js/Point":9,"./_js/Tween":10,"lodash.debounce":1}]},{},[5]);
+},{"./_js/Curve":9,"./_js/Point":10,"./_js/Tween":11,"lodash.debounce":1}]},{},[5]);
 
 //# sourceMappingURL=rivesdeseine.js.map

@@ -4,6 +4,7 @@ include icons/_sprite.svg
 .gfrds_container(class=data.modifiers)
   +list-header(data.header)
   each item in data.items
-    +list-item(item.data)
+    +list-item(item)
+  +ribbons({})
 
 script(async defer src="//platform.instagram.com/fr_FR/embeds.js")

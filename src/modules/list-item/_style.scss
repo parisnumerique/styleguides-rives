@@ -1,0 +1,156 @@
+.gfrds_list-item {
+  background-color: $white;
+  cursor: pointer;
+  height: 10rem;
+  margin: 2rem auto 0;
+  transition: all 0.3s ease;
+  width: 90rem;
+
+  &:first-child {
+    margin-top: 8rem;
+  }
+
+  &.is-open {
+    cursor: default;
+    height: auto;
+    padding: 4rem 0;
+    width: 100%;
+
+    .gfrds_label,
+    .gfrds_list-item-text {
+      display: block;
+    }
+
+    .gfrds_list-item-place {
+      display: flex;
+    }
+  }
+
+  &-embed,
+  &-embed img,
+  &-content,
+  &-title {
+    transition: all 0.3s ease;
+  }
+
+  &-embed {
+    background-size: cover;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &-title {
+    font-family: $seine;
+    font-weight: normal;
+  }
+
+  &-text {
+    font-weight: 500;
+    p {margin: 0;}
+    p + p {margin-top: 2rem;}
+  }
+
+  &-place {
+    align-items: center;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 2rem;
+
+    > .gfrds_icon {
+      fill: $pink;
+    }
+  }
+
+  .gfrds_label,
+  &-text,
+  &-place {
+    display: none;
+  }
+
+  @include medium-and-small {
+    .gfrds_label {
+      margin-bottom: 1.5rem;
+    }
+
+    &-title {
+      font-size: 11vw;
+      line-height: 12vw;
+      margin: 0 0 1rem;
+      transform: translateX(-0.3rem);
+    }
+
+    &-text {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+    }
+
+    &-place {
+      > .gfrds_icon {
+        height: 3.8rem;
+        margin-right: 1.4rem;
+        width: 2.6rem;
+      }
+    }
+  }
+
+  @include large {
+    &.is-open {
+      .gfrds_list-item-embed {
+        min-height: 39rem;
+        height: auto;
+        width: 39rem;
+      }
+
+      .gfrds_list-item-content {
+        margin-left: 49.5rem;
+      }
+
+      .gfrds_list-item-title {
+        font-size: 6rem;
+        line-height: 6rem;
+        margin: 0.5rem 0;
+        transform: translateX(-0.5rem);
+      }
+    }
+
+    .gfrds_label {
+      margin-bottom: 0;
+    }
+
+    &-embed {
+      height: 10rem;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 10rem;
+    }
+
+    &-content {
+      margin-left: 13rem;
+    }
+
+    &-title {
+      font-size: 3rem;
+      line-height: 10rem;
+      margin: 0;
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      line-height: 3rem;
+      max-width: 55rem;
+    }
+
+    &-place {
+      > .gfrds_icon {
+        height: 7.6rem;
+        margin-right: 2.8rem;
+        width: 5.2rem;
+      }
+    }
+  }
+}
