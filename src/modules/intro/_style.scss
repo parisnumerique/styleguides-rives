@@ -1,49 +1,142 @@
 .gfrds_intro {
   color: $darkblue;
-  padding: 8.5rem 20rem 15rem;
+
+  .gfrds_icon {
+    fill: $darkblue;
+  }
 
   .is-history & {
     color: $white;
-
-    &-content {
-      float: left;
-    }
 
     .gfrds_icon {
       fill: $white;
     }
   }
 
-  > .gfrds_wrapper {
-    overflow: hidden;
-  }
-
-  &-content {
-    float: right;
-    max-width: 51rem;
-  }
-
-  .gfrds_icon {
-    fill: $darkblue;
-    height: 6.2rem;
-    width: 2.7rem;
-  }
-
   &-title {
     font-family: $seine;
-    font-size: 6rem;
     font-weight: normal;
-    line-height: 7rem;
-    margin: 2.2rem 0;
   }
 
   &-text {
-    font-size: 1.8rem;
-    line-height: 3rem;
-    max-width: 45rem;
-
     p {
       margin: 2rem 0;
     }
+
+    a {
+      border-bottom: 0.1rem solid;
+      color: inherit;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        border-bottom: 0.2rem solid;
+      }
+    }
+  }
+
+  &-social {
+    &-title {
+      margin-top: 4rem;
+    }
+
+    &-items {
+      @include reset-list;
+    }
+
+    &-item {
+      display: inline-block;
+
+      a {
+        display: inline-block;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  @include medium-and-small {
+    padding: 5rem;
+
+    &-content > .gfrds_icon {
+      display: none;
+    }
+
+    &-title {
+      font-size: 11vw;
+      line-height: 12vw;
+      margin: 0 0 1rem;
+    }
+
+    &-text {
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+
+    &-social {
+      &-item {
+        & + & {
+          margin-left: 1.5rem;
+        }
+
+        .gfrds_icon {
+          height: 3rem;
+          width: 3rem;
+        }
+      }
+    }
+  }
+
+  @include large {
+    padding: 8.5rem 20rem 15rem;
+
+    > .gfrds_wrapper {
+      overflow: hidden;
+    }
+
+    &-content {
+      float: right;
+      max-width: 51rem;
+
+      > .gfrds_icon {
+        height: 6.2rem;
+        width: 2.7rem;
+      }
+    }
+
+    .is-history & {
+      &-content {
+        float: left;
+      }
+    }
+
+    &-title {
+      font-size: 6rem;
+      line-height: 7rem;
+      margin: 2.2rem 0;
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      line-height: 3rem;
+      max-width: 45rem;
+    }
+
+    &-social {
+      &-item {
+        & + & {
+          margin-left: 2rem;
+        }
+
+        .gfrds_icon {
+          height: 5rem;
+          width: 5rem;
+        }
+      }
+    }
+
   }
 }
