@@ -84,8 +84,7 @@
         {
           "type": "separator",
           "data": {
-            "color": "#E6F8F6",
-            "height": "30rem"
+            "modifiers": "lightblue"
           }
         },
         {
@@ -100,8 +99,7 @@
         {
           "type": "separator",
           "data": {
-            "color": "#F9F7F7",
-            "height": "30rem"
+            "modifiers": "lightbrown"
           }
         },
         {
