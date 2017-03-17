@@ -1,0 +1,24 @@
+.gfrds_figure {
+  .is-history & {
+    color: $white;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  &-caption {
+    font-size: 1.2rem;
+    opacity: 0.5;
+    line-height: 1.8rem;
+    margin-top: 2rem;
+  }
+
+  @include large {
+    &-caption {
+      margin-left: 37rem;
+    }
+  }
+
+}

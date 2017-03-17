@@ -190,6 +190,37 @@
         }
       },
       "items": [
+        {
+          "type": "figure",
+          "data": {
+            "image": "images/figure.jpg",
+            "caption": "57795-4. Adam Perelle (1640-1695). \"Perspective de la ville de Paris, vue du Pont Rouge\". Eau-forte, vers 1660. Paris, musée Carnavalet. © Musée Carnavalet / Roger-Viollet"
+          }
+        },
+        {
+          "type": "story",
+          "data": {
+            "title": "De l’Antiquité au 17e siècle : commerce et transport",
+            "text": [
+              "Le centre névralgique de la ville est essentiellement concentré autour de l’île de la Cité. De l’époque gallo-romaine au début du 17e siècle, seuls deux ponts (héritage des Romains) permettent le franchissement de la Seine : le Pont Saint-Michel – Pont au Change (bâti au 9e siècle, puis reconstruit en 1647 et en 1860) et le Petit Pont Notre Dame (dont la première version date de l’époque gallo-romaine). Les traversées du fleuve s’effectuent principalement grâce à des va-et-vient de barques (bachots)."
+            ]
+          }
+        },
+        {
+          "type": "figure",
+          "data": {
+            "image": "images/figure.jpg",
+            "caption": "23652-18. Pierre-Antoine Demachy (1723-1807). \"L'Hôtel de la Monnaie et la Seine vus de la pointe de l'île de la Cité\", 1777. Paris, musée Carnavalet. © Musée Carnavalet / Roger-Viollet"
+          }
+        },
+        {
+          "type": "story",
+          "data": {
+            "text": [
+              "Le centre névralgique de la ville est essentiellement concentré autour de l’île de la Cité. De l’époque gallo-romaine au début du 17e siècle, seuls deux ponts (héritage des Romains) permettent le franchissement de la Seine : le Pont Saint-Michel – Pont au Change (bâti au 9e siècle, puis reconstruit en 1647 et en 1860) et le Petit Pont Notre Dame (dont la première version date de l’époque gallo-romaine). Les traversées du fleuve s’effectuent principalement grâce à des va-et-vient de barques (bachots)."
+            ]
+          }
+        }
       ]
     }
   },

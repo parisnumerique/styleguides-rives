@@ -1,0 +1,6 @@
+mixin figure(data)
+  figure.gfrds_figure(class=data.modifiers)
+    .gfrds_wrapper
+      img.gfrds_figure-image(src=data.image)
+      if data.caption
+        figcaption.gfrds_figure-caption= data.caption

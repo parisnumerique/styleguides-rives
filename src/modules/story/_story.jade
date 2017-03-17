@@ -1,0 +1,7 @@
+mixin story(data)
+  .gfrds_story(class=data.modifiers)
+    .gfrds_wrapper
+      h2.gfrds_story-title= data.title
+      .gfrds_story-text
+        each p in data.text
+          p!= p
