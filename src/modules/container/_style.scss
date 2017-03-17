@@ -1,6 +1,10 @@
+$navbar-height: 6rem;
+
 .gfrds_container {
+  background-color: $white;
   color: $darkblue;
   overflow: hidden;
+  padding-top: $navbar-height;
 
   > * {
     position: relative;

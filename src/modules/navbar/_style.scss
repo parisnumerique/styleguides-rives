@@ -1,64 +1,264 @@
+
+body.gfrds_navbar-mobile-open {
+  overflow: hidden;
+}
+
 .gfrds_navbar {
-  display: none;
+  background-color: $darkblue3;
+  display: block;
+  height: $navbar-height;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 101;
 
-  @include large-and-medium {
-    align-items: center;
-    background-color: $gray1A;
-    display: flex;
-    height: 6rem;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 101;
+  &-nef {
+    height: $navbar-height;
+    padding: 0 2.2rem;
+    transition: opacity 0.2s ease;
 
-    &-logo {
+    svg {
+      height: 1.9rem;
+      display: block;
+      fill: $white;
+      position: relative;
+      top: 2rem;
+      width: 12.5rem;
+    }
+
+    &:hover, &:focus {
       opacity: 0.5;
-      padding: 0 2.2rem;
-      transition: opacity 0.2s ease;
+    }
+  }
 
-      svg {
-        height: 1.9rem;
-        display: block;
-        fill: $white;
-        width: 12.5rem;
+  &-logo {
+    display: none;
+  }
+
+  &-nav > ul,
+  &-social,{
+    @include reset-list;
+  }
+
+  &-nav {
+    font-size: 1rem;
+    font-weight: normal;
+    outline: none;
+    text-align: center;
+
+    a {
+      color: $white;
+      display: inline-block;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    &-item {
+      display: none;
+      line-height: $navbar-height;
+      padding: 0 2.5rem;
+
+      &.current {
+        display: inline-block;
       }
 
+      &-text:after {
+        background: $white;
+        bottom: 1.6rem;
+        content: "";
+        display: block;
+        height: 0.2rem;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+    }
+  }
+
+  &-social {
+    .share-item a {
+      color: $white;
+      opacity: 0.5;
+      font-size: 2.3rem;
+      text-decoration: none;
+      transition: opacity 0.2s ease;
+
       &:hover, &:focus {
+        color: $white;
         opacity: 1;
       }
     }
 
-    &-title {
-      font-size: 1.4rem;
-      flex-grow: 1;
-      opacity: 0.5;
-      text-align: center;
+  }
 
-      strong {text-transform: uppercase;}
+
+  @include small {
+
+    &-nef {
+      float: left;
+      position: absolute;
+      width: 6.5rem;
     }
 
-    &-social {
-      .share-item a {
-        color: $white;
-        opacity: 0.5;
-        font-size: 2.3rem;
-        text-decoration: none;
-        transition: opacity 0.2s ease;
+    &-button-menu {
+      float: right;
+      line-height: $navbar-height;
+      position: relative;
+      right: 0rem;
+      width: 6.5rem;
+      z-index: 2001;
 
-        &:hover, &:focus {
-          color: $white;
-          opacity: 1;
+      &-text {
+        background-color: transparent;
+        display: inline-block;
+        font-size: 0;
+        position: absolute;
+        right: 2rem;
+        top: 2.7rem;
+        width: 2.4rem;
+
+        -webkit-touch-callout: none;
+        user-select: none;
+
+        &:before,
+        &:after {
+          background-color: $white;
+          content: "";
+          display: block;
+          height: 0.4rem;
+          left: 0;
+          position: absolute;
+          top: 0;
+          transition: transform 0.3s ease;
+          width: 100%;
+        }
+
+        &:before {transform: translateY(-0.5rem);}
+        &:after {transform: translateY(0.5rem);}
+      }
+    }
+
+    .gfrds_navbar-mobile-open & {
+
+      &-button-menu {
+        &-text {
+          width: 2.8rem;
+
+          &:before {transform: translateY(0px) rotate(-45deg);}
+          &:after  {transform: translateY(0px) rotate(45deg);}
         }
       }
 
+      &-wrapper {
+        background-color: $white;
+        color: $darkblue;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        top: $navbar-height;
+      }
+
+      &-logo {
+        align-items: center;
+        display: flex;
+        height: 41vw;
+        position: relative;
+        justify-content: center;
+
+        svg {
+          display: block;
+          fill: $darkblue;
+          max-width: 53.6rem;
+          width: 50%;
+        }
+      }
+
+      &-nav {
+        font-size: 2rem;
+        padding-top: 4rem;
+
+        a {
+          color: $darkblue;
+        }
+
+        &-item {
+          display: block;
+          line-height: 5rem;
+
+          &-text:after {
+            background-color: $darkblue;
+            bottom: 1rem;
+            transition: width 0.3s ease;
+            width: 0;
+          }
+
+          &.current,
+          &:hover {
+            .gfrds_navbar-nav-item-text:after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  @include large-and-medium {
+    align-items: center;
+    display: flex;
+
+    &-wrapper {
+      flex-grow: 1;
+    }
+
+    &-logo {
+      display: inline-block;
+      height: $navbar-height;
+      padding: 0 2.2rem;
+      position: absolute;
+
+      svg {
+        height: 3rem;
+        display: block;
+        fill: $white;
+        position: relative;
+        top: 1.5rem;
+        width: 5.2rem;
+      }
+    }
+
+    &-nav {
+      font-size: 1rem;
+
+      a {
+        color: $white;
+        position: relative;
+      }
+
+      &-item {
+        display: inline-block;
+
+        &-text:after {
+          transition: width 0.3s ease;
+          width: 0;
+
+          .gfrds_navbar-nav-item.current &,
+          .gfrds_navbar-nav-item:hover & {
+            width: 100%;
+          }
+        }
+      }
     }
 
     &-button-top {
       border-left: 0.1rem solid transparentize($white, 0.9);
-      height: 6rem;
-      line-height: 6rem;
-      margin-left: 3rem;
+      height: $navbar-height;
+      line-height: $navbar-height;
+      margin-left: 10.2rem;
       padding: 0 2.3rem;
 
       svg {

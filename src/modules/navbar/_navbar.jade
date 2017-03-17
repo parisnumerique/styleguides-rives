@@ -1,0 +1,33 @@
+mixin navbar(data)
+  .gfrds_navbar
+    a.gfrds_navbar-nef(href=data.logo.href)
+      include ../../images/nef.svg
+      span.hidden-accessibly=data.logo.text
+    a.gfrds_navbar-button-menu.only-on-small#nav-toggle(href=data.menu.href target=data.menu.target rel="nofollow" role="button")
+      span.gfrds_navbar-button-menu-text= data.menu.text
+    .gfrds_navbar-wrapper
+      span.gfrds_navbar-logo
+        include ../../images/logo.svg
+      nav.gfrds_navbar-nav(tabindex="-1" role="navigation")
+        ul
+          each item in data.items
+            li.gfrds_navbar-nav-item(class=item.modifiers class=(item.current ? "current" : null))
+              a(href=item.href target=item.target aria-label=item.text)
+                span.gfrds_navbar-nav-item-text= item.text
+      //- ul.gfrds_navbar-social.share
+      //-   if data.navbar.share.items && data.navbar.share.items.length
+      //-     ul.share-items
+      //-       each item in data.navbar.share.items
+      //-         li.share-item.gfrds_navbar-social-item
+      //-           a(href=(item.href + data.url) title=item.title target="_blank")
+      //-             i.share-icon(class="icon-#{item.icon}" aria-hidden="true")
+      //-             span.hidden-accessibly= item.text
+      //- if data.social
+      //-   ul.gfrds_navbar-social
+      //-     each social in data.social
+      //-       li.gfrds_navbar-social-item
+      //-         a(href=social.href onclick=social.onclick title=social.text target=social.target)
+      //-           i.icon(class="icon-#{social.icon}")
+      //-             span.hidden-accessibly= social.text
+    a.gfrds_navbar-button-top.hidden-on-small(href="#")
+      +icon({icon: 'arrow-top'})
