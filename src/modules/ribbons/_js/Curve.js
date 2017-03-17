@@ -3,6 +3,7 @@ function Curve(){
   var curve;
   var points = [];
   var curveID;
+  var isPaused = false;
 
   this.init = function( crv, pts, id ){
     curve = crv;
@@ -21,6 +22,7 @@ function Curve(){
 
   this.onEnterFrame = function(time)
   {
+    if( isPaused ) return;
     for( var i = 0; i < points.length ; i++ ){
       points[i].onEnterFrame( time );
       //console.log( i + " " + points[i].y +" "+points[i].x )
@@ -46,6 +48,13 @@ function Curve(){
     }
   }
 
+  this.stop = function(){
+    isPaused = true;
+  }
+
+  this.play = function(){
+    isPaused = false;
+  }
 
   this.updateCurve = function(){
 
