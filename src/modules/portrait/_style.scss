@@ -7,14 +7,11 @@
   &.orange {background-color: $orange;}
 
   > .gfrds_wrapper {
-    padding: 6.8rem 0 0;
     position: relative;
     z-index: 3;
   }
 
   &-header {
-    margin-bottom: 4rem;
-
     > .gfrds_label {
       color: $white;
     }
@@ -27,23 +24,7 @@
   }
 
   &-text {
-    font-size: 1.8rem;
     font-weight: 500;
-    line-height: 3rem;
-  }
-
-  &-content {
-    display: flex;
-    justify-content: space-between;
-
-    &-col {
-      min-width: 45rem;
-      max-width: 40%;
-
-      &:first-child {
-        min-width: 49rem;
-      }
-    }
   }
 
   &-embed {
@@ -64,7 +45,7 @@
       left: 0;
       position: absolute;
       top: 0;
-      transform: translate3d(3rem, 3rem, 0);
+      transform: translate(3rem, 3rem);
       width: 100%;
     }
   }
@@ -75,13 +56,9 @@
     display: flex;
     font-size: 2.4rem;
     font-weight: bold;
-    margin: 8.8rem 0 0 1.6rem;
 
     > .gfrds_icon {
       fill: $white;
-      height: 7.6rem;
-      margin-right: 2.8rem;
-      width: 5.2rem;
     }
   }
 
@@ -90,8 +67,7 @@
 
     &-title {
       color: $white;
-      font-size: 3.6rem;
-      margin: 0 0 3.6rem;
+      margin: 0;
     }
 
     &-items {
@@ -111,11 +87,9 @@
         align-items: center;
         color: $white;
         display: inline-flex;
-        height: 18rem;
         justify-content: center;
         text-decoration: none;
         transition: background 0.2s ease;
-        width: 18rem;
 
         &:hover,
         &:focus {
@@ -126,8 +100,6 @@
 
     .gfrds_icon {
       fill: $white;
-      height: 7.5rem;
-      width: 7.5rem;
     }
   }
 
@@ -142,8 +114,13 @@
   }
 
   @include medium-and-small {
+    > .gfrds_wrapper {
+      padding: 3rem 2.5rem 0;
+    }
+
     &-header {
-      padding: 0 5rem;
+      padding: 0 1.5rem;
+      margin-bottom: 2rem;
     }
 
     &-title {
@@ -151,13 +128,117 @@
       line-height: 12vw;
       text-align: center;
     }
+
+    &-content {
+      &-col:last-child {
+        margin: 4rem 2rem 0;
+
+      }
+    }
+
+    &-text {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+    }
+
+    &-embed {
+      &:before {
+        transform: translate(1.5rem, 1.5rem);
+      }
+    }
+
+    &-place {
+      font-size: 1.8rem;
+      margin: 3rem 0;
+
+      > .gfrds_icon {
+        height: 3.8rem;
+        margin-right: 1.4rem;
+        width: 2.6rem;
+      }
+    }
+
+    &-share {
+      &-title {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+      }
+
+      &-item {
+        > a {
+          height: 9rem;
+          width: 9rem;
+        }
+      }
+
+      .gfrds_icon {
+        height: 3.75rem;
+        width: 3.75rem;
+      }
+    }
   }
 
   @include large {
+    > .gfrds_wrapper {
+      padding: 6.8rem 0 0;
+    }
+
+    &-header {
+      margin-bottom: 4rem;
+    }
+
     &-title {
       font-size: 14.5rem;
       line-height: 14rem;
       transform: translateX(-1.2rem);
+    }
+
+    &-content {
+      display: flex;
+      justify-content: space-between;
+
+      &-col {
+        min-width: 45rem;
+        max-width: 40%;
+
+        &:first-child {
+          min-width: 49rem;
+        }
+      }
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      line-height: 3rem;
+    }
+
+    &-place {
+      margin: 8.8rem 0 0 1.6rem;
+
+      > .gfrds_icon {
+        height: 7.6rem;
+        margin-right: 2.8rem;
+        width: 5.2rem;
+      }
+    }
+
+    &-share {
+      &-title {
+        font-size: 3.6rem;
+        margin-bottom: 3.6rem;
+      }
+
+      &-item {
+        > a {
+          height: 18rem;
+          width: 18rem;
+        }
+      }
+
+      .gfrds_icon {
+        height: 7.5rem;
+        width: 7.5rem;
+      }
     }
   }
 }
