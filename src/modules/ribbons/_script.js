@@ -89,7 +89,7 @@ GFrds.ribbons = (function(){
             var scrollTop = $(window).scrollTop();
           //  console.log( scrollTop +"-- && --"+ scrollStep );
             if( scrollTop < 1500  && scrollStep != 0){
-              console.log( "MOVE >> 0")
+              // console.log( "MOVE >> 0")
               scrollStep = 0
               for( var i = 0 ; i < curvesObj.length ; i ++ ){
                 // TOP
@@ -106,7 +106,7 @@ GFrds.ribbons = (function(){
               }
             }
             else if( scrollTop >= 1500 && scrollTop < 3000 && scrollStep != 1){
-              console.log( "MOVE >> 1")
+              // console.log( "MOVE >> 1")
               scrollStep = 1
               for( var i = 0 ; i < curvesObj.length ; i ++ ){
                 // TOP
@@ -146,12 +146,12 @@ GFrds.ribbons = (function(){
 
         switch (e.which) {
           case 113:
-            console.log( "<< move left <<")
+            // console.log( "<< move left <<")
             posX = stageW / 4;
             break;
 
           case 100:
-            console.log( "<< move right >>")
+            // console.log( "<< move right >>")
             posX = (stageW / 4) * 3;
             break;
 

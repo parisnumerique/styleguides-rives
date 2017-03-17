@@ -59,7 +59,7 @@ function Curve(){
 
       for ( var i = 0 ; i < points.length ; i ++ ){
 
-        console.log( points[i].getAtt() )
+        // console.log( points[i].getAtt() )
         if( points[i].getAtt() != "" ){
           path += points[i].getAtt();
         }
