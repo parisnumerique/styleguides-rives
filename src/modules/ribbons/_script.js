@@ -17,8 +17,6 @@ GFrds.ribbons = (function(){
     var initStage;
     var scrollTop;
     var curvesPositions;
-    var currentCurvesPosition = 0;
-    var askForCurvesPosition;
 
 
     function init(){
@@ -125,19 +123,19 @@ GFrds.ribbons = (function(){
         });
 
         $(window).scroll(function () {
+
           scrollTop = $(window).scrollTop();
+
           if( scrollTop < 1500  && scrollStep != 0){
-            askForCurvesPosition = 0;
+            scrollStep = 0;
             moveCurves(4500, Tween.Easing.Quadratic.InOut);
           }
           else if( scrollTop >= 1500 && scrollTop < 3000 && scrollStep != 1){
-            askForCurvesPosition = 1;
-
+            scrollStep = 1;
             moveCurves(4500, Tween.Easing.Quadratic.InOut);
           }
           else if ( scrollTop >= 3000 && scrollStep != 2){
-            askForCurvesPosition = 2;
-
+            scrollStep = 2;
             moveCurves(4500, Tween.Easing.Quadratic.InOut);
           }
         });
@@ -180,16 +178,11 @@ GFrds.ribbons = (function(){
     }
 
     function moveCurves( duration, easing ){
-      console.log( "MOVE CURVES ==> ")
-    //  if( currentCurvesPosition != askForCurvesPosition){
-      currentCurvesPosition = askForCurvesPosition;
-    //  }
-//      else return;
 
       for( var i = 0 ; i < curvesObj.length ; i ++ ){
 
         for( var j = 0 ; j < 7 ; j++ ){
-          var ptPos = { x: curvesPositions[currentCurvesPosition][j].x - i*50, y: curvesPositions[currentCurvesPosition][j].y };
+          var ptPos = { x: curvesPositions[scrollStep][j].x - i*50, y: curvesPositions[scrollStep][j].y };
           curvesObj[i].moveTo( j,  ptPos, duration, easing );
           //ptPos.x = ptPos.x - i * 50;
           //console.log( currentCurvesPosition +" -- " + ptPos.y )
