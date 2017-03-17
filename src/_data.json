@@ -6,7 +6,15 @@
       "title": "Rives de Seine",
       "subtitle": "",
       "cover": {
-        "title": "Parc Rives de Seine"
+        "title": "Parc Rives de Seine",
+        "background": {
+          "image": "modules/cover/poster.jpg",
+          "video": {
+            "sources": [
+              {"src": "http://preview.etaminstud.io/paris/rives/video/video.mp4", "type": "video/mp4"}
+            ]
+          }
+        }
       },
       "intro": {
         "title": "Se baigner dans la Seine",

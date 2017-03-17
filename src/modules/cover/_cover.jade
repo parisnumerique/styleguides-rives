@@ -1,3 +1,11 @@
 mixin cover(data)
   .gfrds_cover
-    h1.gfrds_cover-title= data.title
+    .gfrds_cover-video(style="background-image: url(#{data.background.image});")
+      if data.background.video
+        video.quick-access-video(autoplay=true loop=true muted='muted' poster=data.background.image)
+          each source in data.background.video.sources
+            source&attributes(source)
+    h1.gfrds_cover-title
+      .gfrds_cover-logo
+        include ../../images/logo.svg
+      .hidden-accessibly= data.title
