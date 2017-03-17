@@ -13,11 +13,20 @@ GFrds.ribbons = (function(){
     var svgElement, curves = [], curvesPaths = [], curvesObj = [];
     var stageW, stageH, offset, origin, mousePos = {};
     var scrollStep = -1;
-    var curveWidth;
+    var curveWidth = 90;
+    var initStage;
+    var scrollTop;
+    var curvesPositions;
+    var currentCurvesPosition = 0;
+    var askForCurvesPosition;
+
 
     function init(){
       svgElement = $el.find('.gfrds_ribbons-svg').get(0);
+
+
       setParams();
+      initStage = {w:stageW, h:stageH}
 
       if( !GFrds.rippleCoef ){
         GFrds.rippleCoef = [
@@ -31,7 +40,7 @@ GFrds.ribbons = (function(){
 
       var initPoints;
       var curveObj;
-      curveWidth = 90;
+
 
       $el.find('path').each(function(i, el){
 
@@ -65,9 +74,39 @@ GFrds.ribbons = (function(){
     function setParams(){
       stageW = $( window ).width();
       stageH = $( window ).height();
+
+      curvesPositions = [
+      [
+        { x:(stageW / 4) * 1.5, y: -50 },                    //TOP RIGHT
+        { x:(stageW / 4), y: stageH /2 },                   //MIDDLE RIGHT
+        { x:(stageW / 4), y: stageH + 50 },                //BOTTOM RIGHT
+        { x:(stageW / 4) - curveWidth, y: stageH + 50 },    //BOTTOM LEFT
+        { x:(stageW / 4) - curveWidth, y: stageH + 50 },    //BOTTOM LEFT
+        { x:(stageW / 4) - curveWidth, y: stageH / 2 },     //MIDDLE LEFT
+        { x:(stageW / 4) * 1.5 - curveWidth, y: -50 }      //TOP LEFT
+      ],
+      [
+        { x:(stageW / 4) * 2.5, y: -50 },
+        { x:(stageW / 4) * 3, y: stageH /2},
+        { x:(stageW / 4) * 3, y: stageH + 50 },
+        { x:(stageW / 4)  * 3 - curveWidth, y: stageH + 50 },
+        { x:(stageW / 4)  * 3 - curveWidth, y: stageH + 50 },
+        { x:(stageW / 4) * 3 - curveWidth, y: stageH / 2 },
+        { x:(stageW / 4) * 2.5 - curveWidth, y: -50 }
+      ],
+      [
+        { x:(stageW / 4) * 1.5, y: -50 },
+        { x:(stageW / 4), y: stageH /2},
+        { x:(stageW / 4), y: stageH + 50 },
+        { x:(stageW / 4) - curveWidth, y: stageH + 50 },
+        { x:(stageW / 4) - curveWidth, y: stageH + 50 },
+        { x:(stageW / 4) - curveWidth, y: stageH /2 },
+        { x:(stageW / 4) * 1.5 - curveWidth, y: -50 }
+      ]];
     }
 
     function addListeners(){
+
       $(window).on('mousemove', function(e) {
         // storing the y position of the mouse - we want the y pos relative to the SVG container so we'll subtract the container top from clientY.
         mousePos.y = e.clientY;
@@ -86,59 +125,28 @@ GFrds.ribbons = (function(){
         });
 
         $(window).scroll(function () {
-            var scrollTop = $(window).scrollTop();
-          //  console.log( scrollTop +"-- && --"+ scrollStep );
-            if( scrollTop < 1500  && scrollStep != 0){
-              console.log( "MOVE >> 0")
-              scrollStep = 0
-              for( var i = 0 ; i < curvesObj.length ; i ++ ){
-                // TOP
-                curvesObj[i].moveTo( 0, { x:(stageW / 4) * 1.5 - i * 50, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
-                curvesObj[i].moveTo( 6, { x:(stageW / 4) * 1.5 - curveWidth - i * 50, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
+          scrollTop = $(window).scrollTop();
+          if( scrollTop < 1500  && scrollStep != 0){
+            askForCurvesPosition = 0;
+            moveCurves(4500, Tween.Easing.Quadratic.InOut);
+          }
+          else if( scrollTop >= 1500 && scrollTop < 3000 && scrollStep != 1){
+            askForCurvesPosition = 1;
 
-                // MIDDLE
-                curvesObj[i].moveTo( 1, { x:(stageW / 4) - i * 50, y: stageH/2 }, 5000, Tween.Easing.Quadratic.InOut )
-                curvesObj[i].moveTo( 5, { x:(stageW / 4) - curveWidth - i * 50, y: stageH /2 }, 5000, Tween.Easing.Quadratic.InOut )
+            moveCurves(4500, Tween.Easing.Quadratic.InOut);
+          }
+          else if ( scrollTop >= 3000 && scrollStep != 2){
+            askForCurvesPosition = 2;
 
-                // BOTTOM
-                curvesObj[i].moveTo( 2, { x:(stageW / 4) - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
-                curvesObj[i].moveTo( 4, { x:(stageW / 4)- curveWidth - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
-              }
-            }
-            else if( scrollTop >= 1500 && scrollTop < 3000 && scrollStep != 1){
-              console.log( "MOVE >> 1")
-              scrollStep = 1
-              for( var i = 0 ; i < curvesObj.length ; i ++ ){
-                // TOP
-                curvesObj[i].moveTo( 0, { x:(stageW / 4) * 2.5 - i * 50, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
-                curvesObj[i].moveTo( 6, { x:(stageW / 4) * 2.5 - curveWidth - i * 50, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
-                // MIDDLE
-                curvesObj[i].moveTo( 1, { x:(stageW / 4) * 3 - i * 50, y: stageH /2}, 5000, Tween.Easing.Quadratic.InOut )
-                curvesObj[i].moveTo( 5, { x:(stageW / 4) * 3 - curveWidth - i * 50, y: stageH /2 }, 5000, Tween.Easing.Quadratic.InOut )
-                // BOTTOM
-                curvesObj[i].moveTo( 2, { x:(stageW / 4) * 3 - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
-                curvesObj[i].moveTo( 4, { x:(stageW / 4)  * 3 - curveWidth - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
-              }
-            }
-            else if ( scrollTop >= 3000 && scrollStep != 2){
-              scrollStep = 2;
-              for( var i = 0 ; i < curvesObj.length ; i ++ ){
-                // TOP
-                curvesObj[i].moveTo( 0, { x:(stageW / 4) * 1.5 - i * 50, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
-                curvesObj[i].moveTo( 6, { x:(stageW / 4) * 1.5 - curveWidth - i * 50, y: -50 }, 5000, Tween.Easing.Quadratic.InOut )
-                // MIDDLE
-                curvesObj[i].moveTo( 1, { x:(stageW / 4) - i * 50, y: stageH /2}, 5000, Tween.Easing.Quadratic.InOut )
-                curvesObj[i].moveTo( 5, { x:(stageW / 4) - curveWidth - i * 50, y: stageH /2 }, 5000, Tween.Easing.Quadratic.InOut )
-                // BOTTOM
-                curvesObj[i].moveTo( 2, { x:(stageW / 4) - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
-                curvesObj[i].moveTo( 4, { x:(stageW / 4) - curveWidth - i * 50, y: stageH + 50 }, 5000, Tween.Easing.Quadratic.InOut )
-              }
-            }
-         });
+            moveCurves(4500, Tween.Easing.Quadratic.InOut);
+          }
+        });
 
         $(window).on('resize', function(){
           setParams();
+          moveCurves(0);
         });
+
 
 
         $(window).keypress(function (e) {
@@ -168,6 +176,24 @@ GFrds.ribbons = (function(){
 
 
       })
+    }
+
+    function moveCurves( duration, easing ){
+      console.log( "MOVE CURVES ==> ")
+    //  if( currentCurvesPosition != askForCurvesPosition){
+      currentCurvesPosition = askForCurvesPosition;
+    //  }
+//      else return;
+
+      for( var i = 0 ; i < curvesObj.length ; i ++ ){
+
+        for( var j = 0 ; j < 7 ; j++ ){
+          var ptPos = { x: curvesPositions[currentCurvesPosition][j].x - i*50, y: curvesPositions[currentCurvesPosition][j].y };
+          curvesObj[i].moveTo( j,  ptPos, duration, easing );
+          //ptPos.x = ptPos.x - i * 50;
+          //console.log( currentCurvesPosition +" -- " + ptPos.y )
+        }
+      }
     }
 
     function loop(time) {

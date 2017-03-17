@@ -11,15 +11,13 @@ function Curve(){
     this.updateCurve();
   }
 
-
-
   this.moveTo = function( idPoint, pos, duration, easing )
   {
+
     if( points[idPoint] ){
       points[idPoint].moveTo( pos, duration, easing );
     }
   }
-
 
   this.onEnterFrame = function(time)
   {

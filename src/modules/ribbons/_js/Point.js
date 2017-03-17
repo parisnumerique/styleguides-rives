@@ -27,19 +27,33 @@ function Point(posX,posY,attribute,rippleCoef){
     return y;
   }
 
+  this.setX = function( v ){
+    x = v;
+  }
+
+  this.setY = function( v ){
+    y = v;
+  }
+
   this.getAtt = function(){
     return att;
   }
 
   this.moveTo = function( pos, durationT, easing )
   {
-    easingF = easing;
-    startTime = t;
-    endTime = startTime + durationT;
-    duration = durationT;
-    targetPos = pos;
-    startPos = {x:x, y:y}
-    deltaPos = {x: targetPos.x - startPos.x, y: targetPos.y - startPos.y}
+    if( durationT > 15){
+      easingF = easing;
+      startTime = t;
+      endTime = startTime + durationT;
+      duration = durationT;
+      targetPos = pos;
+      startPos = {x:x, y:y}
+      deltaPos = {x: targetPos.x - startPos.x, y: targetPos.y - startPos.y}
+    }else{
+      x = pos.x;
+      y = pos.y;
+      endTime = t;
+    }
   }
 
   this.autoRipple = function()
@@ -69,12 +83,14 @@ function Point(posX,posY,attribute,rippleCoef){
     if( isRipple )  ripple += (rippleRand * rippleDir);
 
     if( t < endTime){
+
       var k = (t - startTime) / duration;
+
       if( easingF){
         k = easingF( k );
       }
 
-      x = startPos.x + deltaPos.x * k;
+      x = startPos.x + deltaPos.x  * k ;
       y = startPos.y + deltaPos.y * k;
 
     }
