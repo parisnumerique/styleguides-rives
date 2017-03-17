@@ -48,9 +48,10 @@
     background: center center no-repeat;
     background-size: cover;
     left: 50%;
+    min-height: 100%;
+    min-width: 100.5%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
   }
 }
