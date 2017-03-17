@@ -8,4 +8,13 @@ mixin intro(data)
         h2.gfrds_intro-title= data.title
         .gfrds_intro-text
           each p in data.text
-            p= p
+            p!= p
+        if data.social
+          .gfrds_intro-social
+            h3.gfrds_intro-social-title= data.social.title
+            ul.gfrds_intro-social-items
+              each s in data.social.items
+                li.gfrds_intro-social-item
+                  a(href=s.href target="_blank")
+                    +icon({icon: s.icon})
+                    .hidden-accessibly= s.name

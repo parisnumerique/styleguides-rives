@@ -6,35 +6,65 @@
       "title": "Rives de Seine",
       "subtitle": "",
       "cover": {
-        "title": "Parc Rives de Seine"
+        "title": "Parc Rives de Seine",
+        "background": {
+          "image": "modules/cover/poster.jpg",
+          "video": {
+            "sources": [
+              {"src": "http://preview.etaminstud.io/paris/rives/video/video.mp4", "type": "video/mp4"}
+            ]
+          }
+        }
       },
       "intro": {
         "title": "Se baigner dans la Seine",
         "text": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo."
-        ]
-      },
-      "tutorial": {
-        "label": "Naviguez",
-        "title": "d'hier à nos jours",
-        "text": "Selon que vous déplacez votre curseur de droite à gauche, vous pourrez passer d’une histoire à l’autre. Allez vers la gauche et s’ouvrent à vous les archives de la Seine, fleuve familier mais méconnu. Allez vers la droite et écoutez les anecdotes et histoires des parisiennes et parisiens d’aujourd’hui."
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
+          "<a href=\"#\">Voir la vidéo drone</a>"
+        ],
+        "social": {
+          "title": "Suivez Parc Rives de Seine sur",
+          "items": [
+            {
+              "href": "#",
+              "name": "Twitter",
+              "icon": "twitter"
+            },
+            {
+              "href": "#",
+              "name": "Facebook",
+              "icon": "facebook"
+            },
+            {
+              "href": "#",
+              "name": "Instagram",
+              "icon": "instagram"
+            },
+            {
+              "href": "#",
+              "name": "Soundloud",
+              "icon": "soundcloud"
+            }
+          ]
+        }
       },
       "items": [
-        {
-          "type": "separator",
-          "data": {
-            "color": "#E6F8F6",
-            "height": "30rem"
-          }
-        },
         {
           "type": "portrait",
           "data": {
             "modifiers": ["pink"],
-            "label": "Voir",
+            "label": {
+              "href": "#",
+              "text": "Voir",
+              "title": "Tous les contenus visuels"
+            },
             "title": "Hortense et Yannis",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
             "embed": "https://www.instagram.com/p/BRA1aRJD_Z4/",
+            "place": [
+              "Paris",
+              "Voie George Pompidou"
+            ],
             "share": {
               "title": "Partager :",
               "items": [
@@ -53,14 +83,17 @@
         {
           "type": "separator",
           "data": {
-            "color": "#E6F8F6",
-            "height": "30rem"
+            "modifiers": "lightblue"
           }
         },
         {
           "type": "push",
           "data": {
-            "label": "Écouter",
+            "label": {
+              "href": "#",
+              "text": "Écouter",
+              "title": "Tous les contenus audio"
+            },
             "title": "Le flottage de bois",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue.",
             "embed": "https%3A//api.soundcloud.com/tracks/8954462"
@@ -69,18 +102,25 @@
         {
           "type": "separator",
           "data": {
-            "color": "#F9F7F7",
-            "height": "30rem"
+            "modifiers": "lightbrown"
           }
         },
         {
           "type": "portrait",
           "data": {
             "modifiers": ["orange"],
-            "label": "Voir",
+            "label": {
+              "href": "#",
+              "text": "Voir",
+              "title": "Tous les contenus visuels"
+            },
             "title": "Charlette",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
             "embed": "https://www.instagram.com/p/BRA1yzDjbqZ/",
+            "place": [
+              "Paris",
+              "Bassin de l'Arsenal"
+            ],
             "share": {
               "title": "Partager :",
               "items": [
@@ -107,18 +147,47 @@
       "title": "Rives de Seine",
       "subtitle": "",
       "cover": {
-        "title": "Parc Rives de Seine"
+        "title": "Parc Rives de Seine",
+        "background": {
+          "image": "modules/cover/poster.jpg",
+          "video": {
+            "sources": [
+              {"src": "http://preview.etaminstud.io/paris/rives/video/video.mp4", "type": "video/mp4"}
+            ]
+          }
+        }
       },
       "intro": {
         "title": "Les rives de la Seine, lieux de vie depuis 20 siècles",
         "text": [
-          "Paris s’est construite depuis la Seine. Depuis 2000 ans, ses rives sont des lieux de vie. Paris.fr vous propose de plonger dans leur Histoire à travers des témoignages et des images d’archives !"
-        ]
-      },
-      "tutorial": {
-        "label": "Naviguez",
-        "title": "d'hier à nos jours",
-        "text": "Selon que vous déplacez votre curseur de droite à gauche, vous pourrez passer d’une histoire à l’autre. Allez vers la gauche et s’ouvrent à vous les archives de la Seine, fleuve familier mais méconnu. Allez vers la droite et écoutez les anecdotes et histoires des parisiennes et parisiens d’aujourd’hui."
+          "Paris s’est construite depuis la Seine. Depuis 2000 ans, ses rives sont des lieux de vie. Paris.fr vous propose de plonger dans leur Histoire à travers des témoignages et des images d’archives !",
+          "<a href=\"#\">Voir la vidéo drone</a>"
+        ],
+        "social": {
+          "title": "Suivez Parc Rives de Seine sur",
+          "items": [
+            {
+              "href": "#",
+              "name": "Twitter",
+              "icon": "twitter"
+            },
+            {
+              "href": "#",
+              "name": "Facebook",
+              "icon": "facebook"
+            },
+            {
+              "href": "#",
+              "name": "Instagram",
+              "icon": "instagram"
+            },
+            {
+              "href": "#",
+              "name": "Soundloud",
+              "icon": "soundcloud"
+            }
+          ]
+        }
       },
       "items": [
       ]

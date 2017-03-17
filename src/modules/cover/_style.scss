@@ -1,12 +1,57 @@
 .gfrds_cover {
   align-items: center;
-  background-color: $grayCC;
+  background-color: $darkblue;
   display: flex;
-  height: 80vh;
+  height: 41vw;
+  overflow: hidden;
+  position: relative;
   justify-content: center;
+
+  &:before {
+    background-color: transparentize($darkblue, 0.6);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
 
   &-title {
     color: $white;
     font-size: 8rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    max-width: 53.6rem;
+    width: 50%;
+  }
+
+  &-logo {
+    fill: $white;
+    width: 100%;
+
+    > svg {
+      display: block;
+    }
+  }
+
+  &-background {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+
+  &-video {
+    background: center center no-repeat;
+    background-size: cover;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100.5%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }

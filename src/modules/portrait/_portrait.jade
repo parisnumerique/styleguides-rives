@@ -6,15 +6,25 @@ mixin portrait(data)
   .gfrds_portrait(class=data.modifiers)
     .gfrds_wrapper
       .gfrds_portrait-header
-        +label({text: data.label})
+        +label(data.label)
         h2.gfrds_portrait-title= data.title
       .gfrds_portrait-content
         .gfrds_portrait-content-col
           .gfrds_portrait-embed
             blockquote.instagram-media(data-instgrm-version="7")
               a(href=data.embed target="_blank")
+          if data.place
+            .hidden-on-small
+              .gfrds_portrait-place
+                +icon({icon: 'marker'})
+                .gfrds_portrait-place-text!= data.place.join('<br />')
         .gfrds_portrait-content-col
           .gfrds_portrait-text= data.text
+          if data.place
+            .only-on-small
+              .gfrds_portrait-place
+                +icon({icon: 'marker'})
+                .gfrds_portrait-place-text!= data.place.join('<br />')
           .gfrds_portrait-share
             h3.gfrds_portrait-share-title= data.share.title
             ul.gfrds_portrait-share-items

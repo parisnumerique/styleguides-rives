@@ -1,8 +1,5 @@
 .gfrds_push {
-  align-items: center;
   background-color: $white;
-  display: flex;
-  justify-content: flex-start;
   margin: 0;
 
   .is-history & {
@@ -10,30 +7,76 @@
   }
 
   &-embed {
-    background-color: $ribbon2;
-    height: 37rem;
-    margin-right: 5rem;
-    width: 37rem;
+    background-color: $grayE6;
+
+    iframe {
+      display: block;
+    }
   }
 
   &-content {
     max-width: 100rem;
   }
 
-  .gfrds_label {
-    margin-bottom: 0;
-  }
-
   &-title {
     font-family: $seine;
-    font-size: 6rem;
-    margin: 0.5rem 0;
-    transform: translateX(-0.5rem);
   }
 
   &-text {
+    font-weight: 500;
+
     p {
       margin: 2rem 0;
+    }
+  }
+
+  @include medium-and-small {
+    &-content {
+      padding: 2.5rem 4.5rem;
+    }
+
+    .gfrds_label {
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    &-title {
+      font-size: 11vw;
+      line-height: 12vw;
+      margin: 0 0 1rem;
+      transform: translateX(-0.3rem);
+    }
+
+    &-text {
+      font-size: 1.5rem;
+      line-height: 2.4rem;
+    }
+  }
+
+  @include large {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+
+    &-embed {
+      height: 37rem;
+      margin-right: 5rem;
+      width: 37rem;
+    }
+
+    .gfrds_label {
+      margin-bottom: 0;
+    }
+
+    &-title {
+      font-size: 6rem;
+      margin: 0.5rem 0;
+      transform: translateX(-0.5rem);
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      line-height: 3rem;
     }
   }
 }

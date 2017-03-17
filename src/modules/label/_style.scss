@@ -2,5 +2,21 @@
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 2rem;
-  text-transform: uppercase;
+  text-decoration: none;
+
+  &:link {
+    border-bottom: 0.2rem solid transparent;
+    color: inherit;
+    text-transform: uppercase;
+    transition: border 0.2s ease;
+
+    &:hover,
+    &:focus {
+      border-bottom-color: inherit;
+    }
+  }
+
+  @include medium-and-small {
+    text-align: center;
+  }
 }

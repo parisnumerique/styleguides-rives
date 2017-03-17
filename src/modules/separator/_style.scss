@@ -1,3 +1,24 @@
 .gfrds_separator {
+
+  // modifiers
+  &.lightblue {
+    background-color: $lightblue;
+  }
+  &.lightbrown {
+    background-color: $lightbrown;
+  }
+
   .gfrds_container > & {z-index: 1;}
+
+  @include small {
+    height: 10rem;
+  }
+
+  @include medium {
+    height: 20rem;
+  }
+
+  @include large {
+    height: 30rem;
+  }
 }

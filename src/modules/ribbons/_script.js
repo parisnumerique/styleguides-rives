@@ -142,6 +142,7 @@ GFrds.ribbons = (function(){
           }
         });
 
+
         $(window).on('resize', function(){
           setParams();
           moveCurves(0);
@@ -154,12 +155,12 @@ GFrds.ribbons = (function(){
 
         switch (e.which) {
           case 113:
-            console.log( "<< move left <<")
+            // console.log( "<< move left <<")
             posX = stageW / 4;
             break;
 
           case 100:
-            console.log( "<< move right >>")
+            // console.log( "<< move right >>")
             posX = (stageW / 4) * 3;
             break;
 

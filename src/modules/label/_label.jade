@@ -1,3 +1,7 @@
 mixin label(data)
-  .gfrds_label(class=data.modifiers)
-    = data.text
+  if data.href
+    a.gfrds_label(href=data.href class=data.modifiers title=data.title)
+      = data.text
+  else
+    .gfrds_label(class=data.modifiers)
+      = data.text
