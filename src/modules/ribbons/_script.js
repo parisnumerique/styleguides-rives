@@ -3,6 +3,7 @@
 var Tween = require('./_js/Tween');
 var Point = require('./_js/Point');
 var Curve = require('./_js/Curve');
+var debounce = require('lodash.debounce');
 
 var GFrds = window.GFrds || {};
 
@@ -12,7 +13,7 @@ GFrds.ribbons = (function(){
     var $el = $(selector);
     var svgElement, curves = [], curvesPaths = [], curvesObj = [];
     var stageW, stageH, offset, origin, mousePos = {};
-    var scrollStep = -1;
+    var scrollStep = 0;
     var curveWidth = 90;
     var initStage;
     var scrollTop;
@@ -123,29 +124,14 @@ GFrds.ribbons = (function(){
         });
 
         $(window).scroll(function () {
-
           scrollTop = $(window).scrollTop();
-
-          if( scrollTop < 1500  && scrollStep != 0){
-            scrollStep = 0;
-            moveCurves(4500, Tween.Easing.Quadratic.InOut);
-          }
-          else if( scrollTop >= 1500 && scrollTop < 3000 && scrollStep != 1){
-            scrollStep = 1;
-            moveCurves(4500, Tween.Easing.Quadratic.InOut);
-          }
-          else if ( scrollTop >= 3000 && scrollStep != 2){
-            scrollStep = 2;
-            moveCurves(4500, Tween.Easing.Quadratic.InOut);
-          }
         });
 
 
-        $(window).on('resize', function(){
+        $(window).on('resize', debounce(function(){
           setParams();
           moveCurves(0);
-        });
-
+        }, debounce));
 
 
         $(window).keypress(function (e) {
@@ -190,11 +176,38 @@ GFrds.ribbons = (function(){
       }
     }
 
+    function pause(){
+        for( var i = 0 ; i < curvesObj.length ; i ++ ){
+          curvesObj[i].pause();
+
+        }
+    }
+
+    function play(){
+        for( var i = 0 ; i < curvesObj.length ; i ++ ){
+          curvesObj[i].play();
+
+        }
+    }
+
     function loop(time) {
+      if( scrollTop < 1500  && scrollStep != 0){
+        scrollStep = 0;
+        moveCurves(4500, Tween.Easing.Quadratic.InOut);
+      }
+      else if( scrollTop >= 1500 && scrollTop < 3000 && scrollStep != 1){
+        scrollStep = 1;
+        moveCurves(4500, Tween.Easing.Quadratic.InOut);
+      }
+      else if ( scrollTop >= 3000 && scrollStep != 2){
+        scrollStep = 2;
+        moveCurves(4500, Tween.Easing.Quadratic.InOut);
+      }
 
       for( var i = 0 ; i < curvesObj.length ; i ++ ){
         curvesObj[i].onEnterFrame( time )
       }
+
       requestAnimationFrame(loop);
     }
 

@@ -48,7 +48,7 @@ function Curve(){
     }
   }
 
-  this.stop = function(){
+  this.pause = function(){
     isPaused = true;
   }
 
