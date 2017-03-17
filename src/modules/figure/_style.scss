@@ -1,4 +1,6 @@
 .gfrds_figure {
+  margin: 0;
+
   .is-history & {
     color: $white;
   }
@@ -13,6 +15,14 @@
     opacity: 0.5;
     line-height: 1.8rem;
     margin-top: 2rem;
+  }
+
+  @include small {
+    margin: 0 0.2rem;
+
+    &-caption {
+      padding: 0 5rem;
+    }
   }
 
   @include large {
