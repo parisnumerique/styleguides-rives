@@ -6,7 +6,7 @@ mixin portrait(data)
   .gfrds_portrait(class=data.modifiers)
     .gfrds_wrapper
       .gfrds_portrait-header
-        +label({text: data.label})
+        +label(data.label)
         h2.gfrds_portrait-title= data.title
       .gfrds_portrait-content
         .gfrds_portrait-content-col
