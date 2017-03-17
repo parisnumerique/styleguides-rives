@@ -13,6 +13,10 @@ mixin portrait(data)
           .gfrds_portrait-embed
             blockquote.instagram-media(data-instgrm-version="7")
               a(href=data.embed target="_blank")
+          if data.place
+            .gfrds_portrait-place
+              +icon({icon: 'marker'})
+              .gfrds_portrait-place-text!= data.place.join('<br />')
         .gfrds_portrait-content-col
           .gfrds_portrait-text= data.text
           .gfrds_portrait-share

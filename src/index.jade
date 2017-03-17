@@ -4,7 +4,6 @@ include icons/_sprite.svg
 .gfrds_container(class=data.modifiers)
   +cover(data.cover)
   +intro(data.intro)
-  +tutorial(data.tutorial)
   each item in data.items
     +#{item.type}(item.data)
   +ribbons({})

@@ -22,10 +22,8 @@
 
   &-title {
     font-family: $seine;
-    font-size: 14.5rem;
-    line-height: 14rem;
+    font-weight: normal;
     margin: 0;
-    transform: translateX(-1.2rem);
   }
 
   &-text {
@@ -68,6 +66,22 @@
       top: 0;
       transform: translate3d(3rem, 3rem, 0);
       width: 100%;
+    }
+  }
+
+  &-place {
+    align-items: center;
+    color: $white;
+    display: flex;
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin: 8.8rem 0 0 1.6rem;
+
+    > .gfrds_icon {
+      fill: $white;
+      height: 7.6rem;
+      margin-right: 2.8rem;
+      width: 5.2rem;
     }
   }
 
@@ -125,5 +139,25 @@
     position: absolute;
     top: 0;
     width: 100%;
+  }
+
+  @include medium-and-small {
+    &-header {
+      padding: 0 5rem;
+    }
+
+    &-title {
+      font-size: 11vw;
+      line-height: 11vw;
+      text-align: center;
+    }
+  }
+
+  @include large {
+    &-title {
+      font-size: 14.5rem;
+      line-height: 14rem;
+      transform: translateX(-1.2rem);
+    }
   }
 }

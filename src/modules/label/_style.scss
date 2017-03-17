@@ -3,4 +3,8 @@
   font-weight: 500;
   margin-bottom: 2rem;
   text-transform: uppercase;
+
+  @include medium-and-small {
+    text-align: center;
+  }
 }
