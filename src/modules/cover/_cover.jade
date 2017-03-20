@@ -1,5 +1,8 @@
+include ../anchor/_anchor
+
 mixin cover(data)
   .gfrds_cover
+    +anchor({name: "cover"})
     if data.background
       .gfrds_cover-background(style=data.background.image ? "background-image: url(" + data.background.image + ");" : '')
         if data.background.video

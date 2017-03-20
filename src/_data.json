@@ -3,6 +3,8 @@
     "assetsPath": "",
     "data": {
       "url": "http://www.paris.fr/actualites/grandformat/rivesdeseine",
+      "baseUrl": "http://localhost:3000",
+      "basePath": "/#",
       "title": "Rives de Seine",
       "navbar": {
         "logo": {

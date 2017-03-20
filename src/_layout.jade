@@ -25,7 +25,7 @@ html
 
     link(href="stylesheets/main.css" type="text/css" rel="stylesheet")
 
-  body(data-anchor=data.anchor)
+  body(data-anchor=data.anchor data-base-url=data.baseUrl data-base-path=data.basePath)
 
     != yield
 
