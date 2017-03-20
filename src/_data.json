@@ -4,7 +4,6 @@
     "data": {
       "url": "http://www.paris.fr/actualites/grandformat/rivesdeseine",
       "title": "Rives de Seine",
-      "subtitle": "",
       "navbar": {
         "logo": {
           "href": "http://www.paris.fr",
@@ -115,7 +114,7 @@
             },
             "title": "Le flottage de bois",
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue.",
-            "embed": "https%3A//api.soundcloud.com/tracks/8954462"
+            "embed": "https%3A//api.soundcloud.com/tracks/312148712"
           }
         },
         {
@@ -165,7 +164,6 @@
       "modifiers": ["is-history"],
       "url": "http://www.paris.fr/actualites/grandformat/rivesdeseine",
       "title": "Rives de Seine",
-      "subtitle": "",
       "navbar": {
         "logo": {
           "href": "http://www.paris.fr",
