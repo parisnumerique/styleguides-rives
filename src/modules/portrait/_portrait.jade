@@ -26,11 +26,12 @@ mixin portrait(data)
               .gfrds_portrait-place
                 +icon({icon: 'marker'})
                 .gfrds_portrait-place-text!= data.place.join('<br />')
-          .gfrds_portrait-share
+          .gfrds_portrait-share.share
             h3.gfrds_portrait-share-title= data.share.title
             ul.gfrds_portrait-share-items
               each item in data.share.items
-                li.gfrds_portrait-share-item: a(href=item.href)
-                  +icon({icon: item.icon})
+                li.gfrds_portrait-share-item.share-item
+                  a(href=item.href)
+                    +icon({icon: item.icon})
     .gfrds_portrait-ribbons
       +ribbons({"modifiers": ["borders-only"]})
