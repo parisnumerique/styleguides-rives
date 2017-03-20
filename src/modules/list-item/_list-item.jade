@@ -3,10 +3,14 @@ include ../label/_label
 
 mixin list-item(data)
   .gfrds_list-item(class=data.modifiers)
-    .gfrds_list-item-embed
-      - var isOpen = data.modifiers && !data.modifiers.indexOf('is-open')
-      - var src = isOpen ? data.img.large : data.img.thumb
-      img(src=src data-large=data.img.large data-thumb=data.img.thumb)
+    - var isOpen = data.modifiers && !data.modifiers.indexOf('is-open')
+    if data.img
+      .gfrds_list-item-embed
+        - var src = isOpen ? data.img.large : data.img.thumb
+        img(src=src data-large=data.img.large data-thumb=data.img.thumb)
+    else if data.embed
+      .gfrds_list-item-embed(style="background-image: url(" + data.embed.thumb + ")")
+        iframe(width="100%" height="390" scrolling="no" frameborder="no" data-original="https://w.soundcloud.com/player/?url=" + data.embed.url + "&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true")
     button.gfrds_list-item-button-toggle
       +icon({icon: 'plus'})
     .gfrds_list-item-share.share

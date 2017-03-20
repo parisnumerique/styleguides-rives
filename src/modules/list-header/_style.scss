@@ -3,7 +3,7 @@
   color: $darkblue2;
 
   // modifiers
-  &.yellow {
+  .is-yellow & {
     .gfrds_list-header-cover {
       background-color: $yellow;
     }
@@ -18,7 +18,7 @@
       }
     }
   }
-  &.pink {
+  .is-pink & {
     .gfrds_list-header-cover {
       background-color: $pink;
     }

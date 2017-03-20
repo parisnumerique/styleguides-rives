@@ -11,6 +11,7 @@
   }
 
   &-embed {
+    background-color: $grayE6;
     background-size: cover;
     height: 10rem;
     width: 10rem;
@@ -22,6 +23,10 @@
     img {
       display: block;
       width: 100%;
+    }
+
+    iframe {
+      display: block;
     }
   }
 
@@ -85,8 +90,15 @@
     font-weight: bold;
     margin-top: 2rem;
 
-    > .gfrds_icon {
-      fill: $pink;
+    .is-yellow & {
+      > .gfrds_icon {
+        fill: $yellow;
+      }
+    }
+    .is-pink & {
+      > .gfrds_icon {
+        fill: $pink;
+      }
     }
   }
 
@@ -272,7 +284,7 @@
     &-title {
       font-size: 3rem;
       line-height: 10rem;
-      margin: 0.5rem 0;
+      margin: 1rem 0 0.5rem;
     }
 
     &-text {
@@ -290,6 +302,7 @@
     }
 
     &.is-open {
+      min-height: 39rem;
       padding: 4rem 0;
 
       .gfrds_list-item-embed {

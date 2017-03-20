@@ -341,8 +341,11 @@
   },
   "ecouter": {
     "data": {
-      "modifiers": ["is-list"],
+      "modifiers": ["is-list", "is-yellow"],
       "title": "À écouter – Rives de Seine",
+      "additionalScripts": [
+        {"src": "https://w.soundcloud.com/player/api.js"}
+      ],
       "navbar": {
         "logo": {
           "href": "http://www.paris.fr",
@@ -360,7 +363,7 @@
       },
       "header": {
         "title": "Écouter",
-        "modifiers": ["ecouter", "yellow"],
+        "modifiers": ["ecouter"],
         "text": [
           "Pendant plusieurs mois, nous avons parcouru les bords de Seine, en amont, en aval, dans Paris, pour récolter les témoignages de celles et ceux qui la vivent.",
           "Depuis longtemps, depuis peu, au quotidien, ce sont leurs mots ! Et pour retrouver tous les contenus Parc Rives de Seine à écouter, abonnez vous à notre <a href=\"https://soundcloud.com/rives-de-seine\">chaîne Soundcloud</a>."
@@ -371,12 +374,42 @@
           "title": "Soundcloud"
         }
       },
-      "items": []
+      "items": [
+        {
+          "label": {
+            "text": "Écouter"
+          },
+          "embed": {
+            "thumb": "https://i1.sndcdn.com/artworks-000212832999-v8brvu-t200x200.jpg",
+            "url": "https://api.soundcloud.com/tracks/312148712"
+          },
+          "title": "Episode 1",
+          "text": [
+            "Vestibulum ultricies justo id cursus viverra. Morbi et augue in tellus maximus bibendum."
+          ],
+          "place": [
+            "Villeneuve-Saint-Georges"
+          ],
+          "share": {
+            "title": "Partager :",
+            "items": [
+              {
+                "href": "https://twitter.com/intent/tweet?text=Texte du tweet http://www.paris.fr",
+                "icon": "twitter"
+              },
+              {
+                "href": "https://www.facebook.com/sharer/sharer.php?u=http://www.paris.fr",
+                "icon": "facebook"
+              }
+            ]
+          }
+        }
+      ]
     }
   },
   "voir": {
     "data": {
-      "modifiers": ["is-list"],
+      "modifiers": ["is-list", "is-pink"],
       "title": "À voir – Rives de Seine",
       "navbar": {
         "logo": {
@@ -395,7 +428,7 @@
       },
       "header": {
         "title": "Voir",
-        "modifiers": ["voir", "pink"],
+        "modifiers": ["voir"],
         "text": [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nisl risus. Duis pellentesque eros eu magna suscipit, vitae gravida purus malesuada.",
           "Vivamus elit felis, dignissim in faucibus at, venenatis vitae orci. Duis vulputate a turpis imperdiet eleifend. Sed sollicitudin eget nisi nec laoreet <a href=\"https://www.instagram.com/rivesdeseine/\">compte instagram</a>."

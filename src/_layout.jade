@@ -36,3 +36,9 @@ html
     script(src="javascript/lib/jquery-2.1.4.min.js")
     script(src="javascript/lib/paris.js")
     script(src="javascript/rivesdeseine.js")
+    if data.additionalScripts
+      each script in data.additionalScripts
+        if script.src
+          script(src=script.src)
+        else if script.inline
+          script!= script.inline
