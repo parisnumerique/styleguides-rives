@@ -162,6 +162,10 @@
     }
 
     &-embed {
+      iframe {
+        height: calc(100vw + 1.4rem);
+      }
+
       &:before {
         transform: translate(1.5rem, 1.5rem);
       }
