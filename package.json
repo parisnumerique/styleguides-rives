@@ -3,7 +3,9 @@
   "description": "Grand Format Rives de Seine",
   "version": "0.0.1",
   "scripts": {
-    "start": "gulp default",
+    "start": "npm-run-all --parallel server livereload",
+    "server": "gulp default",
+    "livereload": "browser-sync start --proxy localhost:9017 --files src/**/* --no-notify",
     "compile": "gulp compile",
     "build": "gulp cleanbuild"
   },
@@ -29,6 +31,7 @@
     "lodash.debounce": "^4.0.8",
     "lodash.defer": "^4.1.0",
     "lodash.throttle": "^4.1.1",
+    "npm-run-all": "^4.0.2",
     "packery": "^2.1.1",
     "paris-styleguide": "git+ssh://git@git.etaminstud.io:paris/livingstyleguide.git#1.6.1",
     "rimraf": "^2.3.1",
