@@ -33,6 +33,7 @@
         }
       },
       "intro": {
+        "id": "intro",
         "title": "Se baigner dans la Seine",
         "text": [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
@@ -68,6 +69,7 @@
         {
           "type": "portrait",
           "data": {
+            "id": "hortense-et-yannis",
             "modifiers": ["pink"],
             "label": {
               "href": "#",
@@ -105,6 +107,7 @@
         {
           "type": "push",
           "data": {
+            "id": "le-flottage-de-bois",
             "label": {
               "href": "#",
               "text": "Écouter",
@@ -124,6 +127,7 @@
         {
           "type": "portrait",
           "data": {
+            "id": "charlette",
             "modifiers": ["orange"],
             "label": {
               "href": "#",
@@ -190,6 +194,7 @@
         }
       },
       "intro": {
+        "id": "intro",
         "title": "Les rives de la Seine, lieux de vie depuis 20 siècles",
         "text": [
           "Paris s’est construite depuis la Seine. Depuis 2000 ans, ses rives sont des lieux de vie. Paris.fr vous propose de plonger dans leur Histoire à travers des témoignages et des images d’archives !",
@@ -225,6 +230,7 @@
         {
           "type": "figure",
           "data": {
+            "id": "1660-perspective",
             "image": "images/figure.jpg",
             "caption": "57795-4. Adam Perelle (1640-1695). \"Perspective de la ville de Paris, vue du Pont Rouge\". Eau-forte, vers 1660. Paris, musée Carnavalet. © Musée Carnavalet / Roger-Viollet"
           }
@@ -232,6 +238,7 @@
         {
           "type": "story",
           "data": {
+            "id": "commerce-et-transport",
             "title": "De l’Antiquité au 17e siècle : commerce et transport",
             "text": [
               "Le centre névralgique de la ville est essentiellement concentré autour de l’île de la Cité. De l’époque gallo-romaine au début du 17e siècle, seuls deux ponts (héritage des Romains) permettent le franchissement de la Seine : le Pont Saint-Michel – Pont au Change (bâti au 9e siècle, puis reconstruit en 1647 et en 1860) et le Petit Pont Notre Dame (dont la première version date de l’époque gallo-romaine). Les traversées du fleuve s’effectuent principalement grâce à des va-et-vient de barques (bachots)."
@@ -241,6 +248,7 @@
         {
           "type": "figure",
           "data": {
+            "id": "1777-hotel-de-la-monnaie",
             "image": "images/figure.jpg",
             "caption": "23652-18. Pierre-Antoine Demachy (1723-1807). \"L'Hôtel de la Monnaie et la Seine vus de la pointe de l'île de la Cité\", 1777. Paris, musée Carnavalet. © Musée Carnavalet / Roger-Viollet"
           }
@@ -248,6 +256,7 @@
         {
           "type": "story",
           "data": {
+            "id": "centre-nevralgique",
             "text": [
               "Le centre névralgique de la ville est essentiellement concentré autour de l’île de la Cité. De l’époque gallo-romaine au début du 17e siècle, seuls deux ponts (héritage des Romains) permettent le franchissement de la Seine : le Pont Saint-Michel – Pont au Change (bâti au 9e siècle, puis reconstruit en 1647 et en 1860) et le Petit Pont Notre Dame (dont la première version date de l’époque gallo-romaine). Les traversées du fleuve s’effectuent principalement grâce à des va-et-vient de barques (bachots)."
             ]

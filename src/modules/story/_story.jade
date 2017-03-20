@@ -1,5 +1,8 @@
+include ../anchor/_anchor
+
 mixin story(data)
   .gfrds_story(class=data.modifiers)
+    +anchor({name: data.id})
     .gfrds_wrapper
       h2.gfrds_story-title= data.title
       .gfrds_story-text

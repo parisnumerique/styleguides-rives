@@ -1,7 +1,9 @@
+include ../anchor/_anchor
 include ../icon/_icon
 
 mixin intro(data)
   .gfrds_intro(class=data.modifiers)
+    +anchor({name: data.id})
     .gfrds_wrapper
       .gfrds_intro-content
         +icon({icon: 'scrolldown'})

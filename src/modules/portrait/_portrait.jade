@@ -1,9 +1,11 @@
+include ../anchor/_anchor
 include ../icon/_icon
 include ../label/_label
 include ../ribbons/_ribbons
 
 mixin portrait(data)
   .gfrds_portrait(class=data.modifiers)
+    +anchor({name: data.id})
     .gfrds_wrapper
       .gfrds_portrait-header
         +label(data.label)
