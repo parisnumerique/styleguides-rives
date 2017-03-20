@@ -8,9 +8,9 @@ Install [Harp](http://harpjs.com):
 
     npm install -g harp
 
-And Browserify and browser-sync
+And Browserify, Watchify and browser-sync
 
-    npm install -g browserify browser-sync
+    npm install -g browserify watchify browser-sync
 
 And the project dependencies (run this command from the project folder)
 
