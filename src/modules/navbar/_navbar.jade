@@ -3,7 +3,7 @@ mixin navbar(data)
     a.gfrds_navbar-nef(href=data.logo.href)
       include ../../images/nef.svg
       span.hidden-accessibly=data.logo.text
-    a.gfrds_navbar-button-menu.only-on-small#nav-toggle(href=data.menu.href target=data.menu.target rel="nofollow" role="button")
+    button.gfrds_navbar-button-menu.only-on-small#nav-toggle
       span.gfrds_navbar-button-menu-text= data.menu.text
     .gfrds_navbar-wrapper
       span.gfrds_navbar-logo

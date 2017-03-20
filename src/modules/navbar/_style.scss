@@ -105,6 +105,8 @@ body.gfrds_navbar-mobile-open {
     }
 
     &-button-menu {
+      background: none;
+      border: 0;
       line-height: $navbar-height;
       height: $navbar-height;
       position: absolute;
@@ -158,6 +160,7 @@ body.gfrds_navbar-mobile-open {
         background-color: $white;
         color: $darkblue;
         height: 100%;
+        overflow: hidden;
         position: relative;
         text-align: center;
         top: $navbar-height;
