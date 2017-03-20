@@ -68,19 +68,19 @@
         {
           "type": "portrait",
           "data": {
-            "id": "hortense-et-yannis",
-            "modifiers": ["pink"],
+            "id": "corine",
+            "modifiers": ["orange"],
             "label": {
               "href": "#",
               "text": "Voir",
               "title": "Tous les contenus visuels"
             },
-            "title": "Hortense et Yannis",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
-            "embed": "https://www.instagram.com/p/BRA1aRJD_Z4/",
+            "title": "Corine",
+            "text": "Je vous présente Celtique. Elle est têtue, elle porte bien son nom. Elle a 9 ans, c’est un Parson Russell. Ces chiens sont d’excellents ratiers, alors ici, je la surveille de près. On croise beaucoup de ragondins, certains font presque le double de sa taille. Elle s’en fiche, elle y va quand même. En ce moment je ne travaille pas, alors on marche deux heures par jour. J’ai des ravitaillements dans mon sac. Et encore, cette race-là peut avaler jusqu’à 18 km/ jour. La vraie question, c’est : « Qui promène qui ? »<br>Je l’envie parce qu’elle peut se baigner lorsqu’il fait beau. J’adore l’eau moi aussi, à la moindre flaque je suis à deux doigts d’enfiler un maillot. Se baigner dans la Seine, je suis pour ! En attendant, j’ai de la chance, mes fenêtres donnent justement sur la Seine et sur le parc de l’île Saint Germain. Je ne vois jamais deux fois le même paysage. D’abord, la Seine monte et descend. Certains jours, lorsqu’elle brunit, on se croirait au Vietnam, sur le fleuve Mékong. Mais c’est sa robe bleu-vert que je lui préfère. Ca lui donne un côté surréaliste.<br><br>Corine, 49 ans, Boulogne<br><br>'© @ulrich_lebeuf / Myop pour la Mairie de Paris, textes : @salome_kiner",
+            "embed": "https://www.instagram.com/p/BRK6Qt-Dtx5/",
             "place": [
-              "Paris",
-              "Voie George Pompidou"
+              "Boulogne-Billancourt",
+              "Base Nautique Ile De Monsieur"
             ],
             "share": {
               "title": "Partager :",
@@ -106,15 +106,15 @@
         {
           "type": "push",
           "data": {
-            "id": "le-flottage-de-bois",
+            "id": "villeneuve-saint-georges-toutes-ces-annees",
             "label": {
               "href": "#",
               "text": "Écouter",
               "title": "Tous les contenus audio"
             },
-            "title": "Le flottage de bois",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue.",
-            "embed": "https://api.soundcloud.com/tracks/312148712"
+            "title": "Villeneuve-Saint-Georges, toutes ces années.",
+            "text": "La vie est faite d'amour, et l'amour a besoin d'années et d'espace. Julien Cernobori descend la Seine, pour aller à la rencontre des gens des rives.",
+            "embed": "'https%3A//api.soundcloud.com/tracks/312148712"
           }
         },
         {
@@ -134,11 +134,49 @@
               "title": "Tous les contenus visuels"
             },
             "title": "Charlette",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
+            "text": "Pourquoi la Seine, l’eau ? Mon mari était médecin militaire, il disait que « l’eau est une forme de liberté ». On a donc cherché un bateau en Hollande, on ne voulait pas être statique. Je me rappelle qu’une fois, arrivés à une écluse fermée, nous nous sommes amarrés à la péniche du marinier. Il a trouvé ça drôle qu’on vive sur une péniche par choix quand lui y était obligé professionnellement, qu’on prenne comme habitation son outil de travail.<br>Au début, notre péniche était au Pont Alexandre III, puis à Grenelle, c’était très festif à l’époque. J’ai toujours adoré Paris, pour moi, Paris, c’est le Paradis ! J’ai voyagé dans de nombreux pays paradisiaques et je peux vous dire qu’en hiver, c’est mortel, il n’y a rien. Ici, il y a tout, et tout le temps de nouvelles choses à découvrir ! Ce matin, je me suis demandée ce que j’allais faire… et je suis allée me promener au Jardin des plantes. »<br><br>Charlette, 85 ans, Paris 12e<br><br>© Mairie de Paris /JB Gurliat",
             "embed": "https://www.instagram.com/p/BRA1yzDjbqZ/",
             "place": [
               "Paris",
               "Bassin de l'Arsenal"
+            ],
+            "share": {
+              "title": "Partager :",
+              "items": [
+                {
+                  "href": "#",
+                  "icon": "twitter"
+                },
+                {
+                  "href": "#",
+                  "icon": "facebook"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "type": "separator",
+          "data": {
+            "modifiers": "lightbrown"
+          }
+        },
+        {
+          "type": "portrait",
+          "data": {
+            "id": "hortense-et-yannis",
+            "modifiers": ["pink"],
+            "label": {
+              "href": "#",
+              "text": "Voir",
+              "title": "Tous les contenus visuels"
+            },
+            "title": "Hortense et Yannis",
+            "text": "Hortense danse sur les quais depuis 18 ans, du coup nous avons continué en couple. La plupart du temps, nous allons dans l’amphithéâtre (13e), et en été à Paris Plage, où nous avons un parquet de danse à disposition. Le top, ce serait d’en avoir un toute l’année, couvert.<br>C’est vrai qu’au début, sur les quais, c’était plus confidentiel, sauvage… Mais quoi qu’il en soit, danser dehors, ce n’est pas comme s’exercer entre quatre murs. A l’intérieur, on est contraint dans ses gestes, et surtout dans sa technique. On se sent enfermé, cloisonné. C’est du tango argentin, il a besoin d’espace !<br><br>Hortense, 37ans, Paris 15e et Yanis<br><br>© Mairie de Paris /JB Gurliat",
+            "embed": "https://www.instagram.com/p/BRA1aRJD_Z4/",
+            "place": [
+              "Paris",
+              "Bassin de l’Arsenal"
             ],
             "share": {
               "title": "Partager :",
@@ -226,21 +264,23 @@
       },
       "items": [
         {
-          "type": "figure",
-          "data": {
-            "id": "1660-perspective",
-            "image": "images/figure.jpg",
-            "caption": "57795-4. Adam Perelle (1640-1695). \"Perspective de la ville de Paris, vue du Pont Rouge\". Eau-forte, vers 1660. Paris, musée Carnavalet. © Musée Carnavalet / Roger-Viollet"
-          }
-        },
-        {
           "type": "story",
           "data": {
             "id": "commerce-et-transport",
             "title": "De l’Antiquité au 17e siècle : commerce et transport",
             "text": [
-              "Le centre névralgique de la ville est essentiellement concentré autour de l’île de la Cité. De l’époque gallo-romaine au début du 17e siècle, seuls deux ponts (héritage des Romains) permettent le franchissement de la Seine : le Pont Saint-Michel – Pont au Change (bâti au 9e siècle, puis reconstruit en 1647 et en 1860) et le Petit Pont Notre Dame (dont la première version date de l’époque gallo-romaine). Les traversées du fleuve s’effectuent principalement grâce à des va-et-vient de barques (bachots)."
+              "Le centre névralgique de la ville est essentiellement concentré autour de l’île de la Cité. De l’époque gallo-romaine au début du 17<sup>e</sup> siècle, seuls deux ponts (héritage des Romains) permettent le franchissement de la Seine : le Pont Saint-Michel – Pont au Change (bâti au 9<sup>e</sup> siècle, puis reconstruit  en 1647 et en 1860) et le Petit Pont Notre Dame (dont la première version date de l’époque gallo-romaine). Juste à côté du Pont au change, le pont aux Meuniers puis le pont Marchand – qui sont plus de simples passerelles – ont existé jusqu’au début du XVI<sup>e</sup> siècle.",
+              "Ces ponts sont des centres d’activités intenses, et lotis de maisons. Leur faible nombre s’explique par la facilité de franchir le fleuve autour de la Cité, où ses bras sont plus étroits, et par le fait que les limites de la Ville, sur les quais, ne s’étendent guère au-delà de l’île de  la Cité et aux ilots qui deviendront l’île Saint-Louis.",
+              "Bien que Henri IV, Louis XIII et Louis XIV tentent de remédier petit à petit au grand déficit de ponts, avec la construction du Pont-Neuf (1577-1607), du Pont Marie (1635), du Pont de la Tournelle (1656) et du Pont royal (1689)), les traversées du fleuve s’effectuent encore principalement grâce à des va-et-vient de barques (bachots). La construction de nouveaux ponts, critiquée par les marchands, car cela ralentit la circulation sur le fleuve, correspond en effet à la nécessité de fluidifier le trafic sur le nouveau pourtour de la ville. L’aménagement des berges suit."
             ]
+          }
+        },
+        {
+          "type": "figure",
+          "data": {
+            "id": "1660-perspective",
+            "image": "images/figure.jpg",
+            "caption": "57795-4. Adam Perelle (1640-1695). \"Perspective de la ville de Paris, vue du Pont Rouge\". Eau-forte, vers 1660. Paris, musée Carnavalet. © Musée Carnavalet / Roger-Viollet"
           }
         },
         {
@@ -254,9 +294,32 @@
         {
           "type": "story",
           "data": {
-            "id": "centre-nevralgique",
+            "id": "ancien-regime",
             "text": [
-              "Le centre névralgique de la ville est essentiellement concentré autour de l’île de la Cité. De l’époque gallo-romaine au début du 17e siècle, seuls deux ponts (héritage des Romains) permettent le franchissement de la Seine : le Pont Saint-Michel – Pont au Change (bâti au 9e siècle, puis reconstruit en 1647 et en 1860) et le Petit Pont Notre Dame (dont la première version date de l’époque gallo-romaine). Les traversées du fleuve s’effectuent principalement grâce à des va-et-vient de barques (bachots)."
+              "Sous l’Ancien Régime, ses quais ne mesurent que 5 km, de la Bastille à La Concorde (contre 12 km aujourd’hui), mais la Seine parisienne donne naissance à une multitude d’activités. Pour le consommateur, il suffit d’aller de rive en rive, de marché en marché et de port en port pour se procurer les biens nécessaires : matériaux de construction, combustibles de chauffage, denrées alimentaires, eau…Ces activités sont réparties, à la fin du XVIII<sup>e</sup> siècle, dans près de 25 ports. En 1823, on en compte 53. Les ports les plus nombreux sont situés rive droite, du quai de la Rapée au Louvre. Leurs clients sont aussi bien des particuliers, des grossistes ou des bateaux qui y mouillent."
+            ]
+          }
+        },
+        {
+          "type": "story",
+          "data": {
+            "id": "ancien-regime",
+            "title": "Au 18e siècle, un axe vital",
+            "text": [
+              "<strong>Interview d’Isabelle Backouche, directrice d’études à l’EHESS, co-auteure <a href=\"http://gensdelaseine.com/fr/accueil/\" target=\"_blank\" rel=\"noopener noreferrer\">du site Gens de la Seine :</a></strong>",
+              "<strong>Quelle est la situation des rives de la Seine avant le 18<sup>e</sup> siècle ?</strong>",
+              "Depuis l’époque gallo-romaine, l’île de la Cité et les bords de Seine étaient un site propice pour des populations qui souhaitaient circuler et avoir un approvisionnement en eau. Les ponts étaient peu nombreux, car la construction d’un pont représentait une grosse opération technique, très coûteuse. Des petites barques circulaient donc sans cesse entre les rives, même si les déplacements étaient plus limités qu’actuellement : les horizons de vie étaient beaucoup restreints que pendant la période contemporaine.",
+              "<strong>Et au 18<sup>e</sup> siècle ?</strong>",
+              "Au 18<sup>e</sup> siècle, la Seine est un axe vital pour Paris, avec un trafic intense de marchandises. Deux-tiers des approvisionnements passent ainsi par le fleuve, et les gros bateaux arrivent jusqu’au pied du Louvre. La voie fluviale est la plus économique, la plus facile et la plus sûre. La Seine a une véritable épaisseur sociale, avec des dynasties de marchands actifs sur ses rives.",
+              "Mais le système arrive à saturation avec la croissance de la population : l’espace fluvial n’est pas extensible à l’infini. Les marchandises sont vendues directement sur les bateaux. Or, les embarcations doivent souvent faire la queue pour accoster : il y a parfois jusqu’à 1 mois d’attente ! Les marchands commencent à protester contre un système qu’ils jugent dépassé. Mais le prévôt des marchands n’est pas favorable aux changements, car il a autorité sur le fleuve. Face au prévôt, il y a le lieutenant général de police qui représente le pouvoir royal, et contrôle le marché des Halles.",
+              "<strong>En quoi la Seine est-elle vitale ?</strong>",
+              "La Seine permet d’abord un accès à l’eau : il y a quelques puits dans Paris, mais la majorité de l’eau consommée provient du fleuve, que les habitants boivent directement. Il y a également de nombreux porteurs d’eau, qui la transportent en barriques. L’eau est également une ressource pour le nettoyage et la lessive. Le fleuve procure aussi aux Parisiens du bois, qui arrive en flottant sur le quai St Bernard. Il fallait ensuite le faire sécher pendant 1 an avant de pouvoir l’utiliser. On empilait donc le bois sur la rive gauche sous forme de théâtres de bois.",
+              "<strong>Quelles sont les transformations en cours au 18<sup>e</sup> siècle ?</strong>",
+              "Il y a une rationalisation des usages. Certaines professions sont chassées du fleuve. Les marchés de bois et les tripiers sont déplacés vers l’Île-aux-Cygnes, une ancienne île qui existait près des Invalides. De nouveaux usages s’imposent pour le fleuve: une meilleure circulation et davantage de salubrité et d’hygiène. Le quai maçonné est donc considéré comme un signe de modernité et il protège les habitations exposées aux crues. Les teinturiers doivent quitter le nord de l’île de la Cité, car on veut détruire leurs maisons pour construire des quais. La construction d’une gare centrale sur l’eau est aussi envisagée vers la Salpêtrière pour que les marchands y vendent leurs produits, mais le projet échouera.",
+              "<em>La Seine et Paris. La Trace du fleuve, 1750-1850, Paris, éditions de l’EHESS, 2016.</em>",
+              "<h3>Le fleuve et ses rives, zones d’approvisionnement</h3>",
+              "Le fleuve approvisionne la cité en denrées : celles-ci sont déchargées et vendues dans des ports spécialisés et les berges ont leurs moulins et leurs marchés, et les porteurs d’eau font concurrence aux pompes pour la fourniture en eau de la capitale. Les bateaux à lessive et les bains sont des lieux d’activité intense, régulés par la police. Les ponts et les quais du centre concentrent des activités socioprofessionnelles très spécialisées tels les métiers de luxe du quai de l’Horloge et du quai de Gesvres, les marchands quincailliers du quai de la Mégisserie ou encore les orfèvres sur le pont Notre-Dame.",
+              "Prenons l’exemple des teinturiers. Une dizaine d’entre eux, à la fin du 18<sup>e</sup> siècle, sont encore installés le long du quai de Corse, sur l’île de la Cité. Depuis Hugues Capet (au 10<sup>e</sup> siècle), ils avaient le privilège de ne pas payer de taxe à la ville. Chassés des rives de Seine –on les accuse de polluer l’eau avec leurs teintures- leur lieu d’activité sera remplacé par des quais."
             ]
           }
         }
