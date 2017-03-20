@@ -7,6 +7,14 @@ mixin list-item(data)
       - var isOpen = data.modifiers && !data.modifiers.indexOf('is-open')
       - var src = isOpen ? data.img.large : data.img.thumb
       img(src=src data-large=data.img.large data-thumb=data.img.thumb)
+    button.gfrds_list-item-button-toggle
+      +icon({icon: 'plus'})
+    .gfrds_list-item-share.share
+      ul.gfrds_list-item-share-items
+        each item in data.share.items
+          li.gfrds_list-item-share-item.share-item
+            a(href=item.href)
+              +icon({icon: item.icon})
     .gfrds_list-item-content
       +label(data.label)
       h2.gfrds_list-item-title= data.title
