@@ -45,7 +45,7 @@
     }
 
     &:after {
-      background-color: $white;
+      background: $white url(../../images/loader.gif) center center no-repeat;
       border-radius: 0.4rem;
       content: "";
       display: block;

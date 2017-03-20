@@ -8,7 +8,7 @@
   }
 
   &-embed {
-    background-color: $grayE6;
+    background: $grayE6 url(../../images/loader.gif) center center no-repeat;
 
     iframe {
       display: block;
