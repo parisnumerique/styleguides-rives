@@ -1,6 +1,7 @@
 .gfrds_push {
   background-color: $white;
   margin: 0;
+  position: relative;
 
   .is-history & {
     background-color: $white;
