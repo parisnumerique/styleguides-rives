@@ -45,7 +45,7 @@
     }
 
     &:after {
-      background: $white url(../../images/loader.svg) center center no-repeat;
+      background: $white url('#{$assets-path}../images/loader.svg') center center no-repeat;
       border-radius: 0.4rem;
       content: "";
       display: block;
