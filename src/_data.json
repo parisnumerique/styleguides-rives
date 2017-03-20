@@ -12,7 +12,6 @@
           "text": "Paris"
         },
         "menu": {
-          "href": "#",
           "text": "Menu"
         },
         "items": [
@@ -38,28 +37,28 @@
         "title": "Se baigner dans la Seine",
         "text": [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
-          "<a href=\"#\">Voir la vidéo drone</a>"
+          "<a href=\"TODO\">Voir la vidéo drone</a>"
         ],
         "social": {
           "title": "Suivez Parc Rives de Seine sur",
           "items": [
             {
-              "href": "#",
+              "href": "https://twitter.com/paris",
               "name": "Twitter",
               "icon": "twitter"
             },
             {
-              "href": "#",
+              "href": "https://www.facebook.com/paris",
               "name": "Facebook",
               "icon": "facebook"
             },
             {
-              "href": "#",
+              "href": "https://www.instagram.com/rivesdeseine/",
               "name": "Instagram",
               "icon": "instagram"
             },
             {
-              "href": "#",
+              "href": "https://soundcloud.com/rives-de-seine",
               "name": "Soundloud",
               "icon": "soundcloud"
             }
@@ -73,7 +72,7 @@
             "id": "corine",
             "modifiers": ["orange"],
             "label": {
-              "href": "#",
+              "href": "TODO",
               "text": "Voir",
               "title": "Tous les contenus visuels"
             },
@@ -88,11 +87,11 @@
               "title": "Partager :",
               "items": [
                 {
-                  "href": "#",
+                  "href": "https://twitter.com/intent/tweet?text=Texte du tweet http://www.paris.fr",
                   "icon": "twitter"
                 },
                 {
-                  "href": "#",
+                  "href": "https://www.facebook.com/sharer/sharer.php?u=http://www.paris.fr",
                   "icon": "facebook"
                 }
               ]
@@ -110,13 +109,26 @@
           "data": {
             "id": "villeneuve-saint-georges-toutes-ces-annees",
             "label": {
-              "href": "#",
+              "href": "TODO",
               "text": "Écouter",
               "title": "Tous les contenus audio"
             },
             "title": "Villeneuve-Saint-Georges, toutes ces années.",
             "text": "La vie est faite d'amour, et l'amour a besoin d'années et d'espace. Julien Cernobori descend la Seine, pour aller à la rencontre des gens des rives.",
-            "embed": "'https%3A//api.soundcloud.com/tracks/312148712"
+            "embed": "https://api.soundcloud.com/tracks/312148712",
+            "share": {
+              "title": "Partager :",
+              "items": [
+                {
+                  "href": "https://twitter.com/intent/tweet?text=Texte du tweet http://www.paris.fr",
+                  "icon": "twitter"
+                },
+                {
+                  "href": "https://www.facebook.com/sharer/sharer.php?u=http://www.paris.fr",
+                  "icon": "facebook"
+                }
+              ]
+            }
           }
         },
         {
@@ -131,7 +143,7 @@
             "id": "charlette",
             "modifiers": ["orange"],
             "label": {
-              "href": "#",
+              "href": "TODO",
               "text": "Voir",
               "title": "Tous les contenus visuels"
             },
@@ -146,11 +158,11 @@
               "title": "Partager :",
               "items": [
                 {
-                  "href": "#",
+                  "href": "https://twitter.com/intent/tweet?text=Texte du tweet http://www.paris.fr",
                   "icon": "twitter"
                 },
                 {
-                  "href": "#",
+                  "href": "https://www.facebook.com/sharer/sharer.php?u=http://www.paris.fr",
                   "icon": "facebook"
                 }
               ]
@@ -169,7 +181,7 @@
             "id": "hortense-et-yannis",
             "modifiers": ["pink"],
             "label": {
-              "href": "#",
+              "href": "TODO",
               "text": "Voir",
               "title": "Tous les contenus visuels"
             },
@@ -184,11 +196,11 @@
               "title": "Partager :",
               "items": [
                 {
-                  "href": "#",
+                  "href": "https://twitter.com/intent/tweet?text=Texte du tweet http://www.paris.fr",
                   "icon": "twitter"
                 },
                 {
-                  "href": "#",
+                  "href": "https://www.facebook.com/sharer/sharer.php?u=http://www.paris.fr",
                   "icon": "facebook"
                 }
               ]
@@ -210,7 +222,6 @@
           "text": "Paris"
         },
         "menu": {
-          "href": "#",
           "text": "Menu"
         },
         "items": [
@@ -236,28 +247,28 @@
         "title": "Les rives de la Seine, lieux de vie depuis 20 siècles",
         "text": [
           "Paris s’est construite depuis la Seine. Depuis 2000 ans, ses rives sont des lieux de vie. Paris.fr vous propose de plonger dans leur Histoire à travers des témoignages et des images d’archives !",
-          "<a href=\"#\">Voir la vidéo drone</a>"
+          "<a href=\"TODO\">Voir la vidéo drone</a>"
         ],
         "social": {
           "title": "Suivez Parc Rives de Seine sur",
           "items": [
             {
-              "href": "#",
+              "href": "https://twitter.com/paris",
               "name": "Twitter",
               "icon": "twitter"
             },
             {
-              "href": "#",
+              "href": "https://www.facebook.com/paris",
               "name": "Facebook",
               "icon": "facebook"
             },
             {
-              "href": "#",
+              "href": "https://www.instagram.com/rivesdeseine/",
               "name": "Instagram",
               "icon": "instagram"
             },
             {
-              "href": "#",
+              "href": "https://soundcloud.com/rives-de-seine",
               "name": "Soundloud",
               "icon": "soundcloud"
             }
@@ -337,7 +348,6 @@
           "text": "Paris"
         },
         "menu": {
-          "href": "#",
           "text": "Menu"
         },
         "items": [
@@ -352,10 +362,10 @@
         "modifiers": ["ecouter", "yellow"],
         "text": [
           "Pendant plusieurs mois, nous avons parcouru les bords de Seine, en amont, en aval, dans Paris, pour récolter les témoignages de celles et ceux qui la vivent.",
-          "Depuis longtemps, depuis peu, au quotidien, ce sont leurs mots ! Et pour retrouver tous les contenus Parc Rives de Seine à écouter, abonnez vous à notre <a href=\"#\">chaîne Soundcloud</a>."
+          "Depuis longtemps, depuis peu, au quotidien, ce sont leurs mots ! Et pour retrouver tous les contenus Parc Rives de Seine à écouter, abonnez vous à notre <a href=\"https://soundcloud.com/rives-de-seine\">chaîne Soundcloud</a>."
         ],
         "social": {
-          "href": "#",
+          "href": "https://soundcloud.com/rives-de-seine",
           "icon": "soundcloud",
           "title": "Soundcloud"
         }
@@ -372,7 +382,6 @@
           "text": "Paris"
         },
         "menu": {
-          "href": "#",
           "text": "Menu"
         },
         "items": [
@@ -387,10 +396,10 @@
         "modifiers": ["voir", "pink"],
         "text": [
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nisl risus. Duis pellentesque eros eu magna suscipit, vitae gravida purus malesuada.",
-          "Vivamus elit felis, dignissim in faucibus at, venenatis vitae orci. Duis vulputate a turpis imperdiet eleifend. Sed sollicitudin eget nisi nec laoreet <a href=\"#\">compte instagram</a>."
+          "Vivamus elit felis, dignissim in faucibus at, venenatis vitae orci. Duis vulputate a turpis imperdiet eleifend. Sed sollicitudin eget nisi nec laoreet <a href=\"https://www.instagram.com/rivesdeseine/\">compte instagram</a>."
         ],
         "social": {
-          "href": "#",
+          "href": "https://www.instagram.com/rivesdeseine/",
           "icon": "instagram",
           "title": "Instagram"
         }
@@ -414,7 +423,20 @@
           "place": [
             "Paris",
             "Voie George Pompidou"
-          ]
+          ],
+          "share": {
+            "title": "Partager :",
+            "items": [
+              {
+                "href": "https://twitter.com/intent/tweet?text=Texte du tweet http://www.paris.fr",
+                "icon": "twitter"
+              },
+              {
+                "href": "https://www.facebook.com/sharer/sharer.php?u=http://www.paris.fr",
+                "icon": "facebook"
+              }
+            ]
+          }
         },
         {
           "label": {
@@ -433,7 +455,20 @@
           "place": [
             "Paris",
             "Voie George Pompidou"
-          ]
+          ],
+          "share": {
+            "title": "Partager :",
+            "items": [
+              {
+                "href": "https://twitter.com/intent/tweet?text=Texte du tweet http://www.paris.fr",
+                "icon": "twitter"
+              },
+              {
+                "href": "https://www.facebook.com/sharer/sharer.php?u=http://www.paris.fr",
+                "icon": "facebook"
+              }
+            ]
+          }
         },
         {
           "label": {
@@ -450,7 +485,20 @@
           "place": [
             "Paris",
             "Voie George Pompidou"
-          ]
+          ],
+          "share": {
+            "title": "Partager :",
+            "items": [
+              {
+                "href": "https://twitter.com/intent/tweet?text=Texte du tweet http://www.paris.fr",
+                "icon": "twitter"
+              },
+              {
+                "href": "https://www.facebook.com/sharer/sharer.php?u=http://www.paris.fr",
+                "icon": "facebook"
+              }
+            ]
+          }
         },
         {
           "label": {
@@ -467,7 +515,20 @@
           "place": [
             "Paris",
             "Voie George Pompidou"
-          ]
+          ],
+          "share": {
+            "title": "Partager :",
+            "items": [
+              {
+                "href": "https://twitter.com/intent/tweet?text=Texte du tweet http://www.paris.fr",
+                "icon": "twitter"
+              },
+              {
+                "href": "https://www.facebook.com/sharer/sharer.php?u=http://www.paris.fr",
+                "icon": "facebook"
+              }
+            ]
+          }
         },
         {
           "label": {
@@ -484,7 +545,20 @@
           "place": [
             "Paris",
             "Voie George Pompidou"
-          ]
+          ],
+          "share": {
+            "title": "Partager :",
+            "items": [
+              {
+                "href": "https://twitter.com/intent/tweet?text=Texte du tweet http://www.paris.fr",
+                "icon": "twitter"
+              },
+              {
+                "href": "https://www.facebook.com/sharer/sharer.php?u=http://www.paris.fr",
+                "icon": "facebook"
+              }
+            ]
+          }
         }
       ]
     }
