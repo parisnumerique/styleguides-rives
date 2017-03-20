@@ -13,8 +13,7 @@ mixin portrait(data)
       .gfrds_portrait-content
         .gfrds_portrait-content-col
           .gfrds_portrait-embed
-            blockquote.instagram-media(data-instgrm-version="7")
-              a(href=data.embed target="_blank")
+            iframe(class="instagram-media instagram-media-rendered" data-original=data.embed + "embed/?cr=1&amp;v=7" allowtransparency="true" scrolling="no" frameborder="0" height="554")
           if data.place
             .hidden-on-small
               .gfrds_portrait-place

@@ -34,11 +34,27 @@
     position: relative;
 
     iframe {
-      margin: 0 !important;
+      border-radius: 0.4rem;
+      box-shadow: none;
+      display: block;
+      margin: 0;
+      padding: 0;
       width: 100%;
       position: relative;
+      z-index: 1;
     }
 
+    &:after {
+      background-color: $white;
+      border-radius: 0.4rem;
+      content: "";
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
     &:before {
       background-color: transparentize($black, 0.85);
       border-radius: 0.4rem;
@@ -216,7 +232,7 @@
     }
 
     &-embed {
-      min-height: 55.2rem;
+      min-height: 55.4rem;
     }
 
     &-place {

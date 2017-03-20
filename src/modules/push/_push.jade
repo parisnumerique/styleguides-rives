@@ -5,7 +5,7 @@ mixin push(data)
   .gfrds_push
     +anchor({name: data.id})
     .gfrds_push-embed
-      iframe(width="100%" height="370" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=" + data.embed + "&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true")
+      iframe(width="100%" height="370" scrolling="no" frameborder="no" data-original="https://w.soundcloud.com/player/?url=" + data.embed + "&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true")
     .gfrds_push-content
       +label(data.label)
       h2.gfrds_push-title= data.title
