@@ -163,6 +163,10 @@
 
     &-embed {
       flex-shrink: 0;
+
+      iframe {
+        height: 28rem;
+      }
     }
 
     &-button-toggle {
