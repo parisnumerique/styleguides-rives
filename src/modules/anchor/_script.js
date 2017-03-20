@@ -36,10 +36,10 @@ var anchor = (function(){
     }
 
     function onScreenEntered(direction){
-      if (name === 'cover') {
+      if ((name === 'cover') || (name === 'intro')) {
         history.replaceState( {} , "", basePath );
       } else {
-        history.replaceState( {} , name, basePath + name );
+        history.replaceState( {} , name, basePath + '/' + name );
       }
     }
 
