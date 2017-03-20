@@ -6,7 +6,14 @@ mixin push(data)
     +anchor({name: data.id})
     .gfrds_push-embed
       iframe(width="100%" height="370" scrolling="no" frameborder="no" data-original="https://w.soundcloud.com/player/?url=" + data.embed + "&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true")
-    .gfrds_push-content
-      +label(data.label)
-      h2.gfrds_push-title= data.title
-      .gfrds_push-text= data.text
+    .gfrds_push-wrapper
+      .gfrds_push-share.share
+        ul.gfrds_push-share-items
+          each item in data.share.items
+            li.gfrds_push-share-item.share-item
+              a(href=item.href)
+                +icon({icon: item.icon})
+      .gfrds_push-content
+        +label(data.label)
+        h2.gfrds_push-title= data.title
+        .gfrds_push-text= data.text

@@ -15,6 +15,31 @@
     }
   }
 
+  &-share {
+    text-align: center;
+
+    &-items {
+      @include reset-list;
+    }
+
+    &-item {
+      & + & {
+        border-top: 0.1rem solid transparentize($darkblue2, 0.8);
+        margin-left: 0 !important;
+        padding-top: 0.5rem;
+      }
+
+      a {
+        display: block;
+        padding: 1rem 0.5rem;
+
+        &:hover {
+          .gfrds_icon {fill: $blue;}
+        }
+      }
+    }
+  }
+
   &-content {
     max-width: 100rem;
   }
@@ -35,8 +60,28 @@
   }
 
   @include medium-and-small {
-    &-content {
+    &-wrapper {
       padding: 2.5rem 4.5rem;
+    }
+
+    &-embed {
+      margin-right: 5rem;
+
+      iframe {
+        height: 28rem;
+      }
+    }
+
+    &-share {
+      position: absolute;
+      top: 1rem;
+      right: 0;
+      width: 5rem;
+
+      .gfrds_icon {
+        height: 2.5rem;
+        width: 2.5rem;
+      }
     }
 
     .gfrds_label {
@@ -58,10 +103,24 @@
     display: flex;
     justify-content: flex-start;
 
+    &-wrapper {
+      display: flex;
+    }
+
     &-embed {
       height: 37rem;
-      margin-right: 5rem;
+      margin-right: 3.2rem;
       width: 37rem;
+    }
+
+    &-share {
+      margin-right: 5rem;
+      width: 4.4rem;
+
+      .gfrds_icon {
+        height: 3rem;
+        width: 3rem;
+      }
     }
 
     .gfrds_label {
