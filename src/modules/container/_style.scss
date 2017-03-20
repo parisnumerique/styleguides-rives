@@ -4,7 +4,6 @@
   background-color: $white;
   color: $darkblue;
   overflow: hidden;
-  padding-top: $navbar-height;
 
   > * {
     position: relative;
@@ -14,10 +13,12 @@
   // modifiers
   &.is-history {
     background-color: $darkblue;
+    padding-top: $navbar-height - 1;
   }
 
   &.is-list {
     background-color: $lightbrown;
+    padding-top: $navbar-height - 1;
     padding-bottom: 14rem;
   }
 }

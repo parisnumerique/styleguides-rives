@@ -14,20 +14,14 @@ mixin navbar(data)
             li.gfrds_navbar-nav-item(class=item.modifiers class=(item.current ? "current" : null))
               a(href=item.href target=item.target aria-label=item.text)
                 span.gfrds_navbar-nav-item-text= item.text
-      //- ul.gfrds_navbar-social.share
-      //-   if data.navbar.share.items && data.navbar.share.items.length
-      //-     ul.share-items
-      //-       each item in data.navbar.share.items
-      //-         li.share-item.gfrds_navbar-social-item
-      //-           a(href=(item.href + data.url) title=item.title target="_blank")
-      //-             i.share-icon(class="icon-#{item.icon}" aria-hidden="true")
-      //-             span.hidden-accessibly= item.text
-      //- if data.social
-      //-   ul.gfrds_navbar-social
-      //-     each social in data.social
-      //-       li.gfrds_navbar-social-item
-      //-         a(href=social.href onclick=social.onclick title=social.text target=social.target)
-      //-           i.icon(class="icon-#{social.icon}")
-      //-             span.hidden-accessibly= social.text
+      if data.social
+        .gfrds_navbar-social
+          h4.gfrds_navbar-social-title= data.social.title
+          ul.gfrds_navbar-social-items
+            each s in data.social.items
+              li.gfrds_navbar-social-item
+                a(href=s.href target="_blank")
+                  +icon({icon: s.icon})
+                  .hidden-accessibly= s.name
     a.gfrds_navbar-button-top.hidden-on-small(href="#")
       +icon({icon: 'arrow-top'})
