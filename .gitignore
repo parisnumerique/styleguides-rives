@@ -27,5 +27,5 @@ Thumbs.db
 node_modules
 tmp/*
 !tmp/.gitkeep
-src/javascript/grandformat.js
-src/javascript/grandformat.js.map
+src/javascript/rivesdeseine.js
+src/javascript/rivesdeseine.js.map
