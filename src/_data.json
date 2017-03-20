@@ -215,7 +215,7 @@
     "data": {
       "modifiers": ["is-history"],
       "url": "http://www.paris.fr/actualites/grandformat/rivesdeseine",
-      "title": "Rives de Seine",
+      "title": "Histoire – Rives de Seine",
       "navbar": {
         "logo": {
           "href": "http://www.paris.fr",
@@ -342,6 +342,7 @@
   "ecouter": {
     "data": {
       "modifiers": ["is-list"],
+      "title": "À écouter – Rives de Seine",
       "navbar": {
         "logo": {
           "href": "http://www.paris.fr",
@@ -376,6 +377,7 @@
   "voir": {
     "data": {
       "modifiers": ["is-list"],
+      "title": "À voir – Rives de Seine",
       "navbar": {
         "logo": {
           "href": "http://www.paris.fr",
