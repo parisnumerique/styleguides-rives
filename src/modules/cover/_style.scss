@@ -2,7 +2,6 @@
   align-items: center;
   background-color: $darkblue;
   display: flex;
-  height: 41vw;
   overflow: hidden;
   position: relative;
   justify-content: center;
@@ -26,10 +25,9 @@
     line-height: 0;
     margin: 0 auto;
     max-width: 53.6rem;
-    transition: opacity 0.2s ease;
     position: relative;
-    text-align: right;
-    width: 50%;
+    transition: opacity 0.2s ease;
+    width: 60%;
     z-index: 2;
   }
 
@@ -86,12 +84,26 @@
   }
 
   @include medium-and-small {
+    height: 70vh;
+
+    &-title {
+      text-align: center;
+    }
+
+    &-embed,
+    &-button-close,
     > .gfrds_icon {
       display: none;
     }
   }
 
   @include large {
+    height: 41vw;
+
+    &-title {
+      text-align: right;
+    }
+
     > .gfrds_icon {
       bottom: 2rem;
       fill: $white;
