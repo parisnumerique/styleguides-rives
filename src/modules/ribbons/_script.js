@@ -18,6 +18,7 @@ GFrds.ribbons = (function(){
     var initStage;
     var scrollTop;
     var curvesPositions;
+    var isPaused = false;
 
 
     function init(){
@@ -85,6 +86,15 @@ GFrds.ribbons = (function(){
         { x:(stageW / 4) * 1.5 - curveWidth, y: -50 }      //TOP LEFT
       ],
       [
+        { x:(stageW / 2), y: -50 },
+        { x:(stageW / 2), y: stageH /2},
+        { x:(stageW / 2), y: stageH + 50 },
+        { x:(stageW / 2)- curveWidth, y: stageH + 50 },
+        { x:(stageW / 2) - curveWidth, y: stageH + 50 },
+        { x:(stageW / 2) - curveWidth, y: stageH / 2 },
+        { x:(stageW / 2) - curveWidth, y: -50 }
+      ],
+      [
         { x:(stageW / 4) * 2.5, y: -50 },
         { x:(stageW / 4) * 3, y: stageH /2},
         { x:(stageW / 4) * 3, y: stageH + 50 },
@@ -92,15 +102,6 @@ GFrds.ribbons = (function(){
         { x:(stageW / 4)  * 3 - curveWidth, y: stageH + 50 },
         { x:(stageW / 4) * 3 - curveWidth, y: stageH / 2 },
         { x:(stageW / 4) * 2.5 - curveWidth, y: -50 }
-      ],
-      [
-        { x:(stageW / 4) * 1.5, y: -50 },
-        { x:(stageW / 4), y: stageH /2},
-        { x:(stageW / 4), y: stageH + 50 },
-        { x:(stageW / 4) - curveWidth, y: stageH + 50 },
-        { x:(stageW / 4) - curveWidth, y: stageH + 50 },
-        { x:(stageW / 4) - curveWidth, y: stageH /2 },
-        { x:(stageW / 4) * 1.5 - curveWidth, y: -50 }
       ]];
     }
 
@@ -177,20 +178,17 @@ GFrds.ribbons = (function(){
     }
 
     function pause(){
-        for( var i = 0 ; i < curvesObj.length ; i ++ ){
-          curvesObj[i].pause();
-
-        }
+      isPaused = true;
     }
 
     function play(){
-        for( var i = 0 ; i < curvesObj.length ; i ++ ){
-          curvesObj[i].play();
-
-        }
+      isPaused = false;
+      loop();
     }
 
     function loop(time) {
+      if( isPaused ) return;
+
       if( scrollTop < 1500  && scrollStep != 0){
         scrollStep = 0;
         moveCurves(4500, Tween.Easing.Quadratic.InOut);

@@ -6922,6 +6922,7 @@ GFrds.ribbons = (function(){
     var initStage;
     var scrollTop;
     var curvesPositions;
+    var isPaused = false;
 
 
     function init(){
@@ -7081,20 +7082,17 @@ GFrds.ribbons = (function(){
     }
 
     function pause(){
-        for( var i = 0 ; i < curvesObj.length ; i ++ ){
-          curvesObj[i].pause();
-
-        }
+      isPaused = true;
     }
 
     function play(){
-        for( var i = 0 ; i < curvesObj.length ; i ++ ){
-          curvesObj[i].play();
-
-        }
+      isPaused = false;
+      loop();
     }
 
     function loop(time) {
+      if( isPaused ) return;
+
       if( scrollTop < 1500  && scrollStep != 0){
         scrollStep = 0;
         moveCurves(4500, Tween.Easing.Quadratic.InOut);
