@@ -19,7 +19,7 @@ GFrds.cover = (function(){
       $iframe = $embed.find('iframe');
       $backgroundVideo = $el.find('.gfrds_cover-video');
 
-      if (!Paris.responsive.is('large')) return;
+      if (!window.matchMedia("(min-width: 1090px)").matches) return;
 
       var embedHeight = $el.height() - 200;
       var embedWidth = embedHeight * 2.38;
