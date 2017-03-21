@@ -48,6 +48,13 @@
       },
       "cover": {
         "title": "Parc Rives de Seine",
+        "link": {
+          "href": "http://www.dailymotion.com/video/kK4aPa7t89K4nTmcZXK",
+          "text": "Voir la vidéo drone"
+        },
+        "embed": {
+          "videoId": "kK4aPa7t89K4nTmcZXK"
+        },
         "background": {
           "image": "modules/cover/poster.jpg",
           "video": {
@@ -61,8 +68,7 @@
         "id": "intro",
         "title": "Se baigner dans la Seine",
         "text": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo.",
-          "<a href=\"TODO\">Voir la vidéo drone</a>"
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo."
         ],
         "social": {
           "title": "Suivez Parc Rives de Seine sur",
@@ -260,6 +266,13 @@
       },
       "cover": {
         "title": "Parc Rives de Seine",
+        "link": {
+          "href": "http://www.dailymotion.com/video/kK4aPa7t89K4nTmcZXK",
+          "text": "Voir la vidéo drone"
+        },
+        "embed": {
+          "videoId": "kK4aPa7t89K4nTmcZXK"
+        },
         "background": {
           "image": "modules/cover/poster.jpg",
           "video": {
@@ -273,8 +286,7 @@
         "id": "intro",
         "title": "Les rives de la Seine, lieux de vie depuis 20 siècles",
         "text": [
-          "Paris s’est construite depuis la Seine. Depuis 2000 ans, ses rives sont des lieux de vie. Paris.fr vous propose de plonger dans leur Histoire à travers des témoignages et des images d’archives !",
-          "<a href=\"TODO\">Voir la vidéo drone</a>"
+          "Paris s’est construite depuis la Seine. Depuis 2000 ans, ses rives sont des lieux de vie. Paris.fr vous propose de plonger dans leur Histoire à travers des témoignages et des images d’archives !"
         ],
         "social": {
           "title": "Suivez Parc Rives de Seine sur",

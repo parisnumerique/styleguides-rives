@@ -12,5 +12,11 @@ mixin cover(data)
     h1.gfrds_cover-title
       .gfrds_cover-logo
         include ../../images/logo.svg
-      .hidden-accessibly= data.title
+        .hidden-accessibly= data.title
+      if data.link
+        a.gfrds_cover-link(href=data.link.href target="_blank")= data.link.text
+    .gfrds_cover-embed
+      iframe(width="100%" height="100%" scrolling="no" frameborder="no" data-original="//www.dailymotion.com/embed/video/" + data.embed.videoId + "?autoplay=1&ui-logo=0" allowfullscreen)
+    button.gfrds_cover-button-close
+      +icon({icon: 'plus'})
     +icon({icon: 'scrolldown'})
