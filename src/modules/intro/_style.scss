@@ -67,10 +67,6 @@
   @include medium-and-small {
     padding: 5rem;
 
-    &-content > .gfrds_icon {
-      display: none;
-    }
-
     &-title {
       font-size: 11vw;
       line-height: 12vw;
@@ -106,11 +102,6 @@
     &-content {
       float: right;
       max-width: 51rem;
-
-      > .gfrds_icon {
-        height: 6.2rem;
-        width: 2.7rem;
-      }
     }
 
     .is-history & {
@@ -122,7 +113,7 @@
     &-title {
       font-size: 6rem;
       line-height: 7rem;
-      margin: 2.2rem 0;
+      margin: 0 0 2.2rem;
     }
 
     &-text {
