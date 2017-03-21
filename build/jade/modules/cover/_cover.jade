@@ -1,0 +1,15 @@
+include ../anchor/_anchor
+
+mixin cover(data)
+  .gfrds_cover
+    +anchor({name: "cover"})
+    if data.background
+      .gfrds_cover-background(style=data.background.image ? "background-image: url(" + data.background.image + ");" : '')
+        if data.background.video
+          video.gfrds_cover-video(autoplay=true loop=true muted='muted' poster=data.background.image)
+            each source in data.background.video.sources
+              source&attributes(source)
+    h1.gfrds_cover-title
+      .gfrds_cover-logo
+        include ../../images/logo.svg
+      .hidden-accessibly= data.title

@@ -1,0 +1,7 @@
+mixin label(data)
+  .gfrds_label(class=data.modifiers)
+    if data.href
+      a.gfrds_label-link(href=data.href title=data.title)
+        = data.text
+    else
+      = data.text

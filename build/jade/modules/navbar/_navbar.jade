@@ -1,0 +1,27 @@
+mixin navbar(data)
+  .gfrds_navbar
+    a.gfrds_navbar-nef(href=data.logo.href)
+      include ../../images/nef.svg
+      span.hidden-accessibly=data.logo.text
+    button.gfrds_navbar-button-menu.only-on-small#nav-toggle
+      span.gfrds_navbar-button-menu-text= data.menu.text
+    .gfrds_navbar-wrapper
+      span.gfrds_navbar-logo
+        include ../../images/logo.svg
+      nav.gfrds_navbar-nav(tabindex="-1" role="navigation")
+        ul
+          each item in data.items
+            li.gfrds_navbar-nav-item(class=item.modifiers class=(item.current ? "current" : null))
+              a(href=item.href target=item.target aria-label=item.text)
+                span.gfrds_navbar-nav-item-text= item.text
+      if data.social
+        .gfrds_navbar-social
+          h4.gfrds_navbar-social-title= data.social.title
+          ul.gfrds_navbar-social-items
+            each s in data.social.items
+              li.gfrds_navbar-social-item
+                a(href=s.href target="_blank")
+                  +icon({icon: s.icon})
+                  .hidden-accessibly= s.name
+    a.gfrds_navbar-button-top.hidden-on-small(href="#")
+      +icon({icon: 'arrow-top'})

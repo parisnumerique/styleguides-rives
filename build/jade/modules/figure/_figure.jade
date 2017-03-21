@@ -1,0 +1,9 @@
+include ../anchor/_anchor
+
+mixin figure(data)
+  figure.gfrds_figure(class=data.modifiers)
+    +anchor({name: data.id})
+    .gfrds_wrapper
+      img.gfrds_figure-image(data-original=data.image)
+      if data.caption
+        figcaption.gfrds_figure-caption= data.caption
