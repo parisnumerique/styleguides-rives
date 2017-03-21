@@ -18,6 +18,7 @@
 .tmproj
 nbproject
 Thumbs.db
+data
 .idea
 *.sublime-project
 *.sublime-workspace
@@ -31,3 +32,5 @@ src/javascript/grandformat.js
 src/javascript/grandformat.js.map
 src/javascript/rivesdeseine.js
 src/javascript/rivesdeseine.js.map
+src/images/history
+build/assets/images/history
