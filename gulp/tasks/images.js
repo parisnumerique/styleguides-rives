@@ -18,5 +18,5 @@ gulp.task('build:images', function () {
       .pipe(imagemin({
           progressive: true,
       }))
-      .pipe(gulp.dest(path.join(config.build.assets.images)));
+      .pipe(gulp.dest(path.join(config.build.assets.index)));
 });

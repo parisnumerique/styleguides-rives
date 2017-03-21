@@ -19,7 +19,32 @@
           {"href": "/ecouter", "text": "Écouter"},
           {"href": "/voir", "text": "Voir"},
           {"href": "/histoire", "text": "Revivre"}
-        ]
+        ],
+        "social": {
+          "title": "Suivez Parc Rives de Seine sur",
+          "items": [
+            {
+              "href": "#",
+              "name": "Twitter",
+              "icon": "twitter"
+            },
+            {
+              "href": "#",
+              "name": "Facebook",
+              "icon": "facebook"
+            },
+            {
+              "href": "#",
+              "name": "Instagram",
+              "icon": "instagram"
+            },
+            {
+              "href": "#",
+              "name": "Soundloud",
+              "icon": "soundcloud"
+            }
+          ]
+        }
       },
       "cover": {
         "title": "Parc Rives de Seine",

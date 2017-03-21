@@ -4,6 +4,10 @@ body.gfrds_navbar-mobile-open {
   overflow: hidden;
 }
 
+.rheader.hidden {
+  display: none !important;
+}
+
 .gfrds_navbar {
   background-color: $darkblue3;
   display: block;
@@ -13,6 +17,11 @@ body.gfrds_navbar-mobile-open {
   top: 0;
   width: 100%;
   z-index: 101;
+
+  .gfrds_navbar-mobile-open & {
+    overflow: hidden;
+    height: 100%;
+  }
 
   &-nef {
     height: $navbar-height;
@@ -37,8 +46,7 @@ body.gfrds_navbar-mobile-open {
     display: none;
   }
 
-  &-nav > ul,
-  &-social,{
+  &-nav > ul {
     @include reset-list;
   }
 
@@ -80,19 +88,37 @@ body.gfrds_navbar-mobile-open {
   }
 
   &-social {
-    .share-item a {
-      color: $white;
-      opacity: 0.5;
-      font-size: 2.3rem;
-      text-decoration: none;
-      transition: opacity 0.2s ease;
+    display: none;
+    margin-bottom: 4rem;
 
-      &:hover, &:focus {
-        color: $white;
-        opacity: 1;
-      }
+    &-title {
+      font-weight: normal;
+      margin-top: 4rem;
     }
 
+    &-items {
+      @include reset-list;
+    }
+
+    &-item {
+      display: inline-block;
+
+      a {
+        display: inline-block;
+        margin: 0 1rem;
+
+        .gfrds_icon {
+          fill: $darkblue;
+          height: 3rem;
+          transition: fill 0.2s ease;
+          width: 3rem;
+        }
+
+        &:hover {
+          .gfrds_icon { fill: $blue; }
+        }
+      }
+    }
   }
 
 
@@ -158,12 +184,13 @@ body.gfrds_navbar-mobile-open {
 
       &-wrapper {
         background-color: $white;
+        background-clip: content-box;
         color: $darkblue;
         height: 100%;
-        overflow: hidden;
+        overflow: auto;
+        padding-top: $navbar-height;
         position: relative;
         text-align: center;
-        top: $navbar-height;
       }
 
       &-logo {
@@ -207,6 +234,10 @@ body.gfrds_navbar-mobile-open {
             }
           }
         }
+      }
+
+      &-social {
+        display: block;
       }
     }
 

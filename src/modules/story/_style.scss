@@ -8,6 +8,7 @@
   &-title {
     font-family: $seine;
     font-weight: normal;
+    overflow-wrap: break-word;
   }
 
   &-text {
@@ -33,7 +34,7 @@
   }
 
   @include medium-and-small {
-    padding: 5rem;
+    padding: 4.7rem;
 
     &-title {
       font-size: 8vw;
@@ -59,7 +60,7 @@
       font-size: 4rem;
       line-height: 5rem;
       margin: 0 2rem 0 0;
-      max-width: 35rem;
+      max-width: 35.3rem;
     }
 
     &-text {

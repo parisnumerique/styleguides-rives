@@ -45,7 +45,7 @@
     }
 
     &:after {
-      background: $white url(../../images/loader.svg) center center no-repeat;
+      background: $white url('#{$assets-path}../images/loader.svg') center center no-repeat;
       border-radius: 0.4rem;
       content: "";
       display: block;
@@ -233,6 +233,7 @@
 
     &-text {
       font-size: 1.8rem;
+      min-height: 48rem;
       line-height: 3rem;
     }
 

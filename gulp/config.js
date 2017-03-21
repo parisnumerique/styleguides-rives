@@ -29,6 +29,7 @@ module.exports = {
       javascript: join(buildOutput, 'assets', 'javascript'),
       fonts: join(buildOutput, 'assets', 'fonts'),
       images: join(buildOutput, 'assets', 'images'),
+      index: join(buildOutput, 'assets'),
     }
   },
 

@@ -8,7 +8,7 @@
   }
 
   &-embed {
-    background: $grayE6 url(../../images/loader.svg) center center no-repeat;
+    background: $grayE6 url('#{$assets-path}../images/loader.svg') center center no-repeat;
 
     iframe {
       display: block;
