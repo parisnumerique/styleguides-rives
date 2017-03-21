@@ -20,7 +20,9 @@ mixin portrait(data)
                 +icon({icon: 'marker'})
                 .gfrds_portrait-place-text!= data.place.join('<br />')
         .gfrds_portrait-content-col
-          .gfrds_portrait-text!= data.text
+          .gfrds_portrait-text
+            each p in data.text
+              p!= p
           if data.place
             .only-on-small
               .gfrds_portrait-place
