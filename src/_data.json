@@ -352,7 +352,10 @@
           "type": "figure",
           "data": {
             "id": "1660-perspective",
-            "image": "images/figure.jpg",
+            "image": {
+              "src": "../../images/history/1_57795-4_1030x702.jpg",
+              "ratio": "1.4672"
+            },
             "caption": "57795-4. Adam Perelle (1640-1695). \"Perspective de la ville de Paris, vue du Pont Rouge\". Eau-forte, vers 1660. Paris, musée Carnavalet. © Musée Carnavalet / Roger-Viollet"
           }
         },
@@ -360,7 +363,10 @@
           "type": "figure",
           "data": {
             "id": "1777-hotel-de-la-monnaie",
-            "image": "images/figure.jpg",
+            "image": {
+              "src": "../../images/history/2_23652-18_1030x683.jpg",
+              "ratio": "1.5081"
+            },
             "caption": "23652-18. Pierre-Antoine Demachy (1723-1807). \"L'Hôtel de la Monnaie et la Seine vus de la pointe de l'île de la Cité\", 1777. Paris, musée Carnavalet. © Musée Carnavalet / Roger-Viollet"
           }
         },
