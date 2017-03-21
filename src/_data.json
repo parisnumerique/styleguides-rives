@@ -241,6 +241,8 @@
       "modifiers": ["is-history"],
       "url": "http://www.paris.fr/actualites/grandformat/rivesdeseine",
       "title": "Histoire – Rives de Seine",
+      "baseUrl": "http://localhost:3000/histoire",
+      "basePath": "/histoire#",
       "navbar": {
         "logo": {
           "href": "http://www.paris.fr",

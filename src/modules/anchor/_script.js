@@ -21,12 +21,14 @@ var anchor = (function(){
       $parent,
       basePath,
       name,
+      isHistory,
       offsetTop;
 
     function init(){
       $parent = $el.parent(),
       name = $el.attr('name');
       basePath = $('body').data('base-path');
+      isHistory = $('.gfrds_container').hasClass('is-history');
       offsetTop = Math.round($el.offset().top);
 
       var inview = new Waypoint.Inview({
@@ -36,6 +38,8 @@ var anchor = (function(){
     }
 
     function onScreenEntered(direction){
+      if (isHistory) return;
+
       if ((name === 'cover') || (name === 'intro')) {
         history.replaceState( {} , "", basePath );
       } else {
