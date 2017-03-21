@@ -68,7 +68,9 @@
         "id": "intro",
         "title": "Se baigner dans la Seine",
         "text": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo."
+          "Un voyage au coeur de l’histoire des Rives de Seine et à travers les portraits audio et photo de ceux qui la vivent, à l’heure où le Parc Rives de Seine voit le jour.",
+          "Désormais, 10 hectares en bords de Seine, dédiés à la détente, aux loisirs et aux activités sportives, aménagés en harmonie avec notre environnement naturel et culturel, s’offrent aux Parisiens et aux amoureux de Paris.",
+          "Une nouvelle page de l’histoire de ce site d’exception est à écrire à partir d’aujourd’hui, par vous tous..."
         ],
         "social": {
           "title": "Suivez Parc Rives de Seine sur",
@@ -108,7 +110,12 @@
               "title": "Tous les contenus visuels"
             },
             "title": "Corine",
-            "text": "Je vous présente Celtique. Elle est têtue, elle porte bien son nom. Elle a 9 ans, c’est un Parson Russell. Ces chiens sont d’excellents ratiers, alors ici, je la surveille de près. On croise beaucoup de ragondins, certains font presque le double de sa taille. Elle s’en fiche, elle y va quand même. En ce moment je ne travaille pas, alors on marche deux heures par jour. J’ai des ravitaillements dans mon sac. Et encore, cette race-là peut avaler jusqu’à 18 km/ jour. La vraie question, c’est : « Qui promène qui ? »<br>Je l’envie parce qu’elle peut se baigner lorsqu’il fait beau. J’adore l’eau moi aussi, à la moindre flaque je suis à deux doigts d’enfiler un maillot. Se baigner dans la Seine, je suis pour ! En attendant, j’ai de la chance, mes fenêtres donnent justement sur la Seine et sur le parc de l’île Saint Germain. Je ne vois jamais deux fois le même paysage. D’abord, la Seine monte et descend. Certains jours, lorsqu’elle brunit, on se croirait au Vietnam, sur le fleuve Mékong. Mais c’est sa robe bleu-vert que je lui préfère. Ca lui donne un côté surréaliste.<br><br>Corine, 49 ans, Boulogne<br><br>'© @ulrich_lebeuf / Myop pour la Mairie de Paris, textes : @salome_kiner",
+            "text": [
+              "Je vous présente Celtique. Elle est têtue, elle porte bien son nom. Elle a 9 ans, c’est un Parson Russell. Ces chiens sont d’excellents ratiers, alors ici, je la surveille de près. On croise beaucoup de ragondins, certains font presque le double de sa taille. Elle s’en fiche, elle y va quand même. En ce moment je ne travaille pas, alors on marche deux heures par jour. J’ai des ravitaillements dans mon sac. Et encore, cette race-là peut avaler jusqu’à 18 km/ jour. La vraie question, c’est : « Qui promène qui ? »",
+              "Je l’envie parce qu’elle peut se baigner lorsqu’il fait beau. J’adore l’eau moi aussi, à la moindre flaque je suis à deux doigts d’enfiler un maillot. Se baigner dans la Seine, je suis pour ! En attendant, j’ai de la chance, mes fenêtres donnent justement sur la Seine et sur le parc de l’île Saint Germain. Je ne vois jamais deux fois le même paysage. D’abord, la Seine monte et descend. Certains jours, lorsqu’elle brunit, on se croirait au Vietnam, sur le fleuve Mékong. Mais c’est sa robe bleu-vert que je lui préfère. Ca lui donne un côté surréaliste.",
+              "Corine, 49 ans, Boulogne",
+              "© @ulrich_lebeuf / Myop pour la Mairie de Paris, textes : @salome_kiner"
+            ],
             "embed": "https://www.instagram.com/p/BRK6Qt-Dtx5/",
             "place": [
               "Boulogne-Billancourt",
@@ -145,8 +152,12 @@
               "title": "Tous les contenus audio"
             },
             "title": "Villeneuve-Saint-Georges, toutes ces années.",
-            "text": "La vie est faite d'amour, et l'amour a besoin d'années et d'espace. Julien Cernobori descend la Seine, pour aller à la rencontre des gens des rives.",
-            "embed": "https://api.soundcloud.com/tracks/312148712",
+            "text": [
+              "La vie est faite d'amour, et l'amour a besoin d'années et d'espace. Julien Cernobori descend la Seine, pour aller à la rencontre des gens des rives."
+            ],
+            "embed": {
+              "url": "https://api.soundcloud.com/tracks/312148712"
+            },
             "share": {
               "title": "Partager :",
               "items": [
@@ -179,7 +190,12 @@
               "title": "Tous les contenus visuels"
             },
             "title": "Charlette",
-            "text": "Pourquoi la Seine, l’eau ? Mon mari était médecin militaire, il disait que « l’eau est une forme de liberté ». On a donc cherché un bateau en Hollande, on ne voulait pas être statique. Je me rappelle qu’une fois, arrivés à une écluse fermée, nous nous sommes amarrés à la péniche du marinier. Il a trouvé ça drôle qu’on vive sur une péniche par choix quand lui y était obligé professionnellement, qu’on prenne comme habitation son outil de travail.<br>Au début, notre péniche était au Pont Alexandre III, puis à Grenelle, c’était très festif à l’époque. J’ai toujours adoré Paris, pour moi, Paris, c’est le Paradis ! J’ai voyagé dans de nombreux pays paradisiaques et je peux vous dire qu’en hiver, c’est mortel, il n’y a rien. Ici, il y a tout, et tout le temps de nouvelles choses à découvrir ! Ce matin, je me suis demandée ce que j’allais faire… et je suis allée me promener au Jardin des plantes. »<br><br>Charlette, 85 ans, Paris 12e<br><br>© Mairie de Paris /JB Gurliat",
+            "text": [
+              "Pourquoi la Seine, l’eau ? Mon mari était médecin militaire, il disait que « l’eau est une forme de liberté ». On a donc cherché un bateau en Hollande, on ne voulait pas être statique. Je me rappelle qu’une fois, arrivés à une écluse fermée, nous nous sommes amarrés à la péniche du marinier. Il a trouvé ça drôle qu’on vive sur une péniche par choix quand lui y était obligé professionnellement, qu’on prenne comme habitation son outil de travail.",
+              "Au début, notre péniche était au Pont Alexandre III, puis à Grenelle, c’était très festif à l’époque. J’ai toujours adoré Paris, pour moi, Paris, c’est le Paradis ! J’ai voyagé dans de nombreux pays paradisiaques et je peux vous dire qu’en hiver, c’est mortel, il n’y a rien. Ici, il y a tout, et tout le temps de nouvelles choses à découvrir ! Ce matin, je me suis demandée ce que j’allais faire… et je suis allée me promener au Jardin des plantes. »",
+              "Charlette, 85 ans, Paris 12e",
+              "© Mairie de Paris /JB Gurliat"
+            ],
             "embed": "https://www.instagram.com/p/BRA1yzDjbqZ/",
             "place": [
               "Paris",
@@ -217,7 +233,12 @@
               "title": "Tous les contenus visuels"
             },
             "title": "Hortense et Yannis",
-            "text": "Hortense danse sur les quais depuis 18 ans, du coup nous avons continué en couple. La plupart du temps, nous allons dans l’amphithéâtre (13e), et en été à Paris Plage, où nous avons un parquet de danse à disposition. Le top, ce serait d’en avoir un toute l’année, couvert.<br>C’est vrai qu’au début, sur les quais, c’était plus confidentiel, sauvage… Mais quoi qu’il en soit, danser dehors, ce n’est pas comme s’exercer entre quatre murs. A l’intérieur, on est contraint dans ses gestes, et surtout dans sa technique. On se sent enfermé, cloisonné. C’est du tango argentin, il a besoin d’espace !<br><br>Hortense, 37ans, Paris 15e et Yanis<br><br>© Mairie de Paris /JB Gurliat",
+            "text": [
+              "Hortense danse sur les quais depuis 18 ans, du coup nous avons continué en couple. La plupart du temps, nous allons dans l’amphithéâtre (13e), et en été à Paris Plage, où nous avons un parquet de danse à disposition. Le top, ce serait d’en avoir un toute l’année, couvert.",
+              "C’est vrai qu’au début, sur les quais, c’était plus confidentiel, sauvage… Mais quoi qu’il en soit, danser dehors, ce n’est pas comme s’exercer entre quatre murs. A l’intérieur, on est contraint dans ses gestes, et surtout dans sa technique. On se sent enfermé, cloisonné. C’est du tango argentin, il a besoin d’espace !",
+              "Hortense, 37ans, Paris 15e et Yanis",
+              "© Mairie de Paris /JB Gurliat"
+            ],
             "embed": "https://www.instagram.com/p/BRA1aRJD_Z4/",
             "place": [
               "Paris",
@@ -469,8 +490,8 @@
         "title": "Voir",
         "modifiers": ["voir"],
         "text": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac nisl risus. Duis pellentesque eros eu magna suscipit, vitae gravida purus malesuada.",
-          "Vivamus elit felis, dignissim in faucibus at, venenatis vitae orci. Duis vulputate a turpis imperdiet eleifend. Sed sollicitudin eget nisi nec laoreet <a href=\"https://www.instagram.com/rivesdeseine/\">compte instagram</a>."
+          "Pendant plusieurs mois, munis d'un appareil photo et d'un carnet, nous sommes allés à la rencontre des \"gens des rives\": ils s'y promènent, y vivent, y travaillent, y reviennent...",
+          "Découvrez leurs histoires, en images et en mots.  Et pour retrouver tous les portraits Rives de Seine, rendez-vous sur notre <a href=\"https://www.instagram.com/rivesdeseine/\" target=\"_blank\">compte Instagram</a> dédié."
         ],
         "social": {
           "href": "https://www.instagram.com/rivesdeseine/",
