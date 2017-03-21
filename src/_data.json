@@ -68,7 +68,9 @@
         "id": "intro",
         "title": "Se baigner dans la Seine",
         "text": [
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec ex dolor. Duis non augue augue. Sed sodales lacinia massa, ac lobortis mauris. Praesent ac malesuada urna, non pharetra elit. Nullam a libero aliquet, pretium nisi in, accumsan turpis. Donec nec nisl scelerisque, porta leo eu, molestie magna. Etiam sed ligula lorem. Maecenas sodales vitae diam et sollicitudin. Maecenas vel condimentum nulla. Phasellus non dictum dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum nunc velit, commodo quis ipsum in, lacinia consequat risus. Pellentesque in odio mollis, lobortis justo sed, pharetra leo."
+          "Un voyage au coeur de l’histoire des Rives de Seine et à travers les portraits audio et photo de ceux qui la vivent, à l’heure où le Parc Rives de Seine voit le jour.",
+          "Désormais, 10 hectares en bords de Seine, dédiés à la détente, aux loisirs et aux activités sportives, aménagés en harmonie avec notre environnement naturel et culturel, s’offrent aux Parisiens et aux amoureux de Paris.",
+          "Une nouvelle page de l’histoire de ce site d’exception est à écrire à partir d’aujourd’hui, par vous tous..."
         ],
         "social": {
           "title": "Suivez Parc Rives de Seine sur",
@@ -150,8 +152,12 @@
               "title": "Tous les contenus audio"
             },
             "title": "Villeneuve-Saint-Georges, toutes ces années.",
-            "text": "La vie est faite d'amour, et l'amour a besoin d'années et d'espace. Julien Cernobori descend la Seine, pour aller à la rencontre des gens des rives.",
-            "embed": "https://api.soundcloud.com/tracks/312148712",
+            "text": [
+              "La vie est faite d'amour, et l'amour a besoin d'années et d'espace. Julien Cernobori descend la Seine, pour aller à la rencontre des gens des rives."
+            ],
+            "embed": {
+              "url": "https://api.soundcloud.com/tracks/312148712"
+            },
             "share": {
               "title": "Partager :",
               "items": [
