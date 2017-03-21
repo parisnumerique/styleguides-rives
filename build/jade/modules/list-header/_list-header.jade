@@ -1,0 +1,10 @@
+mixin list-header(data)
+  .gfrds_list-header(class=data.modifiers)
+    .gfrds_list-header-cover
+      h2.gfrds_list-header-title= data.title
+    .gfrds_wrapper
+      .gfrds_list-header-text
+        each p in data.text
+          p!= p
+      .gfrds_list-header-social
+        a(href=data.social.href target="_blank" title=data.social.title): +icon({icon: data.social.icon})

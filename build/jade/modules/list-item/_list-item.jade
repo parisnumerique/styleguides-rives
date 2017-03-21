@@ -1,0 +1,30 @@
+include ../icon/_icon
+include ../label/_label
+
+mixin list-item(data)
+  .gfrds_list-item(class=data.modifiers)
+    - var isOpen = data.modifiers && !data.modifiers.indexOf('is-open')
+    if data.img
+      .gfrds_list-item-embed
+        - var src = isOpen ? data.img.large : data.img.thumb
+        img(src=src data-large=data.img.large data-thumb=data.img.thumb)
+    else if data.embed
+      .gfrds_list-item-embed(style="background-image: url(" + data.embed.thumb + ")")
+        iframe(width="100%" height="390" scrolling="no" frameborder="no" data-original="https://w.soundcloud.com/player/?url=" + data.embed.url + "&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=true")
+    button.gfrds_list-item-button-toggle
+      +icon({icon: 'plus'})
+    .gfrds_list-item-share.share
+      ul.gfrds_list-item-share-items
+        each item in data.share.items
+          li.gfrds_list-item-share-item.share-item
+            a(href=item.href)
+              +icon({icon: item.icon})
+    .gfrds_list-item-content
+      +label(data.label)
+      h2.gfrds_list-item-title= data.title
+      .gfrds_list-item-text
+        each p in data.text
+          p!= p
+      .gfrds_list-item-place
+        +icon({icon: 'marker'})
+        .gfrds_list-item-place-text!= data.place.join('<br />')

@@ -5,6 +5,9 @@
 
   &.pink {background-color: $pink;}
   &.orange {background-color: $orange;}
+  &.turquoise {background-color: $turquoise;}
+  &.yellow {background-color: $yellow;}
+  &.green {background-color: $green;}
 
   > .gfrds_wrapper {
     position: relative;
@@ -31,11 +34,27 @@
     position: relative;
 
     iframe {
-      margin: 0 !important;
+      border-radius: 0.4rem;
+      box-shadow: none;
+      display: block;
+      margin: 0;
+      padding: 0;
       width: 100%;
       position: relative;
+      z-index: 1;
     }
 
+    &:after {
+      background: $white url('#{$assets-path}../images/loader.svg') center center no-repeat;
+      border-radius: 0.4rem;
+      content: "";
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
     &:before {
       background-color: transparentize($black, 0.85);
       border-radius: 0.4rem;
@@ -81,6 +100,7 @@
 
       & + & {
         border-left: 0;
+        margin-left: 0 !important;
       }
 
       > a {
@@ -142,6 +162,10 @@
     }
 
     &-embed {
+      iframe {
+        height: calc(100vw + 1.4rem);
+      }
+
       &:before {
         transform: translate(1.5rem, 1.5rem);
       }
@@ -209,11 +233,12 @@
 
     &-text {
       font-size: 1.8rem;
+      min-height: 48rem;
       line-height: 3rem;
     }
 
     &-embed {
-      min-height: 55.2rem;
+      min-height: 55.4rem;
     }
 
     &-place {

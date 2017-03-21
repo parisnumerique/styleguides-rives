@@ -1,0 +1,74 @@
+.gfrds_story {
+  position: relative;
+
+  .is-history & {
+    color: $white;
+  }
+
+  &-title {
+    font-family: $seine;
+    font-weight: normal;
+    overflow-wrap: break-word;
+  }
+
+  &-text {
+    p {
+      margin: 0;
+
+      & + & {
+        margin-top: 2rem;
+      }
+    }
+
+    a {
+      border-bottom: 0.1rem solid;
+      color: inherit;
+      text-decoration: none;
+      transition: border 0.2s ease;
+
+      &:hover,
+      &:focus {
+        border-bottom: 0.2rem solid;
+      }
+    }
+  }
+
+  @include medium-and-small {
+    padding: 4.7rem;
+
+    &-title {
+      font-size: 8vw;
+      line-height: 10vw;
+      margin: 0 0 1rem;
+    }
+
+    &-text {
+      font-size: 1.6rem;
+      line-height: 2rem;
+    }
+  }
+
+  @include large {
+    padding: 5rem 20rem 9rem;
+
+    > .gfrds_wrapper {
+      overflow: hidden;
+    }
+
+    &-title {
+      float: left;
+      font-size: 4rem;
+      line-height: 5rem;
+      margin: 0 2rem 0 0;
+      max-width: 35.3rem;
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      line-height: 3rem;
+      margin-left: 37rem;
+      max-width: 60rem;
+    }
+
+  }
+}

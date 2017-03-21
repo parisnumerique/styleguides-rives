@@ -1,0 +1,144 @@
+.gfrds_list-header {
+  background-color: $white;
+  color: $darkblue2;
+
+  // modifiers
+  .is-yellow & {
+    .gfrds_list-header-cover {
+      background-color: $yellow;
+    }
+    .gfrds_list-header-text a {
+      &:hover, &:focus {
+        border-bottom-color: $yellow;
+      }
+    }
+    .gfrds_list-header-social a {
+      &:hover, &:focus {
+        .gfrds_icon {fill: $yellow;}
+      }
+    }
+  }
+  .is-pink & {
+    .gfrds_list-header-cover {
+      background-color: $pink;
+    }
+    .gfrds_list-header-text a {
+      &:hover, &:focus {
+        border-bottom-color: $pink;
+      }
+    }
+    .gfrds_list-header-social a {
+      &:hover, &:focus {
+        .gfrds_icon {fill: $pink;}
+      }
+    }
+  }
+
+  &.voir {
+    .gfrds_list-header-cover {
+      background-image: url('#{$assets-path}images/voir.svg');
+    }
+  }
+  &.ecouter {
+    .gfrds_list-header-cover {
+      background-image: url('#{$assets-path}images/ecouter.svg');
+    }
+  }
+
+  &-cover {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+
+  &-title {
+    bottom: 0;
+    font-family: $seine;
+    font-weight: normal;
+    margin: 0;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, 50%);
+  }
+
+  &-text {
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+
+    a {
+      border-bottom: 0.1rem solid;
+      color: inherit;
+      text-decoration: none;
+      transition: border 0.2s ease;
+
+      &:hover,
+      &:focus {
+        border-bottom-width: 0.2rem;
+      }
+    }
+  }
+
+  &-social {
+    text-align: center;
+
+    a {
+      display: inline-block;
+    }
+
+    .gfrds_icon {
+      fill: $darkblue2;
+      height: 6rem;
+      transition: fill 0.2s ease;
+      width: 6rem;
+    }
+  }
+
+  @include medium-and-small {
+    &-cover {
+      background-position: center 7rem;
+      background-size: 100% 35%;
+      height: 16rem;
+      padding-top: 1.5rem;
+    }
+
+    > .gfrds_wrapper {
+      padding: 3.5rem;
+    }
+
+    &-title {
+      font-size: 5rem;
+    }
+
+    &-text {
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+    }
+
+  }
+
+  @include large {
+    &-cover {
+      background-position: center 7rem;
+      background-size: 100% 32.5rem;
+      height: 30rem;
+    }
+
+    > .gfrds_wrapper {
+      padding-bottom: 4rem;
+    }
+
+    &-title {
+      font-size: 13rem;
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      line-height: 3rem;
+      max-width: 45rem;
+      padding-top: 9rem;
+    }
+  }
+
+}

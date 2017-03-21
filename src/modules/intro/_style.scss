@@ -1,5 +1,6 @@
 .gfrds_intro {
   color: $darkblue;
+  position: relative;
 
   .gfrds_icon {
     fill: $darkblue;
@@ -26,11 +27,13 @@
     a {
       border-bottom: 0.1rem solid;
       color: inherit;
+      font-weight: 500;
       text-decoration: none;
+      transition: border 0.2s ease;
 
       &:hover,
       &:focus {
-        border-bottom: 0.2rem solid;
+        border-bottom: 0.2rem solid $blue;
       }
     }
   }
@@ -49,10 +52,13 @@
 
       a {
         display: inline-block;
-        transition: opacity 0.2s ease;
+
+        .gfrds_icon {
+          transition: fill 0.2s ease;
+        }
 
         &:hover {
-          opacity: 0.7;
+          .gfrds_icon {fill: $blue;}
         }
       }
     }
@@ -60,10 +66,6 @@
 
   @include medium-and-small {
     padding: 5rem;
-
-    &-content > .gfrds_icon {
-      display: none;
-    }
 
     &-title {
       font-size: 11vw;
@@ -73,7 +75,7 @@
 
     &-text {
       font-size: 1.6rem;
-      line-height: 2rem;
+      line-height: 2.2rem;
     }
 
     &-social {
@@ -100,11 +102,6 @@
     &-content {
       float: right;
       max-width: 51rem;
-
-      > .gfrds_icon {
-        height: 6.2rem;
-        width: 2.7rem;
-      }
     }
 
     .is-history & {
@@ -116,7 +113,7 @@
     &-title {
       font-size: 6rem;
       line-height: 7rem;
-      margin: 2.2rem 0;
+      margin: 0 0 2.2rem;
     }
 
     &-text {

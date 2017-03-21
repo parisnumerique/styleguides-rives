@@ -2,10 +2,9 @@ include modules/_all
 include icons/_sprite.svg
 
 .gfrds_container(class=data.modifiers)
+  +navbar(data.navbar)
   +cover(data.cover)
   +intro(data.intro)
   each item in data.items
     +#{item.type}(item.data)
   +ribbons({})
-
-script(async defer src="//platform.instagram.com/fr_FR/embeds.js")

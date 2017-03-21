@@ -1,13 +1,14 @@
 .gfrds_label {
+  color: inherit;
   font-size: 1.5rem;
   font-weight: 500;
-  margin-bottom: 2rem;
-  text-decoration: none;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
 
-  &:link {
+  &-link {
     border-bottom: 0.2rem solid transparent;
     color: inherit;
-    text-transform: uppercase;
+    text-decoration: none;
     transition: border 0.2s ease;
 
     &:hover,
