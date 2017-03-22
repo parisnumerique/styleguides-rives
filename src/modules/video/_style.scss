@@ -16,7 +16,7 @@
     }
 
     &:after {
-      background: $white url('#{$assets-path}../images/loader.svg') center center no-repeat;
+      background: $black url('#{$assets-path}../images/loader.svg') center center no-repeat;
       border-radius: 0.4rem;
       content: "";
       display: block;
@@ -40,4 +40,16 @@
     }
   }
 
+  @include large {
+    padding: 5rem 20rem 9rem;
+
+    > .gfrds_wrapper {
+      overflow: hidden;
+    }
+
+    &-embed {
+      margin-left: 37rem;
+      max-width: 60rem;
+    }
+  }
 }
