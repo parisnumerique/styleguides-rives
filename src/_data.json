@@ -382,18 +382,52 @@
         {
           "type": "story",
           "data": {
-            "id": "ancien-regime",
-            "title": "Au 18e siècle, un axe vital",
             "text": [
               "L’aménagement des quais pour les automobiles est réalisé progressivement à partir des années 1930. En 1942, l’élargissement de la chaussée est ainsi achevé sur le quai Saint-Michel, puis le passage souterrain du quai Malaquais est mis en circulation en 1946. Rive droite, la voie express est achevée en décembre 1967.",
-              "Mais le «&nbsp;tout-voiture&nbsp;» était loin de faire l’unanimité pour les bords de Seine : le projet de voie express à Paris, sur les berges de la partie centrale de la rive gauche (notamment au pied de Notre-Dame) suscite de nombreuses polémiques, <strong>comme en témoigne cette archive de l’INA de 1972.</strong>",
-              "<a href=\"http://www.ina.fr/video/CAF93027639/les-berges-de-la-seine-video.html\" target=\"_blank\">http://www.ina.fr/video/CAF93027639/les-berges-de-la-seine-video.html</a>",
+              "Mais le «&nbsp;tout-voiture&nbsp;» était loin de faire l’unanimité pour les bords de Seine : le projet de voie express à Paris, sur les berges de la partie centrale de la rive gauche (notamment au pied de Notre-Dame) suscite de nombreuses polémiques, <strong>comme en témoigne cette archive de l’INA de 1972.</strong>"
+            ]
+          }
+        },
+        {
+          "type": "video",
+          "data": {
+            "src": "CAF93027639/1/1b0bd203fbcd702f9bc9b10ac3d0fc21"
+          }
+        },
+        {
+          "type": "story",
+          "data": {
+            "text": [
               "Le projet entraîne une forte mobilisation citoyenne et une campagne de presse : l’aménagement n’a donc jamais vu le jour.",
               "Le 20<sup>e</sup> siècle signe aussi la fin d’activités anciennes, telles que les bateaux lavoirs.",
-              "Les quatre derniers disparaissent en 1942. <strong>Témoignage en vidéo (INA)</strong>",
-              "<a href=\"http://www.ina.fr/video/AFE85000678/bateau-lavoir-sur-la-seine-video.html\" target=\"_blank\">http://www.ina.fr/video/AFE85000678/bateau-lavoir-sur-la-seine-video.html</a>",
-              "Mais la Seine accueille toujours au XX<sup>e</sup> siècle des métiers spécifiques, tels celui de marinier. Reportage de 1958 sur le voyage d’un convoi de huit péniches de Rouen à Paris.",
-              "<a href=\"http://www.ina.fr/video/CPF86654447/mariniers-video.html\" target=\"_blank\">http://www.ina.fr/video/CPF86654447/mariniers-video.html</a>",
+              "Les quatre derniers disparaissent en 1942. <strong>Témoignage en vidéo (INA)</strong>"
+            ]
+          }
+        },
+        {
+          "type": "video",
+          "data": {
+            "src": "AFE85000678/1/1b0bd203fbcd702f9bc9b10ac3d0fc21"
+          }
+        },
+        {
+          "type": "story",
+          "data": {
+            "text": [
+              "Mais la Seine accueille toujours au XX<sup>e</sup> siècle des métiers spécifiques, tels celui de marinier. Reportage de 1958 sur le voyage d’un convoi de huit péniches de Rouen à Paris."
+            ]
+          }
+        },
+        {
+          "type": "video",
+          "data": {
+            "src": "CPF86654447/1/1b0bd203fbcd702f9bc9b10ac3d0fc21"
+          }
+        },
+        {
+          "type": "story",
+          "data": {
+            "text": [
               "Un nouveau pont est construit, pour fluidifier le trafic routier. Les travaux du pont Charles-de-Gaulle s’achèvent en 1996. Ce pont métallique qui relie la Gare de Lyon à la Gare d’Austerlitz, est pensé pour soulager le pont d’Austerlitz, le plus fréquenté par la circulation automobile.",
               "<strong>Aujourd’hui, une nouvelle page se tourne pour rendre la Seine, ses rives, ses quais aux Parisiens et à tous ses amoureux.</strong>"
             ]

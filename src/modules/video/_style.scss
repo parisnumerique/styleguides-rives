@@ -1,0 +1,43 @@
+.gfrds_video {
+  position: relative;
+
+  &-embed {
+    position: relative;
+
+    iframe {
+      border-radius: 0.4rem;
+      box-shadow: none;
+      display: block;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
+    &:after {
+      background: $white url('#{$assets-path}../images/loader.svg') center center no-repeat;
+      border-radius: 0.4rem;
+      content: "";
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    &:before {
+      background-color: transparentize($black, 0.85);
+      border-radius: 0.4rem;
+      content: "";
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      transform: translate(3rem, 3rem);
+      width: 100%;
+    }
+  }
+
+}
