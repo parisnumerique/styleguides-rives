@@ -26,26 +26,10 @@
       top: 0;
       width: 100%;
     }
-    &:before {
-      background-color: transparentize($black, 0.85);
-      border-radius: 0.4rem;
-      content: "";
-      display: block;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transform: translate(3rem, 3rem);
-      width: 100%;
-    }
   }
 
   @include large {
-    padding: 5rem 20rem 9rem;
-
-    > .gfrds_wrapper {
-      overflow: hidden;
-    }
+    padding: 0 20rem;
 
     &-embed {
       margin-left: 37rem;

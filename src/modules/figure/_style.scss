@@ -1,13 +1,10 @@
 .gfrds_figure {
   margin: 0;
+  padding-top: 4rem;
   position: relative;
 
   .is-history & {
     color: $white;
-  }
-
-  & + .gfrds_figure {
-    margin-top: 3rem;
   }
 
   img {
@@ -23,6 +20,14 @@
   }
 
   @include small {
+    margin: 0 0.2rem;
+
+    &-caption {
+      padding: 0 5rem;
+    }
+  }
+
+  @include medium {
     margin: 0 0.2rem;
 
     &-caption {
