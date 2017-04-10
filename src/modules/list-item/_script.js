@@ -8,6 +8,7 @@ GFrds.listItem = (function(){
 
   function module(selector){
     var $el = $(selector),
+      api = {},
       $buttonToggle,
       $embed,
       $image,
@@ -22,26 +23,20 @@ GFrds.listItem = (function(){
 
       $el.on('click', onClick);
       $buttonToggle.on('click', onClickButtonToggle);
+
+      $el.data('api', api);
     }
 
     function onClick(e){
       e.preventDefault();
-      open();
+      api.open();
     }
 
     function onClickButtonToggle(e){
       e.preventDefault();
       if (!$el.hasClass('is-open')) return;
       e.stopPropagation();
-      close();
-    }
-
-    function open() {
-      if ($el.hasClass('is-open')) return;
-      $el.addClass('is-open');
-
-      setTimeout(isOpened, 600);
-      resetAllItems();
+      api.close();
     }
 
     function isOpened() {
@@ -56,17 +51,10 @@ GFrds.listItem = (function(){
       });
     }
 
-    function close() {
-      if ($iframe.length) {
-        disableEmbed();
-      }
-
-      $el.removeClass('is-open');
-    }
-
     function enableEmbed() {
+      $iframe.show();
+
       if (soundcloud) {
-        $iframe.show();
         soundcloud.play();
       } else {
         $iframe.attr('src', $iframe.data('original'));
@@ -88,9 +76,28 @@ GFrds.listItem = (function(){
     }
 
     function resetAllItems() {
-      $('.gfrds_list-item').not($el).removeClass('is-open');
+      $('.gfrds_list-item').not($el).each(function(){
+        $(this).data('api').close();
+      });
     }
 
+
+    // The API for external interaction
+    api.open = function open() {
+      if ($el.hasClass('is-open')) return;
+      $el.addClass('is-open');
+
+      setTimeout(isOpened, 600);
+      resetAllItems();
+    }
+
+    api.close = function close() {
+      if ($iframe.length) {
+        disableEmbed();
+      }
+
+      $el.removeClass('is-open');
+    }
 
     init();
 

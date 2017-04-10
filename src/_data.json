@@ -500,6 +500,35 @@
               }
             ]
           }
+        },
+        {
+          "label": {
+            "text": "Écouter"
+          },
+          "embed": {
+            "thumb": "https://i1.sndcdn.com/artworks-000213133103-aznwaj-t200x200.jpg",
+            "url": "https://api.soundcloud.com/tracks/312306178"
+          },
+          "title": "Episode 2",
+          "text": [
+            "Vestibulum ultricies justo id cursus viverra. Morbi et augue in tellus maximus bibendum."
+          ],
+          "place": [
+            "Villeneuve-le-Roi"
+          ],
+          "share": {
+            "title": "Partager :",
+            "items": [
+              {
+                "href": "https://twitter.com/intent/tweet?text=Texte du tweet http://www.paris.fr",
+                "icon": "twitter"
+              },
+              {
+                "href": "https://www.facebook.com/sharer/sharer.php?u=http://www.paris.fr",
+                "icon": "facebook"
+              }
+            ]
+          }
         }
       ]
     }
